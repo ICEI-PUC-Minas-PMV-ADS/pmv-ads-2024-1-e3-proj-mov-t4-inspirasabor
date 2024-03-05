@@ -73,36 +73,46 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Deve oferecer sistema de credenciais do usuário com login e senha | ALTA |
+|RF-002| Permitir que o usuário adicione uma nova receita | ALTA | 
+|RF-003| Permitir que o usuário pesquise pelo nome específico da receita | ALTA |
+|RF-004| Permitir que o usuário filtre as receitas por categoria (Massas, Doces e Sobremesas, Carnes) | MÉDIA |
+|RF-005| Permitir que o usuário avalie as receitas | MÉDIA |
+|RF-006| Permitir que o usuário adicione mídias referentes a receita (Foto e vídeos) | MÉDIA |
+|RF-007| Permitir que o usuário adicione comentários nas receitas | BAIXA | 
+|RF-008| Permitir que o usuário favorite as receitas | BAIXA |
+|RF-009| Permitir que o usuário compatilhe as receitas nas redes sociais | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
+|RNF-002| Deve ser compatível com os principais sistemas móveis do mercado - IOS e Android | ALTA | 
+|RNF-003| O aplicativo deve ser publicado em ambiente acessível na internet (?) | ALTA | 
+|RNF-004| O aplicativo deve ser fácil de usar e navegar, com interfaces claras e intuitivas | ALTA | 
+|RNF-005| O aplicativo deve ser elaborado com as tecnologias React Native, SQLite (?) | ALTA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+>Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+>
+>- [Requisitos Funcionais
+> (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
+> correspondem a uma funcionalidade que deve estar presente na
+>  plataforma (ex: cadastro de usuário).
+>- [Requisitos Não Funcionais
+>  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
+>  correspondem a uma característica técnica, seja de usabilidade,
+>  desempenho, confiabilidade, segurança ou outro (ex: suporte a
+>  dispositivos iOS e Android).
+>Lembre-se que cada requisito deve corresponder à uma e somente uma
+>característica alvo da sua solução. Além disso, certifique-se de que
+>todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -110,11 +120,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre no dia 23 de junho de 2024 |
+|02| O projeto deve ser elaborado apenas pelos membros do grupo |
+|03| A aplicação deve ser fácil de manter e atualizar, com código limpo e documentado para que os desenvolvedores possam entender e modificar facilmente o sistema |
+|04| Toda comunicação inerente à aplicação será realizada com o uso de metodologia ágil |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
+>Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+>
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
