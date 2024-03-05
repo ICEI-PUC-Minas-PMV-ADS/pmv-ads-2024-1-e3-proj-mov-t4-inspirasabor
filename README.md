@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# InspiraSabor
 
-`CURSO`
+`CURSO`: Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA`: Projeto Eixo 3 - Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio
 
-`SEMESTRE`
+`SEMESTRE`: 2024-1
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de aplicação que permita aos seus usuários pesquisarem e adicionarem receitas culinárias.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Maria Pessoa;
+* Christiane Curi Pereira;
+* Gabriel Santana Lourenço;
+* Jonathan Francisco Rocha De Castro;
+* Matheus Henrique Maia Sousa;
+* Tiago Carvalho Taveira Araujo.
 
 ## Orientador
 
-* Nome completo do professor 1
+* Diego Roberto Gonçalves de Pontes
 
 ## Instruções de utilização
 
