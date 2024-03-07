@@ -19,12 +19,13 @@ Como objetivos específicos temos:
   - Permitir que as pessoas avaliem receitas postadas na aplicação; 
   - Possibilitar ao usuário que esse filtre as receitas por categorias.
  
-
 ## Justificativa
 
+Em uma pesquisa conduzida pela InVision em 2019, envolvendo mais de 2000 empresas de 24 indústrias distintas, foi concluído que 77% dessas empresas experimentaram taxas superiores de satisfação do consumidor, diretamente atribuídas a um design eficiente. De maneira ainda mais notável, 81% das empresas afirmaram que o design também aprimorou a usabilidade de seus produtos.
 
+Esses dados destacam a relevância crucial que as organizações bem-sucedidas atribuem ao design, considerando a tela como o epicentro de suas operações. Diante desse panorama e dos números expressivos revelados pela pesquisa, torna-se evidente que a eficácia do design transcende a mera estética, impactando positivamente a experiência do usuário e, por conseguinte, a satisfação do consumidor.
 
-
+Diante das complexidades inerentes aos aplicativos existentes, frequentemente sobrecarregados por anúncios intrusivos e deficiências na localização de informações específicas, é perceptível a insatisfação dos usuários. Nesse contexto, nosso aplicativo propõe-se a preencher essa lacuna, oferecendo uma plataforma limpa, intuitiva e centrada nas necessidades do usuário. Acreditamos que ao priorizar a experiência do usuário e simplificar a interação, nosso aplicativo proporcionará uma alternativa mais agradável e eficiente para os entusiastas da culinária, contribuindo assim para uma experiência gastronômica mais satisfatória e descomplicada.
 
 ## Público-Alvo
 
