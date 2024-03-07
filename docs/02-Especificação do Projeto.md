@@ -1,44 +1,68 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Este projeto foi elaborado pela equipe após a detecção da necessidade de alguns possíveis usuários. O grupo realizou pesquisas e observação de pessoas, suas rotinas diárias e suas necessidades para sugestão de como melhor atendê-los. Com isso, foram estabelecidas as personas, as histórias e os requisitos do projeto, conforme detalhado a seguir.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+A seguir são apresentadas as personas que estão envolvidas no desenvolvimento desse projeto, criadoras de histórias que guiarão o estabelecimento de requisitos e a  construção das funcionalidades desse sistema. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/4f8a4a4c-0b7e-4559-99f6-dfd8c84b0fca" width="278"/>| Maria Luísa Silva | 
+|-----------------------------------------|---------------------------------|
+|**Idade** |49  anos
+|**Ocupação** | Dona de Casa
+|**Histórico** | Maria sempre desempenhou o papel de cozinheira em sua família. Sua busca por praticidade e agilidade, especialmente durante as refeições cotidianas, reflete seu apreço por soluções simples. Criada em um ambiente onde a culinária caseira era reverenciada, ela nutre um amor especial por experimentar novas receitas e pratos. Seus hobbies além de cozinhar  incluem jardinagem e assistir novelas.
+|**Desafios** |-  Encontrar boas  receitas . <br> -  Lidar com aplicativos de forma mais eficaz e organizados, já que não possui grande habilidade com tecnologia.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/7aa4d646-7ad6-4091-a533-bd16738cf78b" width="230"/>| Ricardo Bastos  | 
+|-----------------------------------------|---------------------------------|
+|**Idade** |30 anos
+|**Ocupação** |Engenheiro de Automação
+|**Histórico** |Ricardo é um entusiasta da culinária que adora cozinhar e compartilhar suas receitas favoritas, especialmente as fitness, pois também se preocupa com a saúde. Nas horas vagas, ele gosta de pedalar, o que complementa sua busca por um estilo de vida saudável e ativo. Sua habilidade com aplicativos é notável, e ele está constantemente em busca de novas maneiras de interagir socialmente.  Criado em um ambiente urbano, ele sempre esteve conectado à tecnologia desde jovem, explorando diferentes formas de uso em seu tempo livre.
+|**Desafios** |- Ele tem o desejo de compartilhar suas receitas em uma plataforma especializada, optando por um aplicativo específico em vez do Instagram.<br>- Encontrar receitas saudáveis.
+
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/4380128d-6417-4359-8e42-25314e7c4148" width="600"/>|  Manoela Carlos  | 
+|-----------------------------------------|---------------------------------|
+|**Idade** |25  anos
+|**Ocupação** | Estudante de Medicina
+|**Histórico** |Ela procura por receitas simples e práticas para preparar enquanto equilibra os estudos e o trabalho de meio período no hospital. Vindo de uma família com habilidades culinárias excepcionais, onde a comida sempre ocupou um lugar importante, Manoela lamenta não ter tido tempo para aprender a cozinhar antes de sair de casa.
+|**Desafios** |- Encontrar receitas simples que se encaixem em seu estilo de vida agitado.<br>- Ela está em busca de receitas que possam ser congeladas sem perder o sabor, já que costuma preparar marmitas para a semana toda.
+
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/33b0e01a-439e-411b-b277-92b0a34c538f" width="756"/>| Carlos Augusto| 
+|-----------------------------------------|---------------------------------|
+|**Idade** |50  anos
+|**Ocupação** |  Gerente de Vendas
+|**Histórico** |Carlos, recentemente divorciado e sem experiência na cozinha, nunca demonstrou interesse em cozinhar. No entanto, agora que está morando sozinho e precisa adquirir habilidades básicas para se sustentar, ele está aberto a aprender os fundamentos culinários. No entanto, ele deseja garantir que essa nova responsabilidade não consuma muito tempo de sua recém-descoberta vida de solteiro.
+|**Desafios** |- Aprender a cozinhar partindo do zero, sem experiência prévia.<br>- Devido à falta de experiência na cozinha, Carlos precisa de receitas claras e com um passo a passo detalhado.<br>- Uma plataforma de fácil uso é essencial para Carlos, que não quer perder tempo aprendendo a utilizá-lo. Ele quer pesquisar uma massa fácil e achar. 
+
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/ac24f6f4-bc3c-4ad0-9c32-d8fd2da8b8dd" width="1100"/>| Lúcia Helena| 
+|-----------------------------------------|---------------------------------|
+|**Idade** |64  anos 
+|**Ocupação** |Aposentada
+|**Histórico** |Lúcia adora cozinhar e quer compartilhar as receitas da sua avó com o mundo. Deseja uma plataforma fácil de usar para preservar tradições familiares. Além disso, ela tem uma paixão por escrever e valoriza muito suas raízes italianas. Com uma vida dedicada à família e à culinária, ela busca uma maneira simples de compartilhar os tesouros culinários de sua família com outras pessoas.
+|**Desafios** |- Encontrar uma plataforma simples para compartilhar receitas antigas.<br>- É importante que a plataforma valorize a forma como as receitas são escritas e organizadas, garantindo que a essência e a tradição de cada prato sejam preservadas de maneira clara e acessível.<br>- Ela adoraria receber feedback das pessoas que experimentassem suas receitas.
+
+
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| EU COMO ... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR` |
+|:---:|---|---|
+| Maria Luísa Silva      | Dona de Casa     | Encontrar boas receitas.                                        | Ampliar meu repertório culinário e proporcionar refeições saborosas e variadas para minha família.        |
+| Maria Luísa Silva      | Dona de Casa     | Lidar com aplicativos de forma mais eficaz e organizada.        | Facilitar minha experiência ao buscar e seguir receitas, tornando meu tempo na cozinha mais produtivo.   |
+| Ricardo Bastos         | Engenheiro de Automação | Compartilhar minhas receitas em uma plataforma especializada. | Compartilhar minhas criações culinárias com outras pessoas que tenham interesse em receitas fitness.    |
+| Ricardo Bastos         | Engenheiro de Automação | Encontrar receitas saudáveis.                                   | Manter um estilo de vida saudável e contribuir para a saúde da comunidade compartilhando opções saudáveis. |
+| Manoela Carlos         | Estudante de Medicina | Encontrar receitas simples e práticas.                          | Facilitar a preparação de refeições enquanto gerencio minha rotina agitada de estudos e trabalho no hospital. |
+| Manoela Carlos         | Estudante de Medicina | Receitas que possam ser congeladas sem perder o sabor.          | Preparar marmitas para a semana toda, economizando tempo e garantindo refeições saudáveis durante a semana. |
+| Carlos Augusto         | Gerente de Vendas | Aprender a cozinhar partindo do zero, sem experiência prévia.   | Adquirir habilidades culinárias básicas para se sustentar, agora que está morando sozinho.               |
+| Carlos Augusto         | Gerente de Vendas | Receitas claras e com um passo a passo detalhado.               | Facilitar o aprendizado na cozinha, garantindo que possa seguir as receitas com precisão e confiança.    |
+| Carlos Augusto         | Gerente de Vendas | Uma plataforma de fácil uso.                                    | Poupar tempo e esforço ao encontrar e seguir receitas, tornando a experiência culinária mais agradável.  |
+| Lúcia Helena           | Aposentada       | Uma plataforma simples para compartilhar receitas antigas.      | Preservar tradições familiares e compartilhar o legado culinário de sua família com outras pessoas.      |
+| Lúcia Helena           | Aposentada       | Valorizar a forma como as receitas são escritas e organizadas.  | Garantir que as receitas compartilhadas reflitam a essência e a tradição de cada prato de forma clara.  |
+| Lúcia Helena           | Aposentada       | Receber feedback das pessoas que experimentarem suas receitas.   | Estimular a interação e o compartilhamento de experiências culinárias com outros entusiastas da cozinha. |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
