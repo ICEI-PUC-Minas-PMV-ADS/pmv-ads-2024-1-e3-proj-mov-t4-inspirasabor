@@ -189,7 +189,7 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 Utilizando-se a ferramenta Project Libre, o grupo fez uma previsão de cronograma de atividades para o semestre 2024/1, tempo de duração do projeto, gerando o diagrama de Gantt apresentado abaixo.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/cronograma1.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/cronograma2.PNG)
 
 ## Gerenciamento de Equipe
 
