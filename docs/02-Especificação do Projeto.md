@@ -160,13 +160,20 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ![DiagramaUso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/607dd02c-0620-42e9-8030-88d61665c5e4)
 
 
-# Matriz de Rastreabilidade
+# Matriz de Rastreabilidade (WIP)
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+|  | RF-001 | RF-002 | RF-003 | RF-004 | RF-005 | RF-006 | RNF-001 | RNF-002 | RNF-004| RE-003 |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+| RF-001  |  :heavy_check_mark:        |          |          |          |          |          |          |          |
+| RF-002  |          |          |          |          |          |          |          |          |
+| RF-003  |          |          |          |          |          |          |          |          |
+| RF-004  |          |          |          |          |          |          |          |          |
+| RF-005  |          |          |          |          |          |          |          |          |
+| RF-006  |          |          |          |          |          |          |          |          |
+| RNF-001  |          |          |          |          |          |          |          |          |
+| RNF-002  |          |          |          |          |          |          |          |          |
+| RNF-004  |          |          |          |          |          |          |          |          |
+| RE-003  |          |          |          |          |          |          |          |          |
 
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
