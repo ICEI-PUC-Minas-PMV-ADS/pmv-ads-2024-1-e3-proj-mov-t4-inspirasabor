@@ -164,16 +164,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |  | RF-001 | RF-002 | RF-003 | RF-004 | RF-005 | RF-006 | RNF-001 | RNF-002 | RNF-004| RE-003 |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| RF-001  |  :heavy_check_mark:        |          |          |          |          |          |          |          |
-| RF-002  |          |          |          |          |          |          |          |          |
-| RF-003  |          |          |          |          |          |          |          |          |
-| RF-004  |          |          |          |          |          |          |          |          |
-| RF-005  |          |          |          |          |          |          |          |          |
-| RF-006  |          |          |          |          |          |          |          |          |
+| RF-001  |          |          |          |          |          |          |          |          |
+| RF-002  |   :heavy_check_mark:       |          |          |          |          |          |          |          |:heavy_check_mark:  |   |
+| RF-003  |          |  :heavy_check_mark:        |          |          |          |           |          |          |   :heavy_check_mark: |
+| RF-004  |          |   :heavy_check_mark:       |          |          |          |          |          |          |  :heavy_check_mark:  |
+| RF-005  |  :heavy_check_mark:        |  :heavy_check_mark:        |          |          |          |          |          |          | :heavy_check_mark: |
+| RF-006  |   :heavy_check_mark:       |  :heavy_check_mark:        |          |          |          |         |          |          | :heavy_check_mark:|
 | RNF-001  |          |          |          |          |          |          |          |          |
-| RNF-002  |          |          |          |          |          |          |          |          |
+| RNF-002  |          |          |          |          |          |          |   :heavy_check_mark:       |          |
 | RNF-004  |          |          |          |          |          |          |          |          |
-| RE-003  |          |          |          |          |          |          |          |          |
+| RE-003  |          |          |          |          |          |          |     :heavy_check_mark:     |     :heavy_check_mark:     |        |          |    |
 
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
