@@ -201,4 +201,4 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 Conforme o escopo do projeto e o cronograma de atividades, é apresentada abaixo a previsão de orçamento para execução do projeto.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/Orcamento1.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/Orcamento3.PNG)
