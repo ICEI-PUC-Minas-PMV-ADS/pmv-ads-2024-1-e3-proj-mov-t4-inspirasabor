@@ -197,7 +197,7 @@ Utilizando-se a ferramenta Project Libre, o grupo fez uma previsão de cronogram
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. A seguir é apresentada, portanto, uma imagem que demonstra o gerenciamento da equipe de trabalho através do método Kanban. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/kanban1.png)
 
 ## Gestão de Orçamento
 
