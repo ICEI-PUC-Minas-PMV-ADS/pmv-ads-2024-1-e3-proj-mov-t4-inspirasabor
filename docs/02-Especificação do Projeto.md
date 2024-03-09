@@ -119,7 +119,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
 |RNF-002| Deve ser compatível com os principais sistemas móveis do mercado - IOS e Android | ALTA | 
-|RNF-003| O aplicativo deve ser publicado em ambiente acessível na internet (Lojas de aplicativos - melhorar escrita) | ALTA | 
+|RNF-003| O aplicativo deve ser publicado em ambiente acessível na internet - App Store e Google Play | ALTA | 
 |RNF-004| O aplicativo deve ser fácil de usar e navegar, com interfaces claras e intuitivas | ALTA | 
 |RNF-005| O aplicativo deve ser elaborado com React Native | ALTA | 
 
