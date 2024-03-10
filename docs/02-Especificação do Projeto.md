@@ -149,7 +149,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-![DiagramaUso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/607dd02c-0620-42e9-8030-88d61665c5e4)
+![DiagramaUso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/9985e3ae-5180-48cc-a42d-84bbc6e3ed85)
+
 
 
 # Matriz de Rastreabilidade (WIP)
