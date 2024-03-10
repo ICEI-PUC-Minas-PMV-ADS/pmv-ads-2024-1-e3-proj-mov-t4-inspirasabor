@@ -1,6 +1,6 @@
 # Introdução
 
-Theodore Zeldin falava que "gastronomia é a arte de usar comidar para criar felicidade." Ora, em um cenário onde a culinária se tornou não apenas uma necessidade diária, mas também uma forma de expressão e conexão social, surge a importância de um aplicativo que simplifique e aprimore a experiência na cozinha. No universo das receitas, a busca por praticidade, interatividade e eficiência é essencial para proporcionar uma jornada gastronômica mais agradável e descomplicada.
+Theodore Zeldin falava que "gastronomia é a arte de usar comida para criar felicidade." Ora, em um cenário onde a culinária se tornou não apenas uma necessidade diária, mas também uma forma de expressão e conexão social, surge a importância de um aplicativo que simplifique e aprimore a experiência na cozinha. No universo das receitas, a busca por praticidade, interatividade e eficiência é essencial para proporcionar uma jornada gastronômica mais agradável e descomplicada.
 
 Ao observarmos o cenário atual, percebemos que a complexidade dos aplicativos existentes, aliada ao excesso de propaganda e à dificuldade em localizar receitas específicas, tem gerado desafios significativos para os entusiastas da culinária. É nesse contexto que identificamos a necessidade de desenvolver um aplicativo de receitas que seja a solução para tais problemas.
 
