@@ -153,21 +153,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 
 
-# Matriz de Rastreabilidade (WIP)
-
-|  | RF-001 | RF-002 | RF-003 | RF-004 | RF-005 | RF-006 | RNF-001 | RNF-002 | RNF-004| RE-003 |
-|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-| RF-001  |          |          |          |          |          |          |          |          |
-| RF-002  |   :heavy_check_mark:       |          |          |          |          |          |          |          |:heavy_check_mark:  |   |
-| RF-003  |          |  :heavy_check_mark:        |          |          |          |           |          |          |   :heavy_check_mark: |
-| RF-004  |          |   :heavy_check_mark:       |          |          |          |          |          |          |  :heavy_check_mark:  |
-| RF-005  |  :heavy_check_mark:        |  :heavy_check_mark:        |          |          |          |          |          |          | :heavy_check_mark: |
-| RF-006  |   :heavy_check_mark:       |  :heavy_check_mark:        |          |          |          |         |          |          | :heavy_check_mark:|
-| RNF-001  |          |          |          |          |          |          |          |          |
-| RNF-002  |          |          |          |          |          |          |   :heavy_check_mark:       |          |
-| RNF-004  |          |          |          |          |          |          |          |          |
-| RE-003  |          |          |          |          |          |          |     :heavy_check_mark:     |     :heavy_check_mark:     |        |          |    |
-
+# Matriz de Rastreabilidade
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/127675409/3c32202c-f429-428b-ac60-400d4ba5c895)
 
 # Gerenciamento de Projeto
 
