@@ -58,20 +58,20 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 | EU COMO ... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR` |
 |:---:|---|---|
-| Maria Luísa Silva      | Dona de Casa     | Encontrar boas receitas.                                        | Ampliar meu repertório culinário e proporcionar refeições saborosas e variadas para minha família.        |
-| Maria Luísa Silva      | Dona de Casa     | Lidar com aplicativos de forma mais eficaz e organizada.        | Facilitar minha experiência ao buscar e seguir receitas, tornando meu tempo na cozinha mais produtivo.   |
-| Ricardo Bastos         | Engenheiro de Automação | Compartilhar minhas receitas em uma plataforma especializada. | Compartilhar minhas criações culinárias com outras pessoas que tenham interesse em receitas fitness.    |
-| Ricardo Bastos         | Engenheiro de Automação | Encontrar receitas saudáveis.                                   | Manter um estilo de vida saudável e contribuir para a saúde da comunidade compartilhando opções saudáveis. |
-| Manoela Carlos         | Estudante de Medicina | Encontrar receitas simples e práticas.                          | Facilitar a preparação de refeições enquanto gerencio minha rotina agitada de estudos e trabalho no hospital. |
-| Manoela Carlos         | Estudante de Medicina | Receitas que possam ser congeladas sem perder o sabor.          | Preparar marmitas para a semana toda, economizando tempo e garantindo refeições saudáveis durante a semana. |
-| Carlos Augusto         | Gerente de Vendas | Aprender a cozinhar partindo do zero, sem experiência prévia.   | Adquirir habilidades culinárias básicas para se sustentar, agora que está morando sozinho.               |
-| Carlos Augusto         | Gerente de Vendas | Receitas claras e com um passo a passo detalhado.               | Facilitar o aprendizado na cozinha, garantindo que possa seguir as receitas com precisão e confiança.    |
-| Carlos Augusto         | Gerente de Vendas | Uma plataforma de fácil uso.                                    | Poupar tempo e esforço ao encontrar e seguir receitas, tornando a experiência culinária mais agradável.  |
-| Lúcia Helena           | Aposentada       | Uma plataforma simples para compartilhar receitas antigas.      | Preservar tradições familiares e compartilhar o legado culinário de sua família com outras pessoas.      |
-| Lúcia Helena           | Aposentada       | Valorizar a forma como as receitas são escritas e organizadas.  | Garantir que as receitas compartilhadas reflitam a essência e a tradição de cada prato de forma clara.  |
-| Lúcia Helena       | Aposentada       | Receber feedback das pessoas que experimentarem suas receitas.   | Estimular a interação e o compartilhamento de experiências culinárias com outros entusiastas da cozinha. |
-| Paulo Ribeiro| Professor Universitário | Encontrar receitas fáceis e muito práticas. |Começar a cozinhar sem sentir sobrecarga, ajudando mais em casa após o nascimento do bebê e sem perder muito tempo na preparação das refeições. | 
-| Paulo Ribeiro| Professor Universitário | Encontrar uma plataforma de receitas que ofereça receitas que exijam o mínimo esforço possível na preparação.| Contribuir mais nas tarefas domésticas, especialmente na preparação das refeições, de uma forma que se adapte ao seu estilo de vida preguiçoso e pouco inclinado à culinária.
+| Maria Luísa Silva       | Encontrar boas receitas.                                        | Ampliar meu repertório culinário e proporcionar refeições saborosas e variadas para minha família.        |
+| Maria Luísa Silva       | Lidar com aplicativos de forma mais eficaz e organizada.        | Facilitar minha experiência ao buscar e seguir receitas, tornando meu tempo na cozinha mais produtivo.   |
+| Ricardo Bastos          | Compartilhar minhas receitas em uma plataforma especializada. | Compartilhar minhas criações culinárias com outras pessoas que tenham interesse em receitas fitness.    |
+| Ricardo Bastos          | Encontrar receitas saudáveis.                                   | Manter um estilo de vida saudável e contribuir para a saúde da comunidade compartilhando opções saudáveis. |
+| Manoela Carlos           Encontrar receitas simples e práticas.                          | Facilitar a preparação de refeições enquanto gerencio minha rotina agitada de estudos e trabalho no hospital. |
+| Manoela Carlos          | Receitas que possam ser congeladas sem perder o sabor.          | Preparar marmitas para a semana toda, economizando tempo e garantindo refeições saudáveis durante a semana. |
+| Carlos Augusto          | Aprender a cozinhar partindo do zero, sem experiência prévia.   | Adquirir habilidades culinárias básicas para se sustentar, agora que está morando sozinho.               |
+| Carlos Augusto         | Receitas claras e com um passo a passo detalhado.               | Facilitar o aprendizado na cozinha, garantindo que possa seguir as receitas com precisão e confiança.    |
+| Carlos Augusto         | Uma plataforma de fácil uso.                                    | Poupar tempo e esforço ao encontrar e seguir receitas, tornando a experiência culinária mais agradável.  |
+| Lúcia Helena           | Uma plataforma simples para compartilhar receitas antigas.      | Preservar tradições familiares e compartilhar o legado culinário de sua família com outras pessoas.      |
+| Lúcia Helena           | | Valorizar a forma como as receitas são escritas e organizadas.  | Garantir que as receitas compartilhadas reflitam a essência e a tradição de cada prato de forma clara.  |
+| Lúcia Helena        | Receber feedback das pessoas que experimentarem suas receitas.   | Estimular a interação e o compartilhamento de experiências culinárias com outros entusiastas da cozinha. |
+| Paulo Ribeiro| Encontrar receitas fáceis e muito práticas. |Começar a cozinhar sem sentir sobrecarga, ajudando mais em casa após o nascimento do bebê e sem perder muito tempo na preparação das refeições. | 
+| Paulo Ribeiro| Encontrar uma plataforma de receitas que ofereça receitas que exijam o mínimo esforço possível na preparação.| Contribuir mais nas tarefas domésticas, especialmente na preparação das refeições, de uma forma que se adapte ao seu estilo de vida preguiçoso e pouco inclinado à culinária.
 
 
 
