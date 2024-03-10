@@ -41,6 +41,14 @@ A seguir são apresentadas as personas que estão envolvidas no desenvolvimento 
 |**Histórico** |Lúcia adora cozinhar e quer compartilhar as receitas da sua avó com o mundo. Deseja uma plataforma fácil de usar para preservar tradições familiares. Além disso, ela tem uma paixão por escrever e valoriza muito suas raízes italianas. Com uma vida dedicada à família e à culinária, ela busca uma maneira simples de compartilhar os tesouros culinários de sua família com outras pessoas.
 |**Desafios** |- Encontrar uma plataforma simples para compartilhar receitas antigas.<br>- É importante que a plataforma valorize a forma como as receitas são escritas e organizadas, garantindo que a essência e a tradição de cada prato sejam preservadas de maneira clara e acessível.<br>- Ela adoraria receber feedback das pessoas que experimentassem suas receitas.
 
+|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/75648729/be2b2344-181c-4651-97a2-89878e8b7e4a" width="1100"/>| Paulo Ribeiro| 
+|-----------------------------------------|---------------------------------|
+|**Idade** |47  anos 
+|**Ocupação** |Professor Universitário
+|**Histórico** |Paulo é um professor universitário de 47 anos que, embora tenha alguma habilidade na cozinha, muitas vezes prefere evitar o trabalho árduo de cozinhar. Ele sempre foi acostumado com uma rotina agitada e dependia bastante da comida preparada por sua esposa. No entanto, recentemente, sua esposa deu à luz um bebê, o que aumentou as responsabilidades domésticas de Paulo. Ele sente a necessidade de ajudar mais em casa, especialmente na preparação das refeições, mas sua falta de motivação e disposição o leva a procurar por soluções que sejam rápidas e fáceis.
+|**Desafios** |- Paulo precisa começar a cozinhar para ajudar mais em casa após o nascimento do bebê, mas sua falta de motivação e disposição o tornam preguiçoso em relação à tarefa.<br>- Ele deseja encontrar receitas que sejam extremamente simples e de rápida preparação, para que ele possa contribuir na preparação das refeições sem gastar muito tempo ou esforço.<br>- Como é preguiçoso quando se trata de cozinhar, ele procura por uma plataforma que ofereça receitas extremamente fáceis e rápidas, com o mínimo de passos possível.
+
+
 
 
 
@@ -61,7 +69,10 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Carlos Augusto         | Gerente de Vendas | Uma plataforma de fácil uso.                                    | Poupar tempo e esforço ao encontrar e seguir receitas, tornando a experiência culinária mais agradável.  |
 | Lúcia Helena           | Aposentada       | Uma plataforma simples para compartilhar receitas antigas.      | Preservar tradições familiares e compartilhar o legado culinário de sua família com outras pessoas.      |
 | Lúcia Helena           | Aposentada       | Valorizar a forma como as receitas são escritas e organizadas.  | Garantir que as receitas compartilhadas reflitam a essência e a tradição de cada prato de forma clara.  |
-| Lúcia Helena           | Aposentada       | Receber feedback das pessoas que experimentarem suas receitas.   | Estimular a interação e o compartilhamento de experiências culinárias com outros entusiastas da cozinha. |
+| Lúcia Helena       | Aposentada       | Receber feedback das pessoas que experimentarem suas receitas.   | Estimular a interação e o compartilhamento de experiências culinárias com outros entusiastas da cozinha. |
+| Paulo Ribeiro| Professor Universitário | Encontrar receitas fáceis e muito práticas. |Começar a cozinhar sem sentir sobrecarga, ajudando mais em casa após o nascimento do bebê e sem perder muito tempo na preparação das refeições. | 
+| Paulo Ribeiro| Professor Universitário | Encontrar uma plataforma de receitas que ofereça receitas que exijam o mínimo esforço possível na preparação.| Contribuir mais nas tarefas domésticas, especialmente na preparação das refeições, de uma forma que se adapte ao seu estilo de vida preguiçoso e pouco inclinado à culinária.
+
 
 
 ## Modelagem do Processo de Negócio 
