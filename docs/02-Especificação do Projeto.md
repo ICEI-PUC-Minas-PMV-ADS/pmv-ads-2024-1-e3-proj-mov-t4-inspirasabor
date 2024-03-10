@@ -62,7 +62,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Maria Luísa Silva       | Lidar com aplicativos de forma mais eficaz e organizada.        | Facilitar minha experiência ao buscar e seguir receitas, tornando meu tempo na cozinha mais produtivo.   |
 | Ricardo Bastos          | Compartilhar minhas receitas em uma plataforma especializada. | Compartilhar minhas criações culinárias com outras pessoas que tenham interesse em receitas fitness.    |
 | Ricardo Bastos          | Encontrar receitas saudáveis.                                   | Manter um estilo de vida saudável e contribuir para a saúde da comunidade compartilhando opções saudáveis. |
-| Manoela Carlos           Encontrar receitas simples e práticas.                          | Facilitar a preparação de refeições enquanto gerencio minha rotina agitada de estudos e trabalho no hospital. |
+| Manoela Carlos          | Encontrar receitas simples e práticas.                          | Facilitar a preparação de refeições enquanto gerencio minha rotina agitada de estudos e trabalho no hospital. |
 | Manoela Carlos          | Receitas que possam ser congeladas sem perder o sabor.          | Preparar marmitas para a semana toda, economizando tempo e garantindo refeições saudáveis durante a semana. |
 | Carlos Augusto          | Aprender a cozinhar partindo do zero, sem experiência prévia.   | Adquirir habilidades culinárias básicas para se sustentar, agora que está morando sozinho.               |
 | Carlos Augusto         | Receitas claras e com um passo a passo detalhado.               | Facilitar o aprendizado na cozinha, garantindo que possa seguir as receitas com precisão e confiança.    |
