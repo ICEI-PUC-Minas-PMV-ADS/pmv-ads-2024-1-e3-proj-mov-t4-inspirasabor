@@ -123,20 +123,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-004| O aplicativo deve ser fácil de usar e navegar, com interfaces claras e intuitivas | ALTA | 
 |RNF-005| O aplicativo deve ser elaborado com React Native | ALTA | 
 
->Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
->
->- [Requisitos Funcionais
-> (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-> correspondem a uma funcionalidade que deve estar presente na
->  plataforma (ex: cadastro de usuário).
->- [Requisitos Não Funcionais
->  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->  correspondem a uma característica técnica, seja de usabilidade,
->  desempenho, confiabilidade, segurança ou outro (ex: suporte a
->  dispositivos iOS e Android).
->Lembre-se que cada requisito deve corresponder à uma e somente uma
->característica alvo da sua solução. Além disso, certifique-se de que
->todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -149,11 +135,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |03| A aplicação deve ser fácil de manter e atualizar, com código limpo e documentado para que os desenvolvedores possam entender e modificar facilmente o sistema |
 |04| Toda comunicação inerente à aplicação será realizada com o uso de metodologia ágil |
 
->Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
->
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
@@ -174,11 +155,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | RNF-002  |          |          |          |          |          |          |   :heavy_check_mark:       |          |
 | RNF-004  |          |          |          |          |          |          |          |          |
 | RE-003  |          |          |          |          |          |          |     :heavy_check_mark:     |     :heavy_check_mark:     |        |          |    |
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
 
 
 # Gerenciamento de Projeto
