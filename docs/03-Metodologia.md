@@ -1,9 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A abordagem inclui as especificações das ferramentas utilizadas pelo grupo, tanto para a manutenção dos códigos e outros itens necessários para a coordenação das atividades do projeto.
 
 ## Relação de Ambientes de Trabalho
 
@@ -45,43 +43,59 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A organização da equipe está dessa forma:
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
+Scrum Master: Matheus Maia.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+Product Owner: Gabriel Santana Lourenço.
+
+Equipe de Desenvolvimento: Ana Maria Pessoa, Christiane Curi Pereira, Jonathan Francisco Rocha De Castro e Tiago Carvalho Taveira Araujo.
+
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. Para a organização e distribuição das tarefas do projeto, a equipe está utilizando o Github Projects com o aúxilio do quadro kanban. Dessa forma, o quadro foi estruturado da seguinte forma:
 
+- Product Backlog: O product backlog representa todas as tarefas identificadas no projeto desde a documentação de contexto as referências.
+- A fazer: A coluna a fazer representa o sprint do backlog. De forma a ilustrar o sprint atual desenvolvido pela equipe.
+- Em execução: A partir do momento em que um membro da equipe inicia uma tarefa, essa tarefa é movida para coluna em questão.
+- Homologação: A homologação é o momento em que o Scrum Master e o Product Owner irão validar as tarefas realizadas de forma a verificarem se está em consonância com o que foi acordado por toda equipe.
+- Pronto: Ocorre quando há finalização da tarefa.
+
+  
+O projeto contará com cinco sprints que serão detalhados conforme abaixo:
+
+  #### Sprint 1
+- Planejamento: Para concretização desse _sprint_, o grupo planejou definir e entregar a documentação do contexto e as especificações do projeto. 
+
+- Execução: Para concretizar o que foi planejado, a equipe se reuniu para definir as tarefas da etapa, que é formada pela elaboração da introdução, problema, objetivos,  e público-alvo e também a criação das  personas, histórico de usuários, requisitos (funcionais e não funcionais), bem como as definições do gerenciamento do projeto e matriz de rastreabilidade.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/86fad0e7-08d4-4635-b143-79049164bc70)
+
+
+- Evidências: O grupo estruturou e entregou no último dia 10/03/2024, a documentação de contexto e as especificações do projeto.
+
+#### Sprint 2
+- Planejamento: Entregue a documentação do primeiro _sprint_, o grupo buscou a definição dos documentos de metodologia e projeto de interface. Estabelecido que nesse _sprint_, haveria a necessidade da entrega da divisão de papéis do projeto, as definições de processo e as ferramentas utilizadas, a criação de indicadores de desempenho e metas, entidade de relacionamento, diagrama de fluxos, o padrão BPMN, diagrama de classe, esquema relacional, os _wireframes_ e, ainda, o plano de testes de software e usabilidade. 
+
+- Execução: Utilizando a ferramenta de projetos do Github, o grupo realizou a seguinte divisão de tarefas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b4312801-a9a4-4152-994e-542561307403)
+
+ 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código: Visual Studio.
+- Ferramentas de comunicação: Microsoft Teams e Whatsapp.
+- Ferramentas de desenho de tela (_wireframing_): 
+- Plataforma de elaboração visual (_userflow_): 
+- Ferramenta de criação de diagrama de classe: 
+- - Ferramenta de criação do projeto relacional: 
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+O editor de código foi escolhido porque ele possui uma integração com o
+sistema de versão. As ferramentas de comunicação utilizadas possuem
+integração semelhante e por isso foram selecionadas. Por fim, para criar
+diagramas utilizamos essa ferramenta por melhor captar as
+necessidades da nossa solução.
