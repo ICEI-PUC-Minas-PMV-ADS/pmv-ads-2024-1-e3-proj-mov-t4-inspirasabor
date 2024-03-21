@@ -16,7 +16,8 @@ O diagrama apresenta a seguir apresenta o fluxo de interação do usuário com o
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Screenshot (189)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/127675409/6aa1809b-d84f-4a27-8c5f-e7e5b62d2484)
+
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
