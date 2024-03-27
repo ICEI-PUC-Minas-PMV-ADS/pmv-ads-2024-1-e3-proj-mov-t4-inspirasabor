@@ -87,16 +87,15 @@ Atualmente, os aplicativos disponíveis no mercado para pesquisa e compartilhame
 
 O aplicativo InspiraSabor se propõe a ter uma fácil navegação, bastante intuitivo e sem a presença de anúncios, conforme descrito no modelo do processo a seguir, no padrão BPMN.
 
-!(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/BPM_InspiraSabor.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/blob/main/docs/img/BPM_InspiraSabor.png)
 
-[Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.]
-
-[### Processo 1 – NOME DO PROCESSO
+Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+### Processo 1 – NOME DO PROCESSO
 Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
 Processo 1
 ### Processo 2 – NOME DO PROCESSO
 Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-Processo 2]
+Processo 2
 
 ## Indicadores de Desempenho
 
