@@ -8,7 +8,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/b1aa43ee-f607-4eff-9000-71dc082413c2)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/14ffb467-3b6e-4a83-b2b0-4c8c8d9179c8)
 
 
 ## Modelo ER
