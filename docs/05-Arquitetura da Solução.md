@@ -23,7 +23,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 
 ## Esquema Relacional
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/180e8340-0929-4783-93de-d5ad08ded853)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/125419720/892fafaf-a228-496a-9bf7-d159d329ccda)
+
 
 
 ## Modelo Físico
