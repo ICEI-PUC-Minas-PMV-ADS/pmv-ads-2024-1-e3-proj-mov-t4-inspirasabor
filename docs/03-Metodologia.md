@@ -83,7 +83,7 @@ As ferramentas empregadas no projeto são:
 - Ferramentas de desenho de tela (_wireframing_): 
 - Plataforma de elaboração visual (_userflow_): 
 - Ferramenta de criação de diagrama de classe: Astah. 
-- Ferramenta de criação do projeto relacional: Draw.io
+- Ferramenta de criação do projeto relacional: Draw.io e MySql.
 - Ferramenta de criação da Entidade de Relacionamento: Visual Paradigm.
 - Ferramenta de criação do padrão BPMN:
 - Ferramenta de criação dos indicadores de desempenho: Google Sheets.
