@@ -81,11 +81,11 @@ As ferramentas empregadas no projeto são:
 - Editor de código: Expo.dev (sistema online de codificação).
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
 - Ferramentas de desenho de tela (_wireframing_): 
-- Plataforma de elaboração visual (_userflow_): 
+- Plataforma de elaboração visual (_userflow_): Lucidchart.
 - Ferramenta de criação de diagrama de classe: Astah. 
 - Ferramenta de criação do projeto relacional: Draw.io e MySql.
 - Ferramenta de criação da Entidade de Relacionamento: Visual Paradigm.
-- Ferramenta de criação do padrão BPMN:
+- Ferramenta de criação do padrão BPMN: Bizagi Modeler.
 - Ferramenta de criação dos indicadores de desempenho: Google Sheets.
 -  Ferramenta de criação do gerenciamento de tempo: Project Libre.
 -  Ferramenta de gerenciamento de equipe: Github Projects.
