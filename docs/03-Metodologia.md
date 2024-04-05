@@ -80,7 +80,7 @@ As ferramentas empregadas no projeto são:
 
 - Editor de código: Expo.dev (sistema online de codificação).
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
-- Ferramentas de desenho de tela (_wireframing_): 
+- Ferramentas de desenho de tela (_wireframing_): Miro.
 - Plataforma de elaboração visual (_userflow_): Lucidchart.
 - Ferramenta de criação de diagrama de classe: Astah. 
 - Ferramenta de criação do projeto relacional: Draw.io e MySql.
