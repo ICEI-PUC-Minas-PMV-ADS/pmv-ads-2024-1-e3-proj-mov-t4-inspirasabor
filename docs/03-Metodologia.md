@@ -87,4 +87,6 @@ As ferramentas empregadas no projeto são:
 - Ferramenta de criação da Entidade de Relacionamento: Visual Paradigm.
 - Ferramenta de criação do padrão BPMN:
 - Ferramenta de criação dos indicadores de desempenho: Google Sheets.
+-  Ferramenta de criação do gerenciamento de tempo: Project Libre.
+-  Ferramenta de gerenciamento de equipe: Github Projects.
 
