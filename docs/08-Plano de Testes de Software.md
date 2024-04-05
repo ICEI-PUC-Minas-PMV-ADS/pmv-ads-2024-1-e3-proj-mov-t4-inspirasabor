@@ -9,7 +9,12 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Passos 	| Acessar a aplicação / Clicar em "Crie sua conta!" / Digitar o Nome, o Email e a Senha / Clicar em "Crie seu perfil"  |
 |Critério de Êxito | O cadastro é realizado com sucesso e o usuário consegue realizar o login. |
 
-| **Caso de Teste** | **CT-02 - Cadastro de Receitas** | - APRIMORAR BATER COM O FLUXOGRAMA RF-002
+| **Caso de Teste** | **CT-08 - Cadastrar Receitas** |
+|---|---|
+|	Requisito Associado 	| RF_002 - Permitir que o usuário cadastre receitas. |
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar  receitas. |
+| Passos 	| Acessar a aplicação / Login aceito e usuário logado / Clicar em "Inserir Receita" / Inserir dados. 
+|Critério de Êxito | O usuário consegue inserir mídias. |
 
 | **Caso de Teste** | **CT-03 - Sistema de Pesquisa** |
 |---|---|
@@ -32,11 +37,26 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Passos 	| Acessar a aplicação / Login aceito e usuário logado / Clicar em "Avaliar Receita" / Inserir dados / Usuário insere sua avaliação. |
 |Critério de Êxito | O usuário consegue avaliar e comentar a receita desejada. |
 
-| **Caso de Teste** | **CT-06 - Cadastro de Mídias** | - APRIMORAR BATER COM O FLUXOGRAMA - RF-006
+| **Caso de Teste** | **CT-06 - Sistema de Mídia** |
+|---|---|
+|	Requisito Associado 	| RF_006 - Permitir que o usuário adicione mídias referentes a receita. |
+| Objetivo do Teste 	| Verificar se o usuário consegue inserir mídias. |
+| Passos 	| Acessar a aplicação / Login aceito e usuário logado / Clicar em "Inserir receita" / Usuário insere suas mídias. |
+|Critério de Êxito | O usuário consegue inserir mídias. |
 
-| **Caso de Teste** | **CT-07 - Favoritar Receitas** | - APRIMORAR BATER COM O FLUXOGRAMA RF-008
+| **Caso de Teste** | **CT-07 - Favoritar receitas** |
+|---|---|
+|	Requisito Associado 	| RF_008 - Permitir que o usuário favorite as receitas. |
+| Objetivo do Teste 	| Verificar se o usuário consegue favoritas as receitas. |
+| Passos 	| Acessar a aplicação / Login aceito e usuário logado / Clicar em "Avaliar Receita" / Inserir dados / Usuário insere sua avaliação/ Usuário favorita a receita. |
+|Critério de Êxito | O usuário consegue inserir mídias. |
 
-| **Caso de Teste** | **CT-08 - Compartilhar Receitas** | - APRIMORAR BATER COM O FLUXOGRAMA RF-009
+| **Caso de Teste** | **CT-08 - Compartilhar Receitas** |
+|---|---|
+|	Requisito Associado 	| RF_009 - Permitir que o usuário compartilhe receitas. |
+| Objetivo do Teste 	| Verificar se o usuário consegue compartilhar as receitas. |
+| Passos 	| Acessar a aplicação / Login aceito e usuário logado / Clicar em "Inserir Receita" / Inserir dados / Usuário insere sua avaliação/ Usuário compartilha a receita. |
+|Critério de Êxito | O usuário consegue inserir mídias. |
 
 | **Caso de Teste** 	| **CT-09 – Responsividade**	|
 |---|---|
