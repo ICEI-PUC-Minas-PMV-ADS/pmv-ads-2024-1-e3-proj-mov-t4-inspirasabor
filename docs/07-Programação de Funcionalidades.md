@@ -8,5 +8,4 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo.
 
 A codificação do _dashboard_ pode ser encontrada abaixo:
 
-(INSERIR LINK DO EXPO.DEV)
-
+[InspiraSabor - Dashboard](https://snack.expo.dev/@johnfrdc/inspirasabor-dashboard)

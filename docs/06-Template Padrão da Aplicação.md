@@ -2,6 +2,6 @@
 
 No momento da aplicação, a equipe desenvolveu um _dashboard_ teste, conforme visto abaixo:
 
-(INSERIR IMAGEM)
+![Dashboard](./img/Dashboard1.png) ![Dashboard](./img/Dashboard2.png)
 
 O _dashboard_ visa atender a finalidade do projeto que é o desenvolvimento de uma aplicação simples e de fácil interatividade dos usuários.
