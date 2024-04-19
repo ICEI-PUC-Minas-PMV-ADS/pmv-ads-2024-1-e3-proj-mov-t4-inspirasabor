@@ -9,6 +9,8 @@ Portanto, a partir desse cenário, é imprescindível que pessoas disponham de u
 ## Problema
 O problema evidenciado reside na tarefa de suprir um _gap_ no mercado. A falta de um local de receitas com fácil interatividade, usabilidade e um mecanismo de busca simplificada por receitas. Diante disso, surge o desafio de criar uma aplicação de fácil manuseio, onde os usuários possam não apenas encontrar suas receitas desejadas de maneira rápida, mas também compartilhar suas descobertas culinárias com amigos e familiares.
 
+//teste de commit
+
 ## Objetivos
 
 O objetivo geral deste projeto é criar uma aplicação que forneça receitas por meio de uma interface amigável, promovendo a interação e a praticidade na cozinha. 
