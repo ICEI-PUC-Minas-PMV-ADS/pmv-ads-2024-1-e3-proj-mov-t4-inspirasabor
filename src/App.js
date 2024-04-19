@@ -1,9 +1,12 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
-import Dashboard from './pages/Dashboard'
+import Main from './navigations/Main';
 
 export default function App() {
   return (
-    <Dashboard/>
+    <NavigationContainer>
+      <Main />
+    </NavigationContainer>
   );
 }
