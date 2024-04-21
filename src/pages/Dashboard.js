@@ -13,6 +13,7 @@ const Dashboard = () => {
   const navigation = useNavigation();
   const [receitas, setReceitas] = useState([]);
   const [categorias, setCategorias] = useState([]);
+  const [receitasDoDia, setReceitasDoDia] = useState([]);
 
   useEffect(() => {
     findAllCategorias().then((dados) => {
@@ -20,6 +21,7 @@ const Dashboard = () => {
     });
     findAllReceitas().then((dados) => {
       setReceitas(dados);
+      setReceitasDoDia(dados.filter(r => r.nota >= 4));
     });
   }, []);
 
@@ -32,19 +34,23 @@ const Dashboard = () => {
       <Body>
         <ScrollView>
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Receita do dia</Text>
-            <Card onPress={() => navigation.navigate('Receita')} mode='outlined'>
-              <Card.Content>
-                <Card.Cover 
-                style={styles.cardImage} 
-                source={{ uri: 'https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' }} />
-              </Card.Content>
-            </Card>
+            <Text style={styles.sectionTitle}>Receitas do dia</Text>
+                <FlatList
+                  horizontal
+                  data={receitasDoDia}
+                  renderItem={({ item }) => (
+                    <ItemCard
+                      style={styles.cardDay}
+                      imagem={item.imagem}
+                      onPress={() => navigation.navigate('Receita', { item })}
+                    />
+                  )}
+                  keyExtractor={(item) => item.id}
+                />
           </View>
 
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Melhor avaliadas</Text>
-            <ScrollView horizontal>
               <View style={styles.listContainer}>
                 <FlatList
                   horizontal
@@ -61,12 +67,10 @@ const Dashboard = () => {
                   keyExtractor={(item) => item.id}
                 />
               </View>
-            </ScrollView>
           </View>
 
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Categorias</Text>
-            <ScrollView horizontal>
               <View style={styles.listContainer}>
                 <FlatList
                   horizontal
@@ -77,7 +81,6 @@ const Dashboard = () => {
                   keyExtractor={(item) => item.id}
                 />
               </View>
-            </ScrollView>
           </View>
         </ScrollView>
       </Body>
@@ -97,12 +100,13 @@ const styles = StyleSheet.create({
   listContainer: {
     flexDirection: 'row',
   },
-  cardImage: {
-    borderRadius: 5,
-  },
   card: {
     marginHorizontal: 8,
     width: 200,
+  },
+  cardDay: {
+    marginHorizontal: 8,
+    width: 380,
   },
 });
 

@@ -1,1 +1,1 @@
-export const BASE_URL = "a"
+export const BASE_URL = "https://nice-worlds-worry.loca.lt"

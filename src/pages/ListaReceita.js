@@ -8,13 +8,18 @@ import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
 import { useNavigation } from '@react-navigation/native';
 
-const ListaReceita = () => {
+const ListaReceita = ({route}) => {
     const navigation = useNavigation();
+    const busca  = route.params ? route.params : '';
     const [receitas, setReceitas] = useState([]);
 
     useEffect(() => {
         findAllReceitas().then((dados) => {
-        setReceitas(dados);
+          if(busca) {
+            setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca)));
+          } else {
+            setReceitas(dados);
+          }
         });
     }, []);
 
@@ -26,7 +31,6 @@ const ListaReceita = () => {
             <Body>
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>Resultado</Text>
-                    <ScrollView>
                     <View>
                         <FlatList style={styles.section}
                         data={receitas}
@@ -41,7 +45,6 @@ const ListaReceita = () => {
                         keyExtractor={(item) => item.id}
                         />
                     </View>
-                    </ScrollView>
                 </View>
             </Body>
         </Container>
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   section: {
-    marginBottom: 10,
+    marginBottom: 20,
   },
   sectionTitle: {
     fontSize: 20,
