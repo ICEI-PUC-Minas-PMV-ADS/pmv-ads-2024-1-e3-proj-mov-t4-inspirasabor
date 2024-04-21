@@ -1,1 +1,1 @@
-export const BASE_URL = "https://curly-wombats-battle.loca.lt"
+export const BASE_URL = "a"
