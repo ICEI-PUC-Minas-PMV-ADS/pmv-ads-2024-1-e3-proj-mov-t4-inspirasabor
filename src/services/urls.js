@@ -1,1 +1,1 @@
-export const BASE_URL = "https://nice-worlds-worry.loca.lt"
+export const BASE_URL = "LINK_LOCALTUNNEL"
