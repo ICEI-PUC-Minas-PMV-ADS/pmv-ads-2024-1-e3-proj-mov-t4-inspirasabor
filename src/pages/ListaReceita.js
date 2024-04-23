@@ -16,7 +16,7 @@ const ListaReceita = ({route}) => {
     useEffect(() => {
         findAllReceitas().then((dados) => {
           if(busca) {
-            setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca)));
+            setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca.toLowerCase())));
           } else {
             setReceitas(dados);
           }
