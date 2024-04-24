@@ -10,15 +10,15 @@ const Stack = createNativeStackNavigator();
 
 const Main = () => {
   return (
-    <Stack.Navigator initialRouteName="Register">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
-        name="Dashboard"
-        component={Dashboard}
+        name="Login"
+        component={Login}
         options={{ header: () => null }}
       />
       <Stack.Screen
-        name="ListaReceita"
-        component={ListaReceita}
+        name="Register"
+        component={Register}
         options={{ header: () => null }}
       />
     </Stack.Navigator>

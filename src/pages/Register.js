@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 import { StyleSheet, View, Alert } from "react-native";
-import { TextInput, Button, Headline, IconButton } from "react-native-paper";
+import { TextInput, Button, Headline } from "react-native-paper";
 import { useNavigation } from '@react-navigation/native';
 
 import Container from "../components/Container";
 import Body from "../components/Body";
 import Input from "../components/Input";
 import Logo from '../components/Logo';
-import { useUser } from "../contexts/UserContext";
-import { login } from "../services/auth.services";
+import { register } from "../services/auth.services";
 
-
-const Login = () => {
+const Register = () => {
     const navigation = useNavigation();
-    const { setSigned, setName } = useUser();
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const handleLogin = () => {
+    const handleRegister = () => {
 
-        login({
-            email: email,
-            password: password
-        }).then(res => {
-            console.log(res);
-
-            if (res && res.user) {
-                setSigned(true);
-                setName(res.user.name);
-
-
-            } else {
-
-                Alert.alert('Atenção', 'Usuário ou senha inválidos!');
-            }
-
+        register({
+          name: name,
+          email: email,
+          password: password
+        }).then( res => {
+          console.log(res);
+    
+          if(res){
+    
+            Alert.alert('Atenção', 'Usuário Cadastrado com sucesso!',[
+              { text: "OK", onPress: () => navigation.goBack() }
+            ]);
+    
+          }else{
+    
+             Alert.alert('Atenção', 'Usuário não cadastrado! Tente novamente mais tarde =D');
+          }
+    
         });
-
-    }
+        
+      }
 
     return (
         <Container>
@@ -47,6 +47,12 @@ const Login = () => {
                 Inspira Sabor
             </Headline>
             <Body>
+                <Input
+                    label="Nome"
+                    value={name}
+                    onChangeText={(text) => setName(text)}
+                    left={<TextInput.Icon icon="account" />}
+                />
                 <Input
                     label="E-mail"
                     value={email}
@@ -63,16 +69,16 @@ const Login = () => {
                 <Button
                     style={styles.Button}
                     mode="outlined"
-                    onPress={handleLogin}
+                    onPress={handleRegister}
                 >
-                    LOGIN
+                    REGISTRAR
                 </Button>
                 <Button
                     style={styles.Button}
                     mode="outlined"
-                    onPress={() => navigation.navigate('Register')}
+                    onPress={() => navigation.goBack()}
                 >
-                    CRIE SUA CONTA!
+                    CANCELAR
                 </Button>
             </Body>
         </Container>
@@ -93,4 +99,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Login;
+export default Register;
