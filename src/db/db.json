@@ -17,6 +17,12 @@
       "password": "$2a$10$lnzBVScrr0OswuBQyFZxKeCgxKAVnLvP8cZsiDmYEtryoZYw5CR4K",
       "name": "Luc",
       "id": 3
+    },
+    {
+      "email": "john@gmail.com",
+      "password": "$2a$10$W8C.y4BAXmWIns3x3OTeyuu91nDAz7mwnPw6FbNtqy2GB20eJA1yq",
+      "name": "Jonathan",
+      "id": 4
     }
   ],
   "receitas": [

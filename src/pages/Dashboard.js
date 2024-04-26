@@ -11,17 +11,17 @@ import { useNavigation } from '@react-navigation/native';
 
 const Dashboard = () => {
   const navigation = useNavigation();
-  const [receitas, setReceitas] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const [receitasDoDia, setReceitasDoDia] = useState([]);
+  const [melhoresAvaliadas, setMelhoresAvaliadas] = useState([]);
 
   useEffect(() => {
     findAllCategorias().then((dados) => { 
       setCategorias(dados);
     });
     findAllReceitas().then((dados) => {
-      setReceitas(dados);
-      setReceitasDoDia(dados.filter(r => r.nota >= 4));
+      setReceitasDoDia(dados.filter(r => r.nota === 5));
+      setMelhoresAvaliadas(dados.filter(r => r.nota >= 4));
     });
   }, []);
 
@@ -58,7 +58,7 @@ const Dashboard = () => {
               <View style={styles.listContainer}>
                 <FlatList
                   horizontal
-                  data={receitas}
+                  data={melhoresAvaliadas}
                   renderItem={({ item }) => (
                     <ItemCard 
                       style={styles.card}
@@ -119,10 +119,3 @@ const styles = StyleSheet.create({
 });
 
 export default Dashboard;
-
-
-
-
-
-
-

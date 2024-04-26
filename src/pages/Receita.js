@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import StarRating from '../components/StarRating';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation(); 
@@ -17,7 +18,7 @@ const Receita = ({ route }) => {
       <Text style={styles.subtitulo}>Modo de Preparo:</Text>
       <Text>{item.modoPreparo}</Text>
       <Text style={styles.subtitulo}>Nota:</Text>
-      <Text>{item.nota}</Text>
+      <StarRating rating={item.nota}/>
       
       {/* Adicione um botão para voltar para a tela anterior (Dashboard) */}
       <TouchableOpacity onPress={() => navigation.navigate('Dashboard')} style={styles.button}>
@@ -64,5 +65,3 @@ const styles = StyleSheet.create({
 });
 
 export default Receita;
-
-
