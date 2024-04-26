@@ -3,7 +3,7 @@ import { BASE_URL } from './urls';
 
 export const findAllReceitas = async () => {
     try {
-      return await API.get(`${BASE_URL}/receitas`).then(
+      return await API.get(`${BASE_URL}/categorias`).then(
         (response) => {
           return response.data;
         },
@@ -16,5 +16,6 @@ export const findAllReceitas = async () => {
       console.log(error);
       return null;
     }
-  };
+};
+
   

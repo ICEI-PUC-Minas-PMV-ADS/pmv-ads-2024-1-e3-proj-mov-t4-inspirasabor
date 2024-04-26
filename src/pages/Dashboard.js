@@ -6,7 +6,7 @@ import ItemCard from '../components/ItemCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
-import { findAllCategorias } from '../services/categorias.service';
+import { findAllCategorias } from '../services/categorias.service'; // Importe a função corretamente
 import { useNavigation } from '@react-navigation/native';
 
 const Dashboard = () => {
@@ -16,7 +16,7 @@ const Dashboard = () => {
   const [receitasDoDia, setReceitasDoDia] = useState([]);
 
   useEffect(() => {
-    findAllCategorias().then((dados) => {
+    findAllCategorias().then((dados) => { 
       setCategorias(dados);
     });
     findAllReceitas().then((dados) => {
@@ -24,6 +24,10 @@ const Dashboard = () => {
       setReceitasDoDia(dados.filter(r => r.nota >= 4));
     });
   }, []);
+
+  const handleCategoryPress = (categoria) => { 
+    navigation.navigate('ReceitasPorCategoria', { categoria });
+  };
 
   return (
     <Container>
@@ -45,7 +49,7 @@ const Dashboard = () => {
                       onPress={() => navigation.navigate('Receita', { item })}
                     />
                   )}
-                  keyExtractor={(item) => item.id}
+                  keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
                 />
           </View>
 
@@ -64,7 +68,7 @@ const Dashboard = () => {
                       onPress={() => navigation.navigate('Receita', { item })}
                     />
                   )}
-                  keyExtractor={(item) => item.id}
+                  keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
                 />
               </View>
           </View>
@@ -76,9 +80,13 @@ const Dashboard = () => {
                   horizontal
                   data={categorias}
                   renderItem={({ item }) => (
-                    <ItemCard style={styles.card} categoria={item.categoria} imagem={item.imagem} onPress={() => console.log("Vai para lista de intens por categoria!")} />
+                    <ItemCard 
+                      style={styles.card} 
+                      categoria={item.categoria} 
+                      imagem={item.imagem} 
+                      onPress={() => handleCategoryPress(item.categoria)} /> 
                   )}
-                  keyExtractor={(item) => item.id}
+                  keyExtractor={(item) => item.id.toString()} 
                 />
               </View>
           </View>
@@ -111,3 +119,10 @@ const styles = StyleSheet.create({
 });
 
 export default Dashboard;
+
+
+
+
+
+
+

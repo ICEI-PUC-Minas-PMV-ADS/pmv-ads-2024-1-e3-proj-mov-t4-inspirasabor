@@ -8,41 +8,43 @@ import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
 import { useNavigation } from '@react-navigation/native';
 
-const ListaReceita = ({route}) => {
+const ListaReceita = ({ route }) => {
     const navigation = useNavigation();
-    const busca  = route.params ? route.params : '';
+    const busca = route.params ? route.params : '';
     const [receitas, setReceitas] = useState([]);
 
     useEffect(() => {
         findAllReceitas().then((dados) => {
-          if(busca) {
-            setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca.toLowerCase())));
-          } else {
-            setReceitas(dados);
-          }
+            if (busca) {
+                setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca.toLowerCase())));
+            } else {
+                setReceitas(dados);
+            }
         });
     }, []);
 
     return (
         <Container>
-            <Header 
-            title={'Receitas'}
-            home={() => navigation.navigate('Dashboard')} />
+            <Header
+                title={'Receitas'}
+                home={() => navigation.navigate('Dashboard')} />
             <Body>
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>Resultado</Text>
                     <View>
-                        <FlatList style={styles.section}
-                        data={receitas}
-                        renderItem={({ item }) => (
-                            <ItemCard style={styles.card}
-                            titulo={item.tituloReceita}
-                            nota={item.nota}
-                            imagem={item.imagem}
-                            onPress={() => navigation.navigate('Receita', {item})}
-                            />
-                        )}
-                        keyExtractor={(item) => item.id}
+                        <FlatList
+                            style={styles.section}
+                            data={receitas}
+                            renderItem={({ item }) => (
+                                <ItemCard
+                                    style={styles.card}
+                                    titulo={item.tituloReceita}
+                                    nota={item.nota}
+                                    imagem={item.imagem}
+                                    onPress={() => navigation.navigate('Receita', { item })} // Passando o item da receita como parâmetro
+                                />
+                            )}
+                            keyExtractor={(item) => item.id.toString()} // Convertendo para string, pois o id é um número
                         />
                     </View>
                 </View>
@@ -52,17 +54,25 @@ const ListaReceita = ({route}) => {
 };
 
 const styles = StyleSheet.create({
-  card: {
-    marginBottom: 10,
-  },
-  section: {
-    marginBottom: 20,
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
+    card: {
+        marginBottom: 10,
+    },
+    section: {
+        marginBottom: 20,
+    },
+    sectionTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 10,
+    },
 });
 
 export default ListaReceita;
+
+
+
+
+
+
+
+
