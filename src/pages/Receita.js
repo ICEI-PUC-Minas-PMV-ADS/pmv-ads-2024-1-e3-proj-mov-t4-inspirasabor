@@ -22,7 +22,7 @@ const Receita = ({ route }) => {
       
       {/* Adicione um botão para voltar para a tela anterior (Dashboard) */}
       <TouchableOpacity onPress={() => navigation.navigate('Dashboard')} style={styles.button}>
-        <Text style={styles.buttonText}>Voltar para Home</Text>
+        <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
+    marginTop: 55,
   },
   subtitulo: {
     fontSize: 18,

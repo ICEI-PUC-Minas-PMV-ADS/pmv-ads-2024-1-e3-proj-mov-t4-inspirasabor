@@ -23,6 +23,30 @@
       "password": "$2a$10$W8C.y4BAXmWIns3x3OTeyuu91nDAz7mwnPw6FbNtqy2GB20eJA1yq",
       "name": "Jonathan",
       "id": 4
+    },
+    {
+      "email": "teste02@gmail.com",
+      "password": "$2a$10$nDlgor6uZQl69zJnljE7Ne7RHRodQwX.bhBuXveNSw3Dp.qWAON0q",
+      "name": "Teste Pereira",
+      "id": 5
+    },
+    {
+      "email": "cr7@gmail.com",
+      "password": "$2a$10$O8QI3fFjsDQ8YEzFpKnYLev23Um.ToKxMmpDvkdhL1JmvEb5WehmO",
+      "name": "Cristiano Ronaldo",
+      "id": 6
+    },
+    {
+      "email": "teste03@gmail.com",
+      "password": "$2a$10$QncjnGHfF/U0GSy28BKKfeSBUv4H75HtovYcLqiU7Cs8ZkmwYqt72",
+      "name": "Teste 03",
+      "id": 7
+    },
+    {
+      "email": "teste04@yahoo.com",
+      "password": "$2a$10$w7kVG3XNrZuC48yQ.D7g.uN9No3f9OV6HR2XoNovT/LxiWJGHECmy",
+      "name": "Teste 04",
+      "id": 8
     }
   ],
   "receitas": [

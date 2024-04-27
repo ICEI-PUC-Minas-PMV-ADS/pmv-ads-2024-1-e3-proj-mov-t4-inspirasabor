@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Alert } from "react-native";
 import { TextInput, Button, Headline, IconButton } from "react-native-paper";
 import { useNavigation } from '@react-navigation/native';
@@ -27,8 +27,7 @@ const Login = () => {
             if (res && res.user) {
                 setSigned(true);
                 setName(res.user.name);
-
-
+                navigation.navigate('Dashboard');
             } else {
 
                 Alert.alert('Atenção', 'Usuário ou senha inválidos!');
