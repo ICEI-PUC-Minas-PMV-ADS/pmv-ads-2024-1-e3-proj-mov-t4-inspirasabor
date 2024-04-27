@@ -47,6 +47,36 @@
       "password": "$2a$10$w7kVG3XNrZuC48yQ.D7g.uN9No3f9OV6HR2XoNovT/LxiWJGHECmy",
       "name": "Teste 04",
       "id": 8
+    },
+    {
+      "email": "teste05@gmail.com",
+      "password": "$2a$10$15mH0LLi2F7ZVLuQ7kHPW.Y7CuK2NQ/2bC.yLNAymrIVR6V3IjfNG",
+      "name": "Teste 05",
+      "id": 9
+    },
+    {
+      "email": "aluno1@gmail.com",
+      "password": "$2a$10$UxpSBK57kHRX3.AVbqQN6.m2Ss1dkCcDwhDaUvG58W1F5h4nqjq1i",
+      "name": "Aluno Puc",
+      "id": 10
+    },
+    {
+      "email": "teste07@gmail.com",
+      "password": "$2a$10$WuhlxTj9HEt8B74ZmkRBNuw2rGzmXvpeMcocFAo7z2qL7esljyGD6",
+      "name": "Teste 07",
+      "id": 11
+    },
+    {
+      "email": "teste08@gmail.com",
+      "password": "$2a$10$9TpGV6IfS9tlEnfh8vbjtOrI1.zSxwSrNACpP0MsD3WHn9TLtJLee",
+      "name": "Teste 08",
+      "id": 12
+    },
+    {
+      "email": "teste09@gmail.com",
+      "password": "$2a$10$FnvxfBgAmsXqJTPHuEjPWOl8E6agKxw3vSjhkeKSxXhHcfDm3Fx1K",
+      "name": "Teste 09",
+      "id": 13
     }
   ],
   "receitas": [

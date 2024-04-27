@@ -6,10 +6,11 @@ import ItemCard from '../components/ItemCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const ListaReceita = ({ route }) => {
     const navigation = useNavigation();
+    const isFocused = useIsFocused();
     const busca = route.params ? route.params : '';
     const [receitas, setReceitas] = useState([]);
 
@@ -21,7 +22,7 @@ const ListaReceita = ({ route }) => {
                 setReceitas(dados);
             }
         });
-    }, []);
+    }, [isFocused]);
 
     return (
         <Container>

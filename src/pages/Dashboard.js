@@ -7,13 +7,16 @@ import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
 import { findAllCategorias } from '../services/categorias.service'; // Importe a função corretamente
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useIsFocused} from '@react-navigation/native';
+
 
 const Dashboard = () => {
   const navigation = useNavigation();
+  const isFocused = useIsFocused();
   const [categorias, setCategorias] = useState([]);
   const [receitasDoDia, setReceitasDoDia] = useState([]);
   const [melhoresAvaliadas, setMelhoresAvaliadas] = useState([]);
+  
 
   useEffect(() => {
     findAllCategorias().then((dados) => { 
@@ -23,7 +26,7 @@ const Dashboard = () => {
       setReceitasDoDia(dados.filter(r => r.nota === 5));
       setMelhoresAvaliadas(dados.filter(r => r.nota >= 4));
     });
-  }, []);
+  }, [isFocused]);
 
   const handleCategoryPress = (categoria) => { 
     navigation.navigate('ReceitasPorCategoria', { categoria });
