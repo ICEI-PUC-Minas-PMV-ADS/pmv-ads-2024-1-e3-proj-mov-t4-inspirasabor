@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
-import { Text, Card } from 'react-native-paper';
+import { Text } from 'react-native-paper';
 import Container from '../components/Container';
 import ItemCard from '../components/ItemCard';
 import Body from '../components/Body';
@@ -9,7 +9,6 @@ import { findAllReceitas } from '../services/receitas.service';
 import { findAllCategorias } from '../services/categorias.service'; // Importe a função corretamente
 import { useNavigation, useIsFocused} from '@react-navigation/native';
 
-
 const Dashboard = () => {
   const navigation = useNavigation();
   const isFocused = useIsFocused();
@@ -17,7 +16,6 @@ const Dashboard = () => {
   const [receitasDoDia, setReceitasDoDia] = useState([]);
   const [melhoresAvaliadas, setMelhoresAvaliadas] = useState([]);
   
-
   useEffect(() => {
     findAllCategorias().then((dados) => { 
       setCategorias(dados);
@@ -35,9 +33,11 @@ const Dashboard = () => {
   return (
     <Container>
       <Header 
-      title={'Dashboard'} 
-      home={() => navigation.navigate('Dashboard')} 
-      search={() => navigation.navigate('ListaReceita')} />
+        title={'Dashboard'} 
+        leftIcon={'home'}
+        onPressLeftIcon={() => navigation.navigate('Dashboard')} 
+        search={() => navigation.navigate('ListaReceita')} 
+      />
       <Body>
         <ScrollView>
           <View style={styles.section}>

@@ -1,43 +1,41 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, Image, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import StarRating from '../components/StarRating';
+import Container from '../components/Container';
+import Header from '../components/Header';
+import Body from '../components/Body';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation(); 
-
-
   const { item } = route.params;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>{item.tituloReceita}</Text>
-      <Image source={{ uri: item.imagem }} style={styles.imagem} />
-      <Text style={styles.subtitulo}>Ingredientes:</Text>
-      <Text>{item.ingredientes}</Text>
-      <Text style={styles.subtitulo}>Modo de Preparo:</Text>
-      <Text>{item.modoPreparo}</Text>
-      <Text style={styles.subtitulo}>Nota:</Text>
-      <StarRating rating={item.nota}/>
-      
-      {/* Adicione um botão para voltar para a tela anterior (Dashboard) */}
-      <TouchableOpacity onPress={() => navigation.navigate('Dashboard')} style={styles.button}>
-        <Text style={styles.buttonText}>Voltar</Text>
-      </TouchableOpacity>
-    </View>
+    <Container>
+      <Header 
+        title={'Detalhes da receita'}
+        leftIcon={'arrow-left'}
+        onPressLeftIcon={() => navigation.goBack()} 
+      />
+      <Body>
+        <Text style={styles.titulo}>{item.tituloReceita}</Text>
+        <Image source={{ uri: item.imagem }} style={styles.imagem} />
+        <Text style={styles.subtitulo}>Ingredientes:</Text>
+        <Text>{item.ingredientes}</Text>
+        <Text style={styles.subtitulo}>Modo de Preparo:</Text>
+        <Text>{item.modoPreparo}</Text>
+        <Text style={styles.subtitulo}>Nota:</Text>
+        <StarRating rating={item.nota}/>
+      </Body>
+    </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
-    marginTop: 55,
   },
   subtitulo: {
     fontSize: 18,

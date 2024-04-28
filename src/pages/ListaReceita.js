@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 import { Text } from 'react-native-paper';
 import Container from '../components/Container';
 import ItemCard from '../components/ItemCard';
@@ -28,7 +28,10 @@ const ListaReceita = ({ route }) => {
         <Container>
             <Header
                 title={'Receitas'}
-                home={() => navigation.navigate('Dashboard')} />
+                leftIcon={'home'}
+                onPressLeftIcon={() => navigation.navigate('Dashboard')}
+                search={() => navigation.navigate('ListaReceita')} 
+            />
             <Body>
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>Resultado</Text>
@@ -69,11 +72,3 @@ const styles = StyleSheet.create({
 });
 
 export default ListaReceita;
-
-
-
-
-
-
-
-

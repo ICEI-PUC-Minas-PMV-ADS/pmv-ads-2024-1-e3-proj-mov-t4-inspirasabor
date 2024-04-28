@@ -2,7 +2,6 @@ import React, { useState} from "react";
 import { StyleSheet, View, Alert } from "react-native";
 import { TextInput, Button, Headline, IconButton } from "react-native-paper";
 import { useNavigation } from '@react-navigation/native';
-
 import Container from "../components/Container";
 import Body from "../components/Body";
 import Input from "../components/Input";
@@ -10,12 +9,12 @@ import Logo from '../components/Logo';
 import { useUser } from "../contexts/UserContext";
 import { login } from "../services/auth.services";
 
-
 const Login = () => {
     const navigation = useNavigation();
     const { setSigned, setName } = useUser();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    
     const handleLogin = () => {
 
         login({

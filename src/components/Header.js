@@ -1,12 +1,14 @@
 import React from 'react';
 import { Appbar } from 'react-native-paper';
 
-const Header = ({ title, children, home , search }) => {
+const Header = ({ title, children, leftIcon, onPressLeftIcon, search }) => {
   return (
     <Appbar.Header>
-      <Appbar.Action icon='home' onPress={home} />
+      <Appbar.Action icon={leftIcon} onPress={onPressLeftIcon} />
       <Appbar.Content title={title} />
-      <Appbar.Action icon="magnify" onPress={search} />
+      {
+        search && <Appbar.Action icon="magnify" onPress={search} />
+      }
       <Appbar.Action icon="account-circle" onPress={() => {}} />
       {children}
     </Appbar.Header>

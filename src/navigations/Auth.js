@@ -1,8 +1,5 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-import Dashboard from '../pages/Dashboard';
-import ListaReceita from '../pages/ListaReceita';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 

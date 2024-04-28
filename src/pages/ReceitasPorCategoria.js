@@ -27,7 +27,11 @@ const ReceitasPorCategoria = () => {
 
   return (
     <Container>
-      <Header title={`Receitas de ${categoria}`} home={() => navigation.goBack()} />
+      <Header 
+        title={`Receitas de ${categoria}`} 
+        leftIcon={'arrow-left'} 
+        onPressLeftIcon={() => navigation.goBack()} 
+      />
       <Body>
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Receitas por Categoria</Text>
