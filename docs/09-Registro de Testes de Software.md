@@ -1,12 +1,59 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação Inspira Sabor
+, foram feitos testes de software, conforme os casos de teste e a escala apresentados a seguir.
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+**ESCALA UTILIZADA NOS TESTES DE SOFTWARE:**
+
+| **NÍVEL DA ESCALA**| **CONCLUSÃO** | 
+|---|---|
+| Nível 0	| Está adequado com relação à usabilidade. |
+| Nível 1	| Problema estético que não tem necessidade que ser corrigido, a menos que haja tempo e recurso disponível. |
+| Nível 2	| Problema pequeno, com baixa prioridade na correção. |
+| Nível 3	| Problema grande, com alta prioridade de correção. |
+| Nível 4	| Catástrofe de usabilidade. O produto só será liberado se a correção for realizada. |
+
+
+**REGISTROS DE TESTES DE SOFTWARE:**
+ 
+| **Caso de Teste** | **CT-01 - Sistema de Credenciais** |
+|---|---|
+|	Requisito Associado 	| RF_001 - Deve oferecer sistema de credenciais do usuário com login e senha. |
+| Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação bem como realizar o seu login. |
+|Resultado esperado | O cadastro é realizado com sucesso. |
+|Resultado obtido | Observa-se que o teste em questão foi concluído com sucesso. É possível a criação de usuário que já aparece no banco de dados e login na aplicação. |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/70013a8a-a209-4bfd-ba44-3d963a2aa110" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/bb1d4033-b262-4372-935e-00aaee107f74" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/46ca4cf0-b1c5-4cbf-889d-9e58dc3d9b0b" width="300"/> |
+
+| **Caso de Teste** | **CT-02 - Sistema de Pesquisa** |
+|---|---|
+|	Requisito Associado 	| RF_002- Permitir que o usuário pesquise pelo nome específico da receita. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar buscas dentro da aplicação. |
+|Resultado esperado | O usuário consegue buscar as receitas disponíveis. |
+|Resultado obtido | (INSERIR). |
+|Avaliação | (INSERIR) |
+|Evidência ||
+
+| **Caso de Teste** | **CT-03 - Visualizar receitas** |
+|---|---|
+|	Requisito Associado 	| RF_003- Permitir que o usuário visualize a receita. |
+| Objetivo do Teste 	| Verificar se o usuário visualizar receitas. |
+|Resultado esperado | O usuário consegue visualizar as receitas disponíveis. |
+|Resultado obtido | Observa-se que o teste em questão foi concluído com sucesso. |
+|Avaliação | Nível 1 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b92b7142-145a-4597-8c7a-ddaa0247dbf7" width="300"/>|
+
+| **Caso de Teste** | **CT-04 - Sistema de Filtro de Categoria** |
+|---|---|
+|	Requisito Associado 	| RF_005- Permitir que o usuário filtre as receitas por categoria (Massas, Doces e Sobremesas, Carnes). |
+| Objetivo do Teste 	| Verificar se o usuário visualizar receitas de acordo com suas categoriais. |
+|Resultado esperado | O usuário consegue visualizar as receitas disponíveis por filtro. |
+|Resultado obtido | Observa-se que a funcionalidade está implementada porém não há imagens em todas as receitas. Logo, isso deve ser concluído antes da apresentação final da aplicação. |
+|Avaliação | Nível 4 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/48194321-98a8-4c0e-bb89-5ec877678e78)" width="300"/>|
+
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Para a etapa atual do desenvolvimento da aplicação, os resultados são animadores. Em que pesem alguns desafios, as implementações estão sendo realizadas conforme o esperado.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
