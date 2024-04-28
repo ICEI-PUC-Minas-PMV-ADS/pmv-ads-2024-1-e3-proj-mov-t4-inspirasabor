@@ -92,9 +92,9 @@
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  | Novo usuário criado com sucesso. | Não cadastro de senha conforme a regra na primeira tentativa. | 1m17s | Usuáro ficou satisfeito. Porém sugeriu que a regra de senha já esteja visível antes da primeira tentativa errada ter ocorrido, como está atualmente. Usuário sugeriu que o sistema faça a checagem de e-mail. |
-| Idoso | Novo usuário criado com sucesso.  | A mensagem de erro não fala que deve ter letra minúscula, porém depois de várias tentativas o usuário verificou que é um requisito. | 7m50s | Usuário ficou satisfeito, mas sugere que a mensagem de requisitos de senha já esteja disponível no ato do login e que esta mensagem seja corrigida.  |
-| Adolescente | Novo usuário criado com sucesso.  | Não cadastro de senha conforme a regra na primeira tentativa.  | 1m  |  Usuáro ficou parcialmente satisfeito. Gostaria que a regra da senha já estivesse vísivel antes da primeira tentativa. Realizou sugestão de checagem via envio de código por e-mail ou SSM. |
+| Adulto  | Novo usuário criado com sucesso. | Sem erros. | 1m11s | Usuáro ficou satisfeito mas sugeriu que o sistema faça a checagem de e-mail. |
+| Idoso | Novo usuário criado com sucesso.  |  Sem erros. | 2m50s | Usuário ficou satisfeito.  |
+| Adolescente | Novo usuário criado com sucesso.  | Sem erros.   | 1m  |  Usuáro ficou parcialmente satisfeito, gostaria que a senha tivesse alguns requisitos para segurança.  Realizou sugestão de checagem via envio de código por e-mail ou SSM. |
 
 **TESTE 2 - FAZER LOGIN NA APLICAÇÃO**
 
@@ -104,29 +104,14 @@
 | Idoso | Realização do login com sucesso.  | Nenhum.  | 30s  | Usuário satisfeito.  |
 | Adolescente |  Realização do login com sucesso. | Nenhum.  | 28s | Usuário satisfeito.  |
 
-**TESTE 3 - CRIAR UMA NOVA CATEGORIA**
+**TESTE 3 - VISUALIZAR RECEITA**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  | Usuário criou nova categoria com sucesso. | Usuário não conseguiu inserir o ícone.  | 47s  | Usuário ficou parcialmente satisfeito e fez as seguintes sugestões: é necessário o local no site que tenha as informações básicas sobre como operar o site, qual é seu objetivo e o que é entendido como carteira, transação, categoria...; que a inserção do ícone seja mais intuitiva; e que ao editar uma categoria, o botão de confirmação seja "salvar" em vez de "adicionar".   |
-| Idoso | Usuário criou nova categoria com sucesso. | Nenhum.  | 1m54s | Satisfação parcial. Usuário teve dificuldades para inserir o ícone, solicitou apoio para concluir. |
-| Adolescente | Usuário criou nova categoria com sucesso.  | Nenhum.  | 1m36s  | Parcialmente satisfeito. O Usuário conseguiu realizar o teste porém teve dificuldades para entender os caminhos.  |
+| Adulto  | Usuário conseguiu ver uma receita sem erros. | Nenhum.  | 25s  | Usuário ficou satisfeito.   |
+| Idoso | Usuário conseguiu ver uma receita sem erros. | Nenhum.  | 1m | Satisfação parcial. Usuário gostaria de letras maiores. |
+| Adolescente | Usuário conseguiu ver uma receita sem erros.  | Nenhum.  | 18s | Usuário ficou satisfeito.  |
 
-**TESTE 4 - CADASTRAR UMA META FINANCEIRA A SER ALCANÇADA EM DETERMINADA CATEGORIA**
-
-| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
-|---|---|---|---|---|
-| Adulto  | Não houve sucesso, pois o usuário não conseguiu cadastrar nova meta para uma categoria que ele tinha criado. | O usuário não compreendeu que a criação da meta deve ser feita no cadastro de nova categoria. | Não se aplica. | Usuário sugere que na tela de cadastro de nova meta o campo categoria esteja acima do campo de valor da meta (invertido ao que está atualmente). E que o passo-a-passo para criação de nova meta esteja descrito em algum local da aplicação. |
-| Idoso | Cadastro de meta feito com sucesso. | Nenhum. | 7m22s | Usuário precisou fazer algumas pergutas durante o processo para entender os caminhos de criação de nova categoria e posterior visualização das categorias criadas. |
-| Adolescente | Cadastro de meta feito com sucesso.   |  Nenhum |  2m |  O usuário conseguiu realizar a criação de uma meta e completar o teste porém teve dificuldades para entender os caminhos. |
-
-**TESTE 5 - REGISTRAR UM GANHO E UMA DESPESA FINANCEIRA NA PÁGINA DE TRANSAÇÕES**
-
-| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
-|---|---|---|---|---|
-| Adulto  | Realizado com sucesso.  | Nenhum. | 1m50s | Usuário satisfeito. Sugeriu que o $ seja trocado por R$ e que sejam ajustadas as formatações de ponto e vírgula, que estão trocadas. |
-| Idoso | Realizado com sucesso.  | Nenhum. | 2m33s | Usuário satisfeito, mas sugeriu que o $ seja trocado por R$ e que sejam ajustadas as formatações de ponto e vírgula, que estão trocadas. Ele sugeriu também que os valores apresentados nas tabelas estejam alinhados à direita em vez de esquerda. |
-| Adolescente | Realizado com sucesso.  |  Nenhum. | 35s  | Usuário satisfeito.  |
 
 
 Os testes realizados mostram os avanços atuais do desenvolvimento da aplicação. As telas estão bem configuradas para a navegação do usuário com certa facilidade, porém melhorias ainda podem ser implementadas no sentido de aumentar a satisfação na experiência do usuário, item considerado muito importante pela equipe de desenvolvimento.
