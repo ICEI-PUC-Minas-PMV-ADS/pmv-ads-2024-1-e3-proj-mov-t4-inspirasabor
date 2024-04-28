@@ -4,7 +4,9 @@ import { Appbar } from 'react-native-paper';
 const Header = ({ title, children, leftIcon, onPressLeftIcon, search }) => {
   return (
     <Appbar.Header>
-      <Appbar.Action icon={leftIcon} onPress={onPressLeftIcon} />
+      {
+        leftIcon && <Appbar.Action icon={leftIcon} onPress={onPressLeftIcon} />
+      }
       <Appbar.Content title={title} />
       {
         search && <Appbar.Action icon="magnify" onPress={search} />

@@ -33,9 +33,7 @@ const Dashboard = () => {
   return (
     <Container>
       <Header 
-        title={'Dashboard'} 
-        leftIcon={'home'}
-        onPressLeftIcon={() => navigation.navigate('Dashboard')} 
+        title={'InspiraSabor'} 
         search={() => navigation.navigate('ListaReceita')} 
       />
       <Body>

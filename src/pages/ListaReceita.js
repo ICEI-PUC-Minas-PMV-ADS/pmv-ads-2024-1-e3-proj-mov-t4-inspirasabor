@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
-import { Text } from 'react-native-paper';
+import { Searchbar } from 'react-native-paper';
 import Container from '../components/Container';
 import ItemCard from '../components/ItemCard';
 import Body from '../components/Body';
@@ -8,10 +8,10 @@ import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 
-const ListaReceita = ({ route }) => {
+const ListaReceita = () => {
     const navigation = useNavigation();
     const isFocused = useIsFocused();
-    const busca = route.params ? route.params : '';
+    const [busca, setBusca] = useState('');
     const [receitas, setReceitas] = useState([]);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const ListaReceita = ({ route }) => {
                 setReceitas(dados);
             }
         });
-    }, [isFocused]);
+    }, [busca, isFocused]);
 
     return (
         <Container>
@@ -30,11 +30,15 @@ const ListaReceita = ({ route }) => {
                 title={'Receitas'}
                 leftIcon={'home'}
                 onPressLeftIcon={() => navigation.navigate('Dashboard')}
-                search={() => navigation.navigate('ListaReceita')} 
             />
             <Body>
+                <Searchbar
+                    style={styles.serachBar}
+                    placeholder="Digite o nome da receita"
+                    onChangeText={setBusca}
+                    value={busca}
+                />
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>Resultado</Text>
                     <View>
                         <FlatList
                             style={styles.section}
@@ -69,6 +73,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
     },
+    serachBar: {
+        marginBottom: 10,
+        borderRadius: 5
+    }
 });
 
 export default ListaReceita;

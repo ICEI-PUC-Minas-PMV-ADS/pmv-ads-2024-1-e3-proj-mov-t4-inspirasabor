@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import { StyleSheet, View, Alert } from "react-native";
-import { TextInput, Button, Headline, IconButton } from "react-native-paper";
+import { TextInput, Button, Headline } from "react-native-paper";
 import { useNavigation } from '@react-navigation/native';
 import Container from "../components/Container";
 import Body from "../components/Body";
@@ -42,7 +42,7 @@ const Login = () => {
                 <Logo />
             </View>
             <Headline style={styles.textHeader}>
-                Inspira Sabor
+                InspiraSabor
             </Headline>
             <Body>
                 <Input

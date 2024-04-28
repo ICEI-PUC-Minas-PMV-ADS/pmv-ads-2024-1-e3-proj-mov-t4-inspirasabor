@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-
 import Route from './navigations/Route';
 import UserProvider from './contexts/UserContext';
 
