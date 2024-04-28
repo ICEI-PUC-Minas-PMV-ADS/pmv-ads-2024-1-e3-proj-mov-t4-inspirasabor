@@ -17,8 +17,6 @@ foi utilizado para hospedagem do repositório.
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
@@ -64,14 +62,19 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/86fad0e7-08d4-4635-b143-79049164bc70)
 
 
-- Evidências: O grupo estruturou e entregou no último dia 10/03/2024, a documentação de contexto e as especificações do projeto.
-
 #### Sprint 2
 - Planejamento: Entregue a documentação do primeiro _sprint_, o grupo buscou a definição dos documentos de metodologia e projeto de interface. Estabelecido que nesse _sprint_, haveria a necessidade da entrega da divisão de papéis do projeto, as definições de processo e as ferramentas utilizadas, a criação de indicadores de desempenho e metas, entidade de relacionamento, diagrama de fluxos, o padrão BPMN, diagrama de classe, esquema relacional, os _wireframes_ e, ainda, o plano de testes de software e usabilidade. 
 
 - Execução: Utilizando a ferramenta de projetos do Github, o grupo realizou a seguinte divisão de tarefas:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b4312801-a9a4-4152-994e-542561307403)
+
+#### Sprint 3
+- Planejamento: Entregue a documentação do segundo _sprint_, o grupo buscou a definição das principais funcionalidades que deveriam ser entregues no _sprint_ atual. Dessa forma, buscou-se o desenvolvimento das funcionalidades com requisitos funcionais de alta prioridade.
+
+- Execução: Utilizando a ferramenta de projetos do Github, o grupo realizou a seguinte divisão de tarefas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/6b54e5ca-444c-4ca9-96d3-94ceb2643af9)
 
  
 ### Ferramentas
