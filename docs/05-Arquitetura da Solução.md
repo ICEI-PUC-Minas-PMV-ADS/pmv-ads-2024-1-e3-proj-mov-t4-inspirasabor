@@ -25,13 +25,29 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+O modelo físico de banco de dados está incluído dentro da pasta SRC do projeto podendo ser encontrado no seguinte link:
+[BD Físico](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/tree/dev/src/bd)
+
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+As tecnologias utilizadas, até o presente momento para o desenvolvimento da solução:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Editor de código: Expo.dev (sistema online de codificação) e VS Code.
+Linguagem de programação: Javascript.
+Framworks e bibliotecas: React Native, React Native Paper, React Navigation.
+API On-line: Axios.
+Ferramentas de comunicação: Microsoft Teams e Whatsapp.
+Ferramentas de desenho de tela (wireframing): Miro.
+Plataforma de elaboração visual (userflow): Lucidchart.
+Ferramenta de criação de diagrama de classe: Astah.
+Ferramenta de criação do projeto relacional: Draw.io e MySql.
+Ferramenta de criação da Entidade de Relacionamento: Visual Paradigm.
+Ferramenta de criação do padrão BPMN: Bizagi Modeler.
+Ferramenta de criação dos indicadores de desempenho: Google Sheets.
+Ferramenta de criação do gerenciamento de tempo: Project Libre.
+Ferramenta de gerenciamento de equipe: Github Projects.
+
 
 ## Hospedagem
 
