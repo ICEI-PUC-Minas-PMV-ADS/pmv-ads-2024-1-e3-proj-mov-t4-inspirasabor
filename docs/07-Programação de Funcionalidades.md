@@ -4,8 +4,27 @@
 
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo.
 
-A codificação do _dashboard_ pode ser encontrada abaixo:
 
-[InspiraSabor - Dashboard](https://snack.expo.dev/@johnfrdc/inspirasabor-dashboard)
+A codificação do projeto pode ser encontrada abaixo:
+
+|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
+|------|-----------------------------------------|----|
+|RF-001| Deve oferecer sistema de credenciais do usuário com login e senha. | Login.js / Register.cs / Authservices.js / Auth.js / Route.js| 
+|RF_002|Permitir que o usuário pesquise pelo nome específico da receita. |  /  /  /  | 
+|RF_003| Permitir que o usuário visualize a receita. | Main.js / Dashboard.js / ListaReceita.js / Receita.js | 
+|RF-005| Permitir que o usuário filtre as receitas por categoria (Massas, Doces e Sobremesas, Carnes) | ReceitasPorCategoria.js | 
+
+E também no link: 
+
+[SRC](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/tree/dev)
+
+# Instruções de acesso
+
+As instruções estão em:  [Read me](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/tree/dev/src#readme)
+
+
+# Usuário teste
+
+E-mail: teste09@gmail.com
+Senha: 12345
