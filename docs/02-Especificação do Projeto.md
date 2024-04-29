@@ -121,7 +121,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| Permitir que o usuário adicione mídias referentes a receita (Foto e vídeos) | MÉDIA |
 |RF-008| Permitir que o usuário adicione comentários nas receitas | BAIXA | 
 |RF-009| Permitir que o usuário favorite as receitas | BAIXA |
-|RF-010| Permitir que o usuário compatilhe as receitas nas redes sociais | BAIXA |
+|RF-010| Permitir que o usuário compartilhe as receitas nas redes sociais | BAIXA |
 
 ### Requisitos não Funcionais
 
