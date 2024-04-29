@@ -16,6 +16,14 @@ O _dashboard_ visa atender a finalidade do projeto que é o desenvolvimento de u
 
 # Tela de Visualização de Receita
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b92b7142-145a-4597-8c7a-ddaa0247dbf7)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dea21507-c891-47f1-a3a3-1147c11fe627)
+
 
 A tela em questão foi feita de forma a informar, da melhor maneira ao usuário, os passos necessários para a receita.
+
+# Tela de Pesquisa de Receita
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/41eeddd5-52a0-47db-8bc3-c43b29e4e715)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/973cb060-072d-4c9e-9721-6f638697491e)
+
+
+As telas seguem o parametro da aplicação.
