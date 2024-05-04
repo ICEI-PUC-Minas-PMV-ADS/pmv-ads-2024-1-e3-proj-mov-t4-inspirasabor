@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, Image, StyleSheet } from 'react-native';
+import { StarRatingDisplay } from 'react-native-star-rating-widget';
 import { useNavigation } from '@react-navigation/native';
-import StarRating from '../components/StarRating';
 import Container from '../components/Container';
 import Header from '../components/Header';
 import Body from '../components/Body';
+import StarCard from '../components/StarCard';
+
+import { updateReceitas } from '../services/receitas.service';
 
 const Receita = ({ route }) => {
-  const navigation = useNavigation(); 
+  const navigation = useNavigation();
+  const [rating, setRating] = useState(0);
   const { item } = route.params;
+
+  const handleAvaliacao = () => {
+    updateReceitas({
+      id: item.id,
+      tituloReceita: item.tituloReceita,
+      ingredientes: item.ingredientes,
+      modoPreparo: item.modoPreparo,
+      nota: rating,
+      imagem: item.imagem,
+      categoriaId: item.categoriaId,
+      categoria: item.categoria,
+    }).then();
+  }
 
   return (
     <Container>
@@ -24,8 +41,18 @@ const Receita = ({ route }) => {
         <Text>{item.ingredientes}</Text>
         <Text style={styles.subtitulo}>Modo de Preparo:</Text>
         <Text>{item.modoPreparo}</Text>
+        <Text style={styles.subtitulo}>Categoria:</Text>
+        <Text>{item.categoria}</Text>
         <Text style={styles.subtitulo}>Nota:</Text>
-        <StarRating rating={item.nota}/>
+        <StarRatingDisplay 
+          rating={item.nota}
+          starSize={20}
+        />
+        <StarCard
+          rating={rating}
+          onChange={setRating}
+          onPress={handleAvaliacao}
+        />
       </Body>
     </Container>
   );
@@ -48,6 +75,7 @@ const styles = StyleSheet.create({
     height: 200,
     resizeMode: 'cover',
     marginBottom: 10,
+    borderRadius: 10
   },
   button: {
     backgroundColor: 'blue',

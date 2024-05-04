@@ -3,7 +3,7 @@ import { BASE_URL } from './urls';
 
 export const findAllCategorias = async () => {
     try {
-      return await API.get(`${BASE_URL}/categorias`).then(
+      return await API.get(`${BASE_URL}/categorias?_embed=receitas`).then(
         (response) => {
           return response.data;
         },
