@@ -30,9 +30,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_002- Permitir que o usuário pesquise pelo nome específico da receita. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar buscas dentro da aplicação. |
 |Resultado esperado | O usuário consegue buscar as receitas disponíveis. |
-|Resultado obtido | (INSERIR). |
-|Avaliação | (INSERIR) |
-|Evidência ||
+|Resultado obtido | Observa-se que a funcionalidade está implementada porém não há imagens em todas as receitas. Logo, isso deve ser concluído antes da apresentação final da aplicação. |
+|Avaliação | 4|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/41eeddd5-52a0-47db-8bc3-c43b29e4e715" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/973cb060-072d-4c9e-9721-6f638697491e" width="300"/> 
 
 | **Caso de Teste** | **CT-03 - Visualizar receitas** |
 |---|---|
@@ -41,7 +41,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário consegue visualizar as receitas disponíveis. |
 |Resultado obtido | Observa-se que o teste em questão foi concluído com sucesso. |
 |Avaliação | Nível 1 |
-|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b92b7142-145a-4597-8c7a-ddaa0247dbf7" width="300"/>|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dea21507-c891-47f1-a3a3-1147c11fe627" width="300"/>|
 
 | **Caso de Teste** | **CT-04 - Sistema de Filtro de Categoria** |
 |---|---|
