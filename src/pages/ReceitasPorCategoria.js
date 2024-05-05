@@ -16,9 +16,10 @@ const ReceitasPorCategoria = () => {
   const [receitasPorCategoria, setReceitasPorCategoria] = useState([]);
 
   useEffect(() => {
-    findAllCategorias().then((dados) => { 
-      if (dados) {
-        setReceitasPorCategoria(dados.find(cat => cat.categoriaId === categoria.id));
+    findAllCategorias().then((dados) => {
+      const categoriasEncontradas = dados.find(cat => cat.categoria === categoria);
+      if (categoriasEncontradas) {
+        setReceitasPorCategoria(categoriasEncontradas.receitas);
       } else {
         setReceitasPorCategoria([]);
       }

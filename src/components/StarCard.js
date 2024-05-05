@@ -3,18 +3,18 @@ import { Card, Text, Button } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
 import StarRating from 'react-native-star-rating-widget';
 
-const StarCard = ({ rating, onChange, onPress }) => {
+const StarCard = ({ title, buttonPlaceHolder, rating, onChange, onPress }) => {
   return (
     <Card style={styles.card} mode='outlined'>
       <Card.Content>
-      <Text style={styles.subtitulo}>Avaliação</Text>
+      <Text style={styles.titulo}>{title}</Text>
         <StarRating
            rating={rating}
            onChange={onChange}
            starSize={40}
         />
         <Button style={styles.button} mode="outlined" onPress={onPress}>
-            Enviar avaliação
+            {buttonPlaceHolder}
         </Button>
       </Card.Content>
     </Card>
@@ -22,7 +22,7 @@ const StarCard = ({ rating, onChange, onPress }) => {
 };
 
 const styles = StyleSheet.create({
-    subtitulo: {
+    titulo: {
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: 10,

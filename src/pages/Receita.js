@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Image, StyleSheet } from 'react-native';
+import { Text, Image, StyleSheet, ScrollView } from 'react-native';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
 import { useNavigation } from '@react-navigation/native';
 import Container from '../components/Container';
@@ -35,24 +35,28 @@ const Receita = ({ route }) => {
         onPressLeftIcon={() => navigation.goBack()} 
       />
       <Body>
-        <Text style={styles.titulo}>{item.tituloReceita}</Text>
-        <Image source={{ uri: item.imagem }} style={styles.imagem} />
-        <Text style={styles.subtitulo}>Ingredientes:</Text>
-        <Text>{item.ingredientes}</Text>
-        <Text style={styles.subtitulo}>Modo de Preparo:</Text>
-        <Text>{item.modoPreparo}</Text>
-        <Text style={styles.subtitulo}>Categoria:</Text>
-        <Text>{item.categoria}</Text>
-        <Text style={styles.subtitulo}>Nota:</Text>
-        <StarRatingDisplay 
-          rating={item.nota}
-          starSize={20}
-        />
-        <StarCard
-          rating={rating}
-          onChange={setRating}
-          onPress={handleAvaliacao}
-        />
+        <ScrollView>
+          <Text style={styles.titulo}>{item.tituloReceita}</Text>
+          <Image source={{ uri: item.imagem }} style={styles.imagem} />
+          <Text style={styles.subtitulo}>Ingredientes:</Text>
+          <Text>{item.ingredientes}</Text>
+          <Text style={styles.subtitulo}>Modo de Preparo:</Text>
+          <Text>{item.modoPreparo}</Text>
+          <Text style={styles.subtitulo}>Categoria:</Text>
+          <Text>{item.categoria}</Text>
+          <Text style={styles.subtitulo}>Nota:</Text>
+          <StarRatingDisplay 
+            rating={item.nota}
+            starSize={20}
+          />
+          <StarCard
+            title={"Avaliação"}
+            buttonPlaceHolder={"Enviar avaliação"}
+            rating={rating}
+            onChange={setRating}
+            onPress={handleAvaliacao}
+          />
+        </ScrollView>
       </Body>
     </Container>
   );
