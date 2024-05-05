@@ -34,6 +34,7 @@ const Dashboard = () => {
     <Container>
       <Header 
         title={'InspiraSabor'} 
+        onPress={() => navigation.navigate('AdicionarReceita')}
         search={() => navigation.navigate('ListaReceita')} 
       />
       <Body>

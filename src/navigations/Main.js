@@ -4,6 +4,7 @@ import Dashboard from '../pages/Dashboard';
 import ListaReceita from '../pages/ListaReceita';
 import Receita from '../pages/Receita';
 import ReceitasPorCategoria from '../pages/ReceitasPorCategoria';
+import AdicionarReceita from '../pages/AdicionarReceita';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,7 +31,12 @@ const Main = () => {
         component={ReceitasPorCategoria}
         options={{ header: () => null }}
       />
-    </Stack.Navigator>
+      <Stack.Screen
+        name="AdicionarReceita"
+        component={AdicionarReceita}
+        options={{ header: () => null }}
+      />
+  </Stack.Navigator>
   );
 };
 
