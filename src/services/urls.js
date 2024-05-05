@@ -1,1 +1,1 @@
-export const BASE_URL = "LINK_LOCALTUNNEL"
+export const BASE_URL = "https://large-cobras-stand.loca.lt"
