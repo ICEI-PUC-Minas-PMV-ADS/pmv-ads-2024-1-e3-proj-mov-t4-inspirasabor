@@ -67,6 +67,8 @@ const NovaReceita = () => {
                     value={ingredientes}
                     onChangeText={(text) => setIngredientes(text)}
                     left={<TextInput.Icon icon="food-apple" />}
+                    multiline={true}
+                    numberOfLines={4}
             />
 
             <Text style={styles.Titulo}>4 - Modo de Preparo:</Text>
@@ -74,6 +76,8 @@ const NovaReceita = () => {
                     value={modoPreparo}
                     onChangeText={(text) => setModoPreparo(text)}
                     left={<TextInput.Icon icon="food-fork-drink" />}
+                    multiline={true}
+                    numberOfLines={4}
             />
 
             <Text style={styles.Titulo}>5 - Adicionar Imagem:</Text>
