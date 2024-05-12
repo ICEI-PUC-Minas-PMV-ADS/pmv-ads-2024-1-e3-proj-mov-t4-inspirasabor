@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import { Text, Image, StyleSheet, ScrollView } from 'react-native';
+import React, { useState, useRef, useLayoutEffect } from 'react';
+import { Text, Image, StyleSheet, ScrollView, View } from 'react-native';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
 import { useNavigation } from '@react-navigation/native';
 import Container from '../components/Container';
 import Header from '../components/Header';
 import Body from '../components/Body';
 import StarCard from '../components/StarCard';
-
+import { captureRef } from "react-native-view-shot";
 import { updateReceitas } from '../services/receitas.service';
+import * as Sharing from 'expo-sharing';
+import { Button } from 'react-native-paper';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
@@ -27,6 +29,25 @@ const Receita = ({ route }) => {
     }).then();
   }
 
+  const imageRef = useRef();
+  const handleShare = async () => {
+    try {
+      const uri = await captureRef(imageRef, {
+        quality: 1,
+        format: 'png',
+      });
+      
+      await Sharing.shareAsync(uri);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useLayoutEffect(() => {
+    handleShare();
+  }, []);
+
+
   return (
     <Container>
       <Header 
@@ -36,6 +57,7 @@ const Receita = ({ route }) => {
       />
       <Body>
         <ScrollView>
+          <View ref={imageRef} collapsable={false}>
           <Text style={styles.titulo}>{item.tituloReceita}</Text>
           <Image source={{ uri: item.imagem }} style={styles.imagem} />
           <Text style={styles.subtitulo}>Ingredientes:</Text>
@@ -49,6 +71,7 @@ const Receita = ({ route }) => {
             rating={item.nota}
             starSize={20}
           />
+          </View>
           <StarCard
             title={"Avaliação"}
             buttonPlaceHolder={"Enviar avaliação"}
@@ -56,6 +79,15 @@ const Receita = ({ route }) => {
             onChange={setRating}
             onPress={handleAvaliacao}
           />
+
+          <Button
+          title = {"Compartilhar"}
+          buttonPlaceHolder={"Compartilhar"} 
+          mode="outlined"
+          onPress = {handleShare}
+          >
+            Compartilhar
+           </Button> 
         </ScrollView>
       </Body>
     </Container>

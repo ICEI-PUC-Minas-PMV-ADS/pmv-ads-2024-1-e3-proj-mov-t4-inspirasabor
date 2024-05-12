@@ -77,6 +77,12 @@
       "password": "$2a$10$FnvxfBgAmsXqJTPHuEjPWOl8E6agKxw3vSjhkeKSxXhHcfDm3Fx1K",
       "name": "Teste 09",
       "id": 13
+    },
+    {
+      "email": "tiago@gmail.com",
+      "password": "$2a$10$ghnCo51HsYi3o9qyyDyxIe/TdyW49MeKuXWyxRAPhSJcbAe8uB8vW",
+      "name": "Tiago",
+      "id": 14
     }
   ],
   "categorias": [
