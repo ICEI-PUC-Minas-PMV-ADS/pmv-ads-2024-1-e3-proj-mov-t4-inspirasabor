@@ -1,24 +1,60 @@
-import React, { useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { RadioButton } from 'react-native-paper';
+
+import Input from "../components/Input";
 import Container from '../components/Container';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { useNavigation, useIsFocused } from '@react-navigation/native';
-import { RadioButton, Text, TextInput, Button } from 'react-native-paper';
-import Input from "../components/Input";
-import { categoria } from '../services/categorias.service';
-//import jsonData from '../db/db.json'; 
+import { getReceita } from '../services/adicionarReceita.services';
+import { insertReceita } from '../services/adicionarReceita.services';
 
-const NovaReceita = () => {
+const adicionarReceita = () => {   
+  const navigation = useNavigation();
+  const [categoriaId, setCategoriaId] = useState([]);
+  const [tituloReceita, setTituloReceita] = useState([]);
+  const [ingredientes, setIngredientes] = useState([]);
+  const [modoPreparo, setModoPreparo] = useState([]);
 
-    const navigation = useNavigation();
-    const [AdicionarReceita, setAdicionarReceita] = useState([]);
-    const [tituloReceita, setTituloReceita] = useState([]);
-    const [ingredientes, setIngredientes] = useState([]);
-    const [modoPreparo, setModoPreparo] = useState([]);
-    
-    const [categoria, setCategoria] = React.useState('Carnes');
-    
+  useEffect(() => {
+
+    getReceita().then(dados => {
+      console.log(dados);
+    });
+  }, []);
+
+  const salvarReceita = () => {
+    try {
+      if (!categoriaId || !tituloReceita || !ingredientes || !modoPreparo) {
+        Alert.alert('Por favor, preencha todos os campos do formulário.');
+        return;
+      }
+
+      if (categoriaId.trim() === '' || tituloReceita.trim() === '' || ingredientes.trim() === '' || modoPreparo.trim() === '') {
+        Alert.alert('Por favor, preencha todos os campos do formulário.');
+        return;
+      }
+  
+      insertReceita({
+        categoriaId: categoriaId === 'Carnes' ? 1 : categoriaId === 'Massas' ? 2 : 3,
+        tituloReceita: tituloReceita,
+        ingredientes: ingredientes,
+        modoPreparo: modoPreparo,
+      }).then(res => {
+        navigation.goBack();
+      }).catch(error => {
+        console.error('Erro ao salvar a receita:', error);
+        Alert.alert('Ocorreu um erro ao salvar a receita. Tente novamente mais tarde.');
+      });
+  
+    } catch (error) {
+      console.error('Erro ao salvar a receita:', error);
+      Alert.alert('Por favor, preencha todos os campos do formulário.');
+    }
+  };
+   
+       
     return (
       <Container>
             <Header
@@ -27,6 +63,7 @@ const NovaReceita = () => {
                 onPressLeftIcon={() => navigation.navigate('Dashboard')}
             />
             <Body>
+            <ScrollView>
 
               <Text style={styles.Titulo}>1 - Escolha uma Categoria:</Text>
             
@@ -34,24 +71,24 @@ const NovaReceita = () => {
 
                 <RadioButton
                   value="Carnes"
-                  status={ categoria === 'Carnes' ? 'checked' : 'unchecked' }
-                  onPress={() => setCategoria('Carnes')}
+                  status={ categoriaId === 'Carnes' ? 'checked' : 'unchecked' }
+                  onPress={() => setCategoriaId('Carnes')}
                 />
                 <Text style={styles.NomeCategoria}>Carnes</Text>
 
                 <RadioButton
-                  value="Doces"
-                  status={ categoria === 'Doces' ? 'checked' : 'unchecked' }
-                  onPress={() => setCategoria('Doces')}
-                />
-                <Text style={styles.NomeCategoria}>Doces</Text>
-
-                <RadioButton
                   value="Massas"
-                  status={ categoria === 'Massas' ? 'checked' : 'unchecked' }
-                  onPress={() => setCategoria('Massas')}
+                  status={ categoriaId === 'Massas' ? 'checked' : 'unchecked' }
+                  onPress={() => setCategoriaId('Massas')}
                 />
                 <Text style={styles.NomeCategoria}>Massas</Text>
+
+                <RadioButton
+                  value="Doces"
+                  status={ categoriaId === 'Doces' ? 'checked' : 'unchecked' }
+                  onPress={() => setCategoriaId('Doces')}
+                />
+                <Text style={styles.NomeCategoria}>Doces</Text>
 
             </View>
 
@@ -84,18 +121,21 @@ const NovaReceita = () => {
 
 
             <Button 
+              title={"salvar"}
               icon='content-save-check' 
               mode='conteined' 
               color={'darkblue'}    
               style={styles.Salvar}
-              onPress={() => console.log('A receita foi salva com sucesso!')}>SALVAR
+              onPress={salvarReceita}>SALVAR
             </Button>
-            
+
+            </ScrollView>            
             </Body>
 
       </Container>
       );
-  };
+
+  }; 
 
 const styles = StyleSheet.create({
   ContainerRadio:{
@@ -124,4 +164,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NovaReceita;
+export default adicionarReceita;
