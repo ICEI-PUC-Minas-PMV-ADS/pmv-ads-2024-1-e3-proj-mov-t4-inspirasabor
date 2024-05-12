@@ -43,6 +43,7 @@ const adicionarReceita = () => {
         modoPreparo: modoPreparo,
       }).then(res => {
         navigation.goBack();
+        Alert.alert('A receita foi salva com sucesso!');
       }).catch(error => {
         console.error('Erro ao salvar a receita:', error);
         Alert.alert('Ocorreu um erro ao salvar a receita. Tente novamente mais tarde.');
