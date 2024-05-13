@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert,Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
+import * as ImagePicker from 'expo-image-picker'
 
 import Input from "../components/Input";
 import Container from '../components/Container';
@@ -16,6 +17,7 @@ const adicionarReceita = () => {
   const [tituloReceita, setTituloReceita] = useState([]);
   const [ingredientes, setIngredientes] = useState([]);
   const [modoPreparo, setModoPreparo] = useState([]);
+  const [image, setImage] = useState(null);
 
   useEffect(() => {
 
@@ -53,8 +55,21 @@ const adicionarReceita = () => {
       Alert.alert('Por favor, preencha todos os campos do formulário.');
     }
   };
-   
        
+  const pickImage = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+
+    console.log(result);
+
+    if (!result.canceled) {
+      setImage(result.assets[0].uri);
+    }
+  };
     return (
       <Container>
             <Header
@@ -118,7 +133,8 @@ const adicionarReceita = () => {
             />
 
             <Text style={styles.Titulo}>5 - Adicionar Imagem:</Text>
-
+            {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+            <Button title="Escolher imagem" onPress={pickImage} />
 
             <Button 
               title={"salvar"}
