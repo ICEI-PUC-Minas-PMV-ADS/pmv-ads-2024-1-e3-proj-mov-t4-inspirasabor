@@ -20,7 +20,7 @@ export const findAllReceitas = async () => {
 
 export const updateReceitas = async (param) => {
   try{
-    return await API.put(`${BASE_URL}/receitas/${param.id}`, param).then(
+    return await API.put(`${BASE_URL}/receitas/${param.id}?_expand=categoria`, param).then(
       response => {
         return response.data;
       },

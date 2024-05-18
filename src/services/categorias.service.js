@@ -17,4 +17,21 @@ export const findAllCategorias = async () => {
       return null;
     }
   };
+
+export const getCategoriaById = async (id) => {
+  try {
+    return await API.get(`${BASE_URL}/categorias/${id}`).then(
+      (response) => {
+        return response.data;
+      },
+      (error) => {
+        console.log(error);
+        return null;
+      }
+    );
+  } catch (error) {
+    console.log(error);
+    return null;
+  };
+};
   

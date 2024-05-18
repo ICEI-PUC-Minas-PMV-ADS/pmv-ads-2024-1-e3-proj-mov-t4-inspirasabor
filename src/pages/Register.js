@@ -6,7 +6,7 @@ import Container from "../components/Container";
 import Body from "../components/Body";
 import Input from "../components/Input";
 import Logo from '../components/Logo';
-import { register } from "../services/auth.services";
+import { register } from "../services/auth.service";
 
 const Register = () => {
     const navigation = useNavigation();

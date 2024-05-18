@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { Text } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
@@ -21,8 +21,8 @@ const Dashboard = () => {
       setCategorias(dados);
     });
     findAllReceitas().then((dados) => {
-      setReceitasDoDia(dados.filter(r => r.nota === 5));
-      setMelhoresAvaliadas(dados.filter(r => r.nota >= 4));
+      setReceitasDoDia(dados.filter(r => r.media === 5));
+      setMelhoresAvaliadas(dados.filter(r => r.media >= 4));
     });
   }, [isFocused]);
 
@@ -34,8 +34,9 @@ const Dashboard = () => {
     <Container>
       <Header 
         title={'InspiraSabor'} 
-        onPress={() => navigation.navigate('AdicionarReceita')}
-        search={() => navigation.navigate('ListaReceita')} 
+        onPressPlusBox={() => navigation.navigate('AdicionarReceita')}
+        rightIcon={'magnify'}
+        onPressRightIcon={() => navigation.navigate('ListaReceita')} 
       />
       <Body>
         <ScrollView>
@@ -45,7 +46,7 @@ const Dashboard = () => {
                   horizontal
                   data={receitasDoDia}
                   renderItem={({ item }) => (
-                    <ItemCard
+                    <ReceitaCard
                       style={styles.cardDay}
                       imagem={item.imagem}
                       onPress={() => navigation.navigate('Receita', { item })}
@@ -62,10 +63,10 @@ const Dashboard = () => {
                   horizontal
                   data={melhoresAvaliadas}
                   renderItem={({ item }) => (
-                    <ItemCard 
+                    <ReceitaCard 
                       style={styles.card}
                       titulo={item.tituloReceita}
-                      nota={item.nota}
+                      nota={item.media}
                       imagem={item.imagem}
                       onPress={() => navigation.navigate('Receita', { item })}
                     />
@@ -82,7 +83,7 @@ const Dashboard = () => {
                   horizontal
                   data={categorias}
                   renderItem={({ item }) => (
-                    <ItemCard 
+                    <ReceitaCard 
                       style={styles.card} 
                       categoria={item.categoria} 
                       imagem={item.imagem} 

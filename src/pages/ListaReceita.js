@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
@@ -44,10 +44,10 @@ const ListaReceita = () => {
                             style={styles.section}
                             data={receitas}
                             renderItem={({ item }) => (
-                                <ItemCard
+                                <ReceitaCard
                                     style={styles.card}
                                     titulo={item.tituloReceita}
-                                    nota={item.nota}
+                                    nota={item.media}
                                     imagem={item.imagem}
                                     onPress={() => navigation.navigate('Receita', { item })} // Passando o item da receita como parâmetro
                                 />

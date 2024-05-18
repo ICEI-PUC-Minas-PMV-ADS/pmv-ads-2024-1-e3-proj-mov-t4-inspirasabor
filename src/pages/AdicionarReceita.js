@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert,Image } fr
 import { useNavigation } from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
 import * as ImagePicker from 'expo-image-picker'
-
 import Input from "../components/Input";
 import Container from '../components/Container';
 import Body from '../components/Body';
@@ -11,7 +10,7 @@ import Header from '../components/Header';
 import { getReceita } from '../services/adicionarReceita.services';
 import { insertReceita } from '../services/adicionarReceita.services';
 
-const adicionarReceita = () => {   
+const AdicionarReceita = () => {   
   const navigation = useNavigation();
   const [categoriaId, setCategoriaId] = useState([]);
   const [tituloReceita, setTituloReceita] = useState([]);
@@ -181,4 +180,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default adicionarReceita;
+export default AdicionarReceita;

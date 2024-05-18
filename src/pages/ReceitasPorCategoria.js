@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { Text } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { findAllCategorias } from '../services/categorias.service';
-// import jsonData from '../db/db.json'; 
 
 const ReceitasPorCategoria = () => {
   const navigation = useNavigation();
@@ -24,15 +23,6 @@ const ReceitasPorCategoria = () => {
         setReceitasPorCategoria([]);
       }
     });
-
-    // Encontrar a categoria no JSON
-   // const categoriaEncontrada = jsonData.categorias.find((cat) => cat.categoria === categoria);
-   // // Se a categoria for encontrada, defina as receitas associadas a ela
-   // if (categoriaEncontrada) {
-   //   setReceitasPorCategoria(categoriaEncontrada.receitas);
-   // } else {
-   //   setReceitasPorCategoria([]);
-   // }
   }, [categoria]);
 
   return (
@@ -48,7 +38,7 @@ const ReceitasPorCategoria = () => {
           <FlatList
             data={receitasPorCategoria}
             renderItem={({ item }) => (
-              <ItemCard
+              <ReceitaCard
                 style={styles.card}
                 titulo={item.tituloReceita}
                 imagem={item.imagem}

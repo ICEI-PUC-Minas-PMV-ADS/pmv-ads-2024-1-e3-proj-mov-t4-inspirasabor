@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { Text, Card } from 'react-native-paper';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
 
-const ItemCard = ({ titulo, nota, imagem, categoria, style , onPress }) => {
+const ReceitaCard = ({ titulo, nota, imagem, categoria, style , onPress }) => {
   return (
     <Card style={style} onPress={onPress} mode='outlined'>
       <Card.Content>
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ItemCard;
+export default ReceitaCard;

@@ -1,7 +1,7 @@
-import React, { useState, useRef, useLayoutEffect } from 'react';
-import { Text, Image, StyleSheet, ScrollView, View } from 'react-native';
+import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
+import { Text, Image, StyleSheet, ScrollView, View, Alert, FlatList } from 'react-native';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 import Container from '../components/Container';
 import Header from '../components/Header';
 import Body from '../components/Body';
@@ -9,25 +9,66 @@ import StarCard from '../components/StarCard';
 import { captureRef } from "react-native-view-shot";
 import { updateReceitas } from '../services/receitas.service';
 import * as Sharing from 'expo-sharing';
-import { Button } from 'react-native-paper';
+import { TextInput } from 'react-native-paper';
+import { useUser } from '../contexts/UserContext';
+import { createComentario, getComentarios } from '../services/comentario.service';
+import { getCategoriaById } from '../services/categorias.service';
+import ComentatioCard from '../components/ComentarioCard';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
+  const isFocused = useIsFocused();
+  const { id } = useUser();
   const [rating, setRating] = useState(0);
+  //const [numeroAvaliacao, setNumeroAvaliacao] = useState(0);
+  const [comentario, setComentario] = useState('');
+  const [comentarios, setComentarios] = useState([]);
+  const [categoria, setCategoria] = useState('');
   const { item } = route.params;
 
   const handleAvaliacao = () => {
-    updateReceitas({
-      id: item.id,
-      tituloReceita: item.tituloReceita,
-      ingredientes: item.ingredientes,
-      modoPreparo: item.modoPreparo,
-      nota: rating,
-      imagem: item.imagem,
-      categoriaId: item.categoriaId,
-      categoria: item.categoria,
-    }).then();
-  }
+    if (rating > 0) {
+      const notaFinal = Math.round(item.nota + rating);
+      const numeroAvaliacao = item.numeroAvaliacao + 1;
+      const media = Math.round(notaFinal/numeroAvaliacao);
+      updateReceitas({
+        id: item.id,
+        tituloReceita: item.tituloReceita,
+        ingredientes: item.ingredientes,
+        modoPreparo: item.modoPreparo,
+        nota: notaFinal,
+        numeroAvaliacao: numeroAvaliacao,
+        media: media,
+        imagem: item.imagem,
+        categoriaId: item.categoriaId
+      }).then();
+      Alert.alert('Muito obrigado pela avaliação');
+    } else {
+      Alert.alert('Atenção!','Valor invalido!');
+    }
+  };
+
+  const salvarComentario = () => {
+    if (!comentario || comentario.trim() === '') {
+      Alert.alert('Atenção!','Por favor, preencha o campo de comentario!');
+      return;
+    };
+
+    createComentario({
+      userId: id,
+      receitaId: item.id,
+      comentario: comentario
+    }).then(res => {
+      Alert.alert('Muito obrigado pelo comentario');
+      setComentario('');
+      getComentarios().then((listaDeComentarios) => {
+        setComentarios(listaDeComentarios.filter(c => c.receitaId === item.id));
+      });
+    }).catch(error => {
+      console.error('Erro ao criar o comentário:', error);
+      Alert.alert('Ocorreu um erro ao criar o comentário. Tente novamente mais tarde.');
+    });
+  };
 
   const imageRef = useRef();
   const handleShare = async () => {
@@ -41,53 +82,83 @@ const Receita = ({ route }) => {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
+
+  useEffect(() => {
+    getCategoriaById(item.categoriaId).then((cat) => {
+      setCategoria(cat.categoria);
+    });
+    getComentarios().then((listaDeComentarios) => {
+      setComentarios(listaDeComentarios.filter(c => c.receitaId === item.id));
+    });
+  }, [isFocused]);
 
   useLayoutEffect(() => {
     handleShare();
   }, []);
-
 
   return (
     <Container>
       <Header 
         title={'Detalhes da receita'}
         leftIcon={'arrow-left'}
+        rightIcon={'share'}
+        onPressRightIcon={handleShare}
         onPressLeftIcon={() => navigation.goBack()} 
       />
       <Body>
         <ScrollView>
           <View ref={imageRef} collapsable={false}>
-          <Text style={styles.titulo}>{item.tituloReceita}</Text>
-          <Image source={{ uri: item.imagem }} style={styles.imagem} />
-          <Text style={styles.subtitulo}>Ingredientes:</Text>
-          <Text>{item.ingredientes}</Text>
-          <Text style={styles.subtitulo}>Modo de Preparo:</Text>
-          <Text>{item.modoPreparo}</Text>
-          <Text style={styles.subtitulo}>Categoria:</Text>
-          <Text>{item.categoria}</Text>
-          <Text style={styles.subtitulo}>Nota:</Text>
-          <StarRatingDisplay 
-            rating={item.nota}
-            starSize={20}
+            <Text style={styles.titulo}>{item.tituloReceita}</Text>
+            <Image source={{ uri: item.imagem }} style={styles.imagem} />
+            <Text style={styles.subtitulo}>Ingredientes:</Text>
+            <Text>{item.ingredientes}</Text>
+            <Text style={styles.subtitulo}>Modo de Preparo:</Text>
+            <Text>{item.modoPreparo}</Text>
+            <Text style={styles.subtitulo}>Categoria:</Text>
+            <Text>{categoria}</Text>
+            <Text style={styles.subtitulo}>Nota:</Text>
+            <StarRatingDisplay 
+              rating={item.media}
+              starSize={20}
+            />
+          </View>
+          <View>
+            <StarCard
+              title={"Avaliação"}
+              buttonPlaceHolder={"Enviar avaliação"}
+              rating={rating}
+              onChange={setRating}
+              onPress={handleAvaliacao}
+            />
+          </View>
+          <View>
+            <Text style={styles.subtitulo}>Deixe seu comentário</Text>
+            <TextInput
+            label="Comentário"
+            value={comentario}
+            right={<TextInput.Icon 
+              icon="send"
+              onPress={salvarComentario}
+              />}
+            onChangeText={text => setComentario(text)}
           />
           </View>
-          <StarCard
-            title={"Avaliação"}
-            buttonPlaceHolder={"Enviar avaliação"}
-            rating={rating}
-            onChange={setRating}
-            onPress={handleAvaliacao}
-          />
-
-          <Button
-          title = {"Compartilhar"}
-          buttonPlaceHolder={"Compartilhar"} 
-          mode="outlined"
-          onPress = {handleShare}
-          >
-            Compartilhar
-           </Button> 
+          <View>
+            <Text style={styles.subtitulo}>Comentários</Text>
+            <FlatList
+              horizontal
+              data={comentarios}
+              renderItem={({ item }) => (
+                <ComentatioCard
+                  nomeUsuario={item.user.name + ' comentou:'}
+                  comentario={item.comentario}
+                />
+              )}
+              keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
+            />
+          </View>
+          
         </ScrollView>
       </Body>
     </Container>
@@ -100,11 +171,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
+  listaComentarios: {
+    marginBottom: 10,
+  },
   subtitulo: {
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 10,
-    marginBottom: 5,
+    marginBottom: 10,
   },
   imagem: {
     width: '100%',
@@ -112,18 +186,6 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     marginBottom: 10,
     borderRadius: 10
-  },
-  button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
-    marginTop: 20,
-  },
-  buttonText: {
-    color: 'white',
-    textAlign: 'center',
-    fontSize: 16,
-    fontWeight: 'bold',
   },
 });
 
