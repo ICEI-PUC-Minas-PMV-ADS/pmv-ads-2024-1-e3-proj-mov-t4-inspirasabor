@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
-import { Text, Image, StyleSheet, ScrollView, View, Alert, FlatList } from 'react-native';
+import { Text, Image, StyleSheet, ScrollView, View, Alert, FlatList, TouchableOpacity } from 'react-native';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 import Container from '../components/Container';
@@ -14,6 +14,7 @@ import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
 import { getCategoriaById } from '../services/categorias.service';
 import ComentatioCard from '../components/ComentarioCard';
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
@@ -106,6 +107,14 @@ const Receita = ({ route }) => {
         onPressRightIcon={handleShare}
         onPressLeftIcon={() => navigation.goBack()} 
       />
+
+    <TouchableOpacity
+        style={styles.editButton} // Adiciona estilo para posicionar o botão
+        onPress={() => navigation.navigate('AdicionarReceita', { receita: item })}
+      >
+        <Icon name="edit" size={25} color="white" />
+      </TouchableOpacity>
+    
       <Body>
         <ScrollView>
           <View ref={imageRef} collapsable={false}>
@@ -157,9 +166,13 @@ const Receita = ({ route }) => {
               )}
               keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
             />
+
+         
           </View>
-          
+                   
         </ScrollView>
+    
+
       </Body>
     </Container>
   );
@@ -186,6 +199,12 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     marginBottom: 10,
     borderRadius: 10
+  },
+  editButton: {
+    position: 'absolute',
+    top: 42,
+    right: 100,
+    zIndex: 1,
   },
 });
 

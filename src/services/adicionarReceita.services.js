@@ -34,3 +34,37 @@ export const insertReceita = async (param) => {
     return null;
   }
 }
+
+export const updateReceita = async (param) => {
+  try{
+    return await API.put(`${BASE_URL}/receitas/${param.id}`, param).then( 
+      response => {
+        return response.data;
+      },
+      error =>{
+        console.log(error);
+        return  null;
+      }
+    );
+  }catch(error){
+    console.log(error);
+    return null;
+  }
+}
+
+export const deleteReceita = async (id) => {
+  try{
+    return await API.delete(`${BASE_URL}/receitas/${id}`).then( 
+      response => {
+        return response.data;
+      },
+      error =>{
+        console.log(error);
+        return  null;
+      }
+    );
+  }catch(error){
+    console.log(error);
+    return null;
+  }
+}
