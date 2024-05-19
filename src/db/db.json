@@ -83,6 +83,12 @@
       "password": "$2a$10$ghnCo51HsYi3o9qyyDyxIe/TdyW49MeKuXWyxRAPhSJcbAe8uB8vW",
       "name": "Tiago",
       "id": 14
+    },
+    {
+      "email": "Gabriel@mail.com",
+      "password": "$2a$10$Z3Rybs.fftLXhxusiEeg2ukjnaim.fx5Prgs/wQwNJWtFWhNL/anK",
+      "name": "Gabriel",
+      "id": 16
     }
   ],
   "categorias": [
@@ -234,6 +240,15 @@
       "media": 5,
       "imagem": "https://images.pexels.com/photos/10311446/pexels-photo-10311446.jpeg",
       "categoriaId": 3
+    },
+    {
+      "categoriaId": 1,
+      "tituloReceita": "Feijão cozido",
+      "ingredientes": "Feijão\nÁgua\nSal (opcional, a gosto)",
+      "modoPreparo": "Lave o feijão: Coloque o feijão em uma peneira e lave-o em água corrente para remover quaisquer impurezas.\n\nDeixe de molho (opcional): Coloque o feijão em uma tigela grande e cubra com água. Deixe de molho por cerca de 8 horas ou durante a noite. Isso ajuda a reduzir o tempo de cozimento e torna o feijão mais fácil de digerir, mas é opcional.\n\nCozinhe o feijão: Após o período de molho (ou se não estiver deixando de molho), escorra o feijão e coloque-o em uma panela grande. Cubra o feijão com água limpa. A quantidade de água deve ser cerca de 2-3 vezes o volume do feijão.\n\nCozinhe em fogo médio-alto: Leve o feijão para ferver em fogo médio-alto. Quando começar a ferver, reduza o fogo para médio-baixo para manter uma fervura suave.\n\nTempo de cozimento: O tempo de cozimento varia dependendo do tipo de feijão e se foi deixado de molho. Geralmente, feijão que não foi deixado de molho leva cerca de 1-2 horas para cozinhar após ferver. Se você deixou o feijão de molho, pode levar cerca de 30 minutos a 1 hora.\n\nAdicione sal (opcional): Cerca de 30 minutos antes do feijão estar pronto, você pode adicionar sal a gosto. Adicionar sal muito cedo pode prolongar o tempo de cozimento do feijão.\n\nVerifique a maciez: Para saber se o feijão está pronto, experimente alguns grãos. Eles devem estar macios, mas ainda inteiros. Se estiverem muito macios, você pode ter cozido demais, mas ainda estarão deliciosos!\n\nEscorra o feijão (opcional): Quando o feijão estiver pronto, você pode escorrer o excesso de água, se preferir, ou deixá-lo com um pouco de caldo.",
+      "nota": 0,
+      "imagem": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fsnack-85b295c1-43e3-4043-9db6-5f421cd691ef-6b7d619b-62c6-4627-af41-4a28eb37efbd/ImagePicker/ce761297-4e26-4fca-b8e0-02c3d413a292.jpeg",
+      "id": 13
     }
   ],
   "comentarios": [
@@ -254,6 +269,12 @@
       "receitaId": 2,
       "comentario": "Cheiroso",
       "id": 3
+    },
+    {
+      "userId": 16,
+      "receitaId": 6,
+      "comentario": "Colocar mais sal",
+      "id": 4
     }
   ]
 }
