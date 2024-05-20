@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert, Image, TouchableOpacity } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
 import * as ImagePicker from 'expo-image-picker';
@@ -12,14 +12,14 @@ import { insertReceita, updateReceita, deleteReceita } from '../services/adicion
 const AdicionarReceita = () => {
   const navigation = useNavigation();
   const route = useRoute();
-  const receita = route.params?.receita || {}; // Obter os dados da receita, se existirem
+  const receita = route.params?.receita || {}; 
 
   const [categoriaId, setCategoriaId] = useState(receita.categoriaId || '');
   const [tituloReceita, setTituloReceita] = useState(receita.tituloReceita || '');
   const [ingredientes, setIngredientes] = useState(receita.ingredientes || '');
   const [modoPreparo, setModoPreparo] = useState(receita.modoPreparo || '');
   const [image, setImage] = useState(receita.imagem || null);
-
+  
   const salvarReceita = () => {
     try {
       if (!categoriaId || !tituloReceita || !ingredientes || !modoPreparo) {
@@ -27,7 +27,7 @@ const AdicionarReceita = () => {
         return;
       }
 
-      const receitaData = {
+      const receitaAntiga = {
         categoriaId: categoriaId === 'Carnes' ? 1 : categoriaId === 'Massas' ? 2 : 3,
         tituloReceita,
         ingredientes,
@@ -37,8 +37,8 @@ const AdicionarReceita = () => {
       };
 
       if (receita.id) {
-        receitaData.id = receita.id;
-        updateReceita(receitaData).then(res => {
+        receitaAntiga.id = receita.id;
+        updateReceita(receitaAntiga).then(res => {
           navigation.navigate('Dashboard');
           Alert.alert('A receita foi atualizada com sucesso!');
         }).catch(error => {
@@ -46,7 +46,7 @@ const AdicionarReceita = () => {
           Alert.alert('Ocorreu um erro ao atualizar a receita. Tente novamente mais tarde.');
         });
       } else {
-        insertReceita(receitaData).then(res => {
+        insertReceita(receitaAntiga).then(res => {
           navigation.navigate('Dashboard');
           Alert.alert('A receita foi salva com sucesso!');
         }).catch(error => {
@@ -160,27 +160,33 @@ const AdicionarReceita = () => {
 
           <Text style={styles.Titulo}>5 - Adicionar Imagem:</Text>
           {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
-          <Button title="Escolher imagem" onPress={pickImage} />
+          <TouchableOpacity style={styles.ImageButton} onPress={pickImage}>
+            <Text style={styles.ImageButtonText}>Escolher imagem</Text>
+          </TouchableOpacity>
 
-          <Button
-            title={receita.id ? "Salvar Receita" : "Salvar Receita"}
-            icon='content-save-check'
-            mode='conteined'
-            color={'darkgreen'}
-            style={styles.Salvar}
-            onPress={salvarReceita}
-          >
-            {receita.id ? "ATUALIZAR" : "SALVAR"}
-          </Button>
+          <View style={styles.ButtonCrud}>
+            {receita.id && (
+                <Button
+                  title="Excluir Receita"
+                  color="red"
+                  style={styles.Excluir}
+                  onPress={excluirReceita}
+                />
+              )}
 
-          {receita.id && (
             <Button
-              title="Excluir Receita"
-              color="red"
-              style={styles.Excluir}
-              onPress={excluirReceita}
-            />
-          )}
+              title={receita.id ? "Salvar Receita" : "Salvar Receita"}
+              icon='content-save-check'
+              mode='contained'
+              color={'darkgreen'}
+              style={styles.Salvar}
+              onPress={salvarReceita}
+            >
+              {receita.id ? "ATUALIZAR" : "SALVAR"}
+            </Button>
+
+            
+          </View>
         </ScrollView>
       </Body>
     </Container>
@@ -198,25 +204,40 @@ const styles = StyleSheet.create({
     marginTop: 18,
     fontSize: 18,
     fontWeight: 'bold',
+    marginVertical: 10,
   },
   NomeCategoria: {
     fontSize: 15,
     fontWeight: 'bold',
     color: 'darkblue',
   },
+  ImageButton: {
+    backgroundColor: 'blue',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginVertical: 10,
+    alignSelf: 'flex-start', 
+    alignSelf: 'center',
+  },
+  ImageButtonText: {
+    fontSize: 16,
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  ButtonCrud: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 15,
+    
+  },
   Salvar: {
-    marginTop: 15,
-    justifyContent: 'center',
-    marginHorizontal: 10,
-    marginTop: 15,
-    borderBottomColor: 'red',
     fontSize: 20,
     backgroundColor: 'lightgreen',
+    marginVertical: 10,
+    
   },
   Excluir: {
-    marginTop: 15,
-    justifyContent: 'center',
-    marginHorizontal: 10,
     fontSize: 20,
     backgroundColor: 'red',
   },
