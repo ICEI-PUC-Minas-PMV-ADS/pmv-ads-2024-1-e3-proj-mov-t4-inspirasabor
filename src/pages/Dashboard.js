@@ -6,8 +6,8 @@ import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { findAllReceitas } from '../services/receitas.service';
-import { findAllCategorias } from '../services/categorias.service'; // Importe a função corretamente
-import { useNavigation, useIsFocused} from '@react-navigation/native';
+import { findAllCategorias } from '../services/categorias.service';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const Dashboard = () => {
   const navigation = useNavigation();
@@ -32,11 +32,13 @@ const Dashboard = () => {
 
   return (
     <Container>
-      <Header 
-        title={'InspiraSabor'} 
-        onPressPlusBox={() => navigation.navigate('AdicionarReceita')}
-        rightIcon={'magnify'}
-        onPressRightIcon={() => navigation.navigate('ListaReceita')} 
+      <Header
+        title={'InspiraSabor'}
+        middleIconA={'plus-box'}
+        middleIconB={'magnify'}
+        rightIcon={'account-circle'}
+        onPressMiddleIconA={() => navigation.navigate('AdicionarReceita')}
+        onPressMiddleIconB={() => navigation.navigate('ListaReceita')}
       />
       <Body>
         <ScrollView>

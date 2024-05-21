@@ -28,8 +28,8 @@ const ListaReceita = () => {
         <Container>
             <Header
                 title={'Receitas'}
-                leftIcon={'home'}
-                onPressLeftIcon={() => navigation.navigate('Dashboard')}
+                leftIcon={'arrow-left'}
+                onPressLeftIcon={() => navigation.goBack()}
             />
             <Body>
                 <Searchbar

@@ -1,22 +1,20 @@
 import React from 'react';
 import { Appbar } from 'react-native-paper';
 
-const Header = ({ title, children, leftIcon, onPressLeftIcon, rightIcon, onPressRightIcon, onPressPlusBox }) => {
+const Header = ({ title, leftIcon, onPressLeftIcon, rightIcon, onPressRightIcon, middleIconA, onPressMiddleIconA, middleIconB, onPressMiddleIconB, children }) => {
+
   return (
     <Appbar.Header>
-      {
-        leftIcon && <Appbar.Action icon={leftIcon} onPress={onPressLeftIcon} />
-      }    
+
+      {leftIcon && <Appbar.Action icon={leftIcon} onPress={onPressLeftIcon} />}
+
       <Appbar.Content title={title} />
-      {
-        onPressPlusBox && <Appbar.Action icon="plus-box" onPress={onPressPlusBox} />
-      }
-      
-      {
-        rightIcon && <Appbar.Action icon={rightIcon} onPress={onPressRightIcon} />
-      }
-      <Appbar.Action icon="account-circle" onPress={() => {}} />
+
+      {middleIconA && <Appbar.Action icon={middleIconA} onPress={onPressMiddleIconA} />}
+      {middleIconB && <Appbar.Action icon={middleIconB} onPress={onPressMiddleIconB} />}
+      {rightIcon && <Appbar.Action icon={rightIcon} onPress={onPressRightIcon} />}
       {children}
+
     </Appbar.Header>
   );
 };

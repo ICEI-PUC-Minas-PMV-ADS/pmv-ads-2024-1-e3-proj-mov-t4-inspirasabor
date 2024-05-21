@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from 'react';
-import { Text, Image, StyleSheet, ScrollView, View, Alert, FlatList, TouchableOpacity } from 'react-native';
+import { Text, Image, StyleSheet, ScrollView, View, Alert, FlatList } from 'react-native';
 import { StarRatingDisplay } from 'react-native-star-rating-widget';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 import Container from '../components/Container';
@@ -9,12 +9,11 @@ import StarCard from '../components/StarCard';
 import { captureRef } from "react-native-view-shot";
 import { updateReceitas } from '../services/receitas.service';
 import * as Sharing from 'expo-sharing';
-import { TextInput } from 'react-native-paper';
+import { TextInput, Icon } from 'react-native-paper';
 import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
 import { getCategoriaById } from '../services/categorias.service';
 import ComentatioCard from '../components/ComentarioCard';
-import Icon from 'react-native-vector-icons/FontAwesome'
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
@@ -99,20 +98,17 @@ const Receita = ({ route }) => {
 
   return (
     <Container>
-      <Header 
+     
+      <Header
         title={'Detalhes da receita'}
         leftIcon={'arrow-left'}
-        rightIcon={'share'}
-        onPressRightIcon={handleShare}
-        onPressLeftIcon={() => navigation.goBack()} 
-      />
-
-    <TouchableOpacity
-        style={styles.editButton} // Adiciona estilo para posicionar o botão
-        onPress={() => navigation.navigate('AdicionarReceita', { receita: item })}
-      >
-        <Icon name="edit" size={25} color="white" />
-      </TouchableOpacity>
+        middleIconA={'lead-pencil'}
+        middleIconB={'share'}
+        rightIcon={'star-plus-outline'}
+        onPressLeftIcon={() => navigation.goBack()}
+        onPressMiddleIconA={() => navigation.navigate('AdicionarReceita', { receita: item })}
+        onPressMiddleIconB={handleShare}
+      /> 
     
       <Body>
         <ScrollView>
