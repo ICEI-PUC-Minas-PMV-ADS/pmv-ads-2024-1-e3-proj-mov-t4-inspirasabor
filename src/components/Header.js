@@ -11,6 +11,7 @@ const Header = ({ title, children, leftIcon, onPressLeftIcon, rightIcon, onPress
       {
         onPressPlusBox && <Appbar.Action icon="plus-box" onPress={onPressPlusBox} />
       }
+      
       {
         rightIcon && <Appbar.Action icon={rightIcon} onPress={onPressRightIcon} />
       }

@@ -104,8 +104,8 @@ const AdicionarReceita = () => {
     <Container>
       <Header
         title={receita.id ? 'Editar Receita' : 'Adicionar nova Receita'}
-        leftIcon={'home'}
-        onPressLeftIcon={() => navigation.navigate('Dashboard')}
+        leftIcon={'arrow-left'}
+        onPressLeftIcon={() => navigation.goBack()}
       />
       <Body>
         <ScrollView>

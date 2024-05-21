@@ -21,7 +21,6 @@ const Receita = ({ route }) => {
   const isFocused = useIsFocused();
   const { id } = useUser();
   const [rating, setRating] = useState(0);
-  //const [numeroAvaliacao, setNumeroAvaliacao] = useState(0);
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
   const [categoria, setCategoria] = useState('');
