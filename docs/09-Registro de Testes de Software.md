@@ -112,9 +112,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RNF_001 - O sistema deve ser responsivo para rodar em um dispositivos móvel. |
 | Objetivo do Teste 	| Verificar se a aplicação encontra-se responsiva para dispositivos móveis. |
 |Resultado esperado | Aplicação responsiva. |
-|Resultado obtido | Observa-se que a funcionalidade está implementada. |
+|Resultado obtido | Observa-se que a funcionalidade está implementada estando responsiva em diferentes tamanhos de tela. |
 |Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/24ed9b4c-2054-4962-be0a-8445433be5f2" width="300"/>|
 
 | **Caso de Teste** | **CT-12- Publicação** |
 |---|---|
