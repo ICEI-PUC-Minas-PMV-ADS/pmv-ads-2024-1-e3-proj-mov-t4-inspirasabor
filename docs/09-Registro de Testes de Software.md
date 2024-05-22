@@ -105,7 +105,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário consegue compartilhar as receitas. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada com a possibilidade de o usuário compartilhar a receita via e-mail. |
 |Avaliação | Nível 1 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/c9567462-db48-4d22-ad0c-678ad4fb670b" width="300"/>|
 
 | **Caso de Teste** | **CT-11- Responsividade** |
 |---|---|
