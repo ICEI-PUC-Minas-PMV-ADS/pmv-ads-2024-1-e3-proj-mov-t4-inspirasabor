@@ -87,7 +87,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário consegue comentar nas receitas. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. |
 |Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/ae87ea56-a391-45ec-b6b4-b072787d038d" width="300"/>|
 
 | **Caso de Teste** | **CT-09- Permitir que o usuário favorite as receitas** |
 |---|---|
