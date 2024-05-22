@@ -78,7 +78,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário consegue inserir mídia quando cadastrar receita. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. Porém, a imagem fica salva apenas no dispositivo local em decorrência da API _fake_. |
 |Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/56ec9481-0440-4e1a-986a-e1c04a42d545" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/e41943e0-68f3-43c9-aa73-7d972a1b155f" width="300"/>|
 
 | **Caso de Teste** | **CT-08- Permitir que o usuário adicione comentários nas receitas** |
 |---|---|
