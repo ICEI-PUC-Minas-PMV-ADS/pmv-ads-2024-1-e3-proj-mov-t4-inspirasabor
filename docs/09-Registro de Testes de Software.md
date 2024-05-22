@@ -46,7 +46,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 
 | **Caso de Teste** | **CT-04 - Cadastrar Receitas** |
 |---|---|
-|	Requisito Associado 	| RF_005- Permitir que o usuário adicione uma nova receita. |
+|	Requisito Associado 	| RF_004- Permitir que o usuário adicione uma nova receita. |
 | Objetivo do Teste 	| Verificar se o usuário consegue adicionar uma nova receita. |
 |Resultado esperado | O usuário consegue inserir receitas. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. Porém, a imagem fica salva apenas no dispositivo local em decorrência da API _fake_. |
@@ -58,9 +58,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_005- Permitir que o usuário filtre as receitas por categoria (Massas, Doces e Sobremesas, Carnes). |
 | Objetivo do Teste 	| Verificar se o usuário visualizar receitas de acordo com suas categoriais. |
 |Resultado esperado | O usuário consegue visualizar as receitas disponíveis por filtro. |
-|Resultado obtido | Observa-se que a funcionalidade está implementada porém não há imagens em todas as receitas. Logo, isso deve ser concluído antes da apresentação final da aplicação. |
-|Avaliação | Nível 4 |
-|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/48194321-98a8-4c0e-bb89-5ec877678e78)" width="300"/>|
+|Resultado obtido | Observa-se que a funcionalidade está implementada. |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/adce66b4-aaf2-49ac-a9de-9c97d9a53e1c" width="300"/>|
 
 | **Caso de Teste** | **CT-06 - Sistema de Avaliação de Receitas** |
 |---|---|
