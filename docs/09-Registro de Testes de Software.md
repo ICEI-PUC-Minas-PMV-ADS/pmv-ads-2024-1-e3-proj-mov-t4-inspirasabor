@@ -69,7 +69,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário consegue avaliar com estrelas as receitas da aplicação. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. |
 |Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b94ce192-7a87-4730-bc00-6671ce5132f2" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/4114a433-b4eb-425e-a814-524b944af949" width="300"/>|
 
 | **Caso de Teste** | **CT-07 - Permitir que o usuário adicione mídias referentes a receita** |
 |---|---|
