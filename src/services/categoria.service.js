@@ -1,7 +1,7 @@
 import API from './webapi.service';
 import { BASE_URL } from './urls';
 
-export const findAllCategorias = async () => {
+export const getCategorias = async () => {
     try {
       return await API.get(`${BASE_URL}/categorias?_embed=receitas`).then(
         (response) => {

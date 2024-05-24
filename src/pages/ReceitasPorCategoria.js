@@ -6,7 +6,7 @@ import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { findAllCategorias } from '../services/categorias.service';
+import { getCategorias } from '../services/categoria.service';
 
 const ReceitasPorCategoria = () => {
   const navigation = useNavigation();
@@ -15,7 +15,7 @@ const ReceitasPorCategoria = () => {
   const [receitasPorCategoria, setReceitasPorCategoria] = useState([]);
 
   useEffect(() => {
-    findAllCategorias().then((dados) => {
+    getCategorias().then((dados) => {
       const categoriasEncontradas = dados.find(cat => cat.categoria === categoria);
       if (categoriasEncontradas) {
         setReceitasPorCategoria(categoriasEncontradas.receitas);

@@ -7,12 +7,12 @@ import Header from '../components/Header';
 import Body from '../components/Body';
 import StarCard from '../components/StarCard';
 import { captureRef } from "react-native-view-shot";
-import { updateReceitas } from '../services/receitas.service';
+import { updateReceita } from '../services/receita.service';
 import * as Sharing from 'expo-sharing';
-import { TextInput, Icon } from 'react-native-paper';
+import { TextInput } from 'react-native-paper';
 import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
-import { getCategoriaById } from '../services/categorias.service';
+import { getCategoriaById } from '../services/categoria.service';
 import ComentatioCard from '../components/ComentarioCard';
 
 const Receita = ({ route }) => {
@@ -30,7 +30,7 @@ const Receita = ({ route }) => {
       const notaFinal = Math.round(item.nota + rating);
       const numeroAvaliacao = item.numeroAvaliacao + 1;
       const media = Math.round(notaFinal/numeroAvaliacao);
-      updateReceitas({
+      updateReceita({
         id: item.id,
         tituloReceita: item.tituloReceita,
         ingredientes: item.ingredientes,
@@ -159,15 +159,10 @@ const Receita = ({ route }) => {
                   comentario={item.comentario}
                 />
               )}
-              keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
+              keyExtractor={(item) => item.id.toString()}
             />
-
-         
-          </View>
-                   
+          </View> 
         </ScrollView>
-    
-
       </Body>
     </Container>
   );

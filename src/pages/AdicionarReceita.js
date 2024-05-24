@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TextInput, Button, Alert, Image, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, ScrollView, Button, Alert, Image } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { RadioButton } from 'react-native-paper';
-import * as ImagePicker from 'expo-image-picker';
 import Input from "../components/Input";
 import Container from '../components/Container';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { insertReceita, updateReceita, deleteReceita } from '../services/adicionarReceita.services';
+import { insertReceita, updateReceita, deleteReceita } from '../services/receita.service';
 
 const AdicionarReceita = () => {
   const navigation = useNavigation();
@@ -19,7 +18,7 @@ const AdicionarReceita = () => {
   const [ingredientes, setIngredientes] = useState(receita.ingredientes || '');
   const [modoPreparo, setModoPreparo] = useState(receita.modoPreparo || '');
   const [image, setImage] = useState(receita.imagem || null);
-  
+
   const salvarReceita = () => {
     try {
       if (!categoriaId || !tituloReceita || !ingredientes || !modoPreparo) {
@@ -32,6 +31,8 @@ const AdicionarReceita = () => {
         tituloReceita,
         ingredientes,
         modoPreparo,
+        numeroAvaliacao: receita.numeroAvaliacao || 0,
+        media: receita.media || 0,
         nota: receita.nota || 0,
         imagem: image,
       };
@@ -57,19 +58,6 @@ const AdicionarReceita = () => {
     } catch (error) {
       console.error('Erro ao salvar a receita:', error);
       Alert.alert('Por favor, preencha todos os campos do formulário.');
-    }
-  };
-
-  const pickImage = async () => {
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
-
-    if (!result.canceled) {
-      setImage(result.assets[0].uri);
     }
   };
 
@@ -137,32 +125,23 @@ const AdicionarReceita = () => {
           <Input
             value={tituloReceita}
             onChangeText={(text) => setTituloReceita(text)}
-            left={<TextInput.Icon icon="lead-pencil" />}
           />
 
           <Text style={styles.Titulo}>3 - Ingredientes:</Text>
           <Input
             value={ingredientes}
             onChangeText={(text) => setIngredientes(text)}
-            left={<TextInput.Icon icon="food-apple" />}
-            multiline={true}
-            numberOfLines={4}
           />
 
           <Text style={styles.Titulo}>4 - Modo de Preparo:</Text>
           <Input
             value={modoPreparo}
             onChangeText={(text) => setModoPreparo(text)}
-            left={<TextInput.Icon icon="food-fork-drink" />}
-            multiline={true}
-            numberOfLines={4}
           />
 
-          <Text style={styles.Titulo}>5 - Adicionar Imagem:</Text>
-          {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
-          <TouchableOpacity style={styles.ImageButton} onPress={pickImage}>
-            <Text style={styles.ImageButtonText}>Escolher imagem</Text>
-          </TouchableOpacity>
+          <Text style={styles.Titulo}>5 - Adicionar url da Imagem:</Text>
+          <Input value={image}  onChangeText={(text) => setImage(text)}/>
+          {image && <Image source={{ uri: image }} style={styles.imagem} />}
 
           <View style={styles.ButtonCrud}>
             {receita.id && (
@@ -184,8 +163,6 @@ const AdicionarReceita = () => {
             >
               {receita.id ? "ATUALIZAR" : "SALVAR"}
             </Button>
-
-            
           </View>
         </ScrollView>
       </Body>
@@ -229,7 +206,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: 15,
-    
   },
   Salvar: {
     fontSize: 20,
@@ -240,6 +216,13 @@ const styles = StyleSheet.create({
   Excluir: {
     fontSize: 20,
     backgroundColor: 'red',
+  },
+  imagem: {
+    width: '100%',
+    height: 200,
+    resizeMode: 'cover',
+    marginBottom: 10,
+    borderRadius: 10
   },
 });
 

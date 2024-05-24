@@ -5,7 +5,7 @@ import Container from '../components/Container';
 import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { findAllReceitas } from '../services/receitas.service';
+import { getReceitas } from '../services/receita.service';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const ListaReceita = () => {
@@ -15,7 +15,7 @@ const ListaReceita = () => {
     const [receitas, setReceitas] = useState([]);
 
     useEffect(() => {
-        findAllReceitas().then((dados) => {
+        getReceitas().then((dados) => {
             if (busca) {
                 setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca.toLowerCase())));
             } else {

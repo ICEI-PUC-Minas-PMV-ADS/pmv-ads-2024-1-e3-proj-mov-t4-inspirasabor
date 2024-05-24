@@ -5,8 +5,8 @@ import Container from '../components/Container';
 import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { findAllReceitas } from '../services/receitas.service';
-import { findAllCategorias } from '../services/categorias.service';
+import { getReceitas } from '../services/receita.service';
+import { getCategorias } from '../services/categoria.service';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const Dashboard = () => {
@@ -17,10 +17,10 @@ const Dashboard = () => {
   const [melhoresAvaliadas, setMelhoresAvaliadas] = useState([]);
   
   useEffect(() => {
-    findAllCategorias().then((dados) => { 
+    getCategorias().then((dados) => { 
       setCategorias(dados);
     });
-    findAllReceitas().then((dados) => {
+    getReceitas().then((dados) => {
       setReceitasDoDia(dados.filter(r => r.media === 5));
       setMelhoresAvaliadas(dados.filter(r => r.media >= 4));
     });

@@ -110,15 +110,15 @@
   ],
   "receitas": [
     {
-      "id": 1,
+      "categoriaId": 1,
       "tituloReceita": "Receita de carne",
       "ingredientes": "500g de carne, sal, pimenta",
       "modoPreparo": "1. Tempere a carne com sal e pimenta. 2. Grelhe a carne em fogo médio até dourar.",
-      "nota": 13,
       "numeroAvaliacao": 4,
       "media": 3,
+      "nota": 13,
       "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoriaId": 1
+      "id": 1
     },
     {
       "id": 2,
@@ -141,10 +141,12 @@
       "id": 3
     },
     {
-      "categoriaId": 3,
+      "categoriaId": 1,
       "tituloReceita": "Receita de Frango Assado",
       "ingredientes": "1 frango inteiro, suco de 2 limões, 4 dentes de alho picados, sal, pimenta, alecrim",
       "modoPreparo": "1. Lave bem o frango e tempere-o com suco de limão, alho picado, sal, pimenta e alecrim.\n2. Deixe marinar por pelo menos 1 hora na geladeira. \n3. Asse em forno preaquecido a 180°C por cerca de 1 hora ou até dourar.",
+      "numeroAvaliacao": 0,
+      "media": 0,
       "nota": 4,
       "imagem": "https://images.pexels.com/photos/5876544/pexels-photo-5876544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "id": 4
@@ -236,15 +238,6 @@
       "media": 5,
       "imagem": "https://images.pexels.com/photos/10311446/pexels-photo-10311446.jpeg",
       "categoriaId": 3
-    },
-    {
-      "categoriaId": 1,
-      "tituloReceita": "Feijão cozido",
-      "ingredientes": "Feijão\nÁgua\nSal (opcional, a gosto)",
-      "modoPreparo": "Lave o feijão: Coloque o feijão em uma peneira e lave-o em água corrente para remover quaisquer impurezas.\n\nDeixe de molho (opcional): Coloque o feijão em uma tigela grande e cubra com água. Deixe de molho por cerca de 8 horas ou durante a noite. Isso ajuda a reduzir o tempo de cozimento e torna o feijão mais fácil de digerir, mas é opcional.\n\nCozinhe o feijão: Após o período de molho (ou se não estiver deixando de molho), escorra o feijão e coloque-o em uma panela grande. Cubra o feijão com água limpa. A quantidade de água deve ser cerca de 2-3 vezes o volume do feijão.\n\nCozinhe em fogo médio-alto: Leve o feijão para ferver em fogo médio-alto. Quando começar a ferver, reduza o fogo para médio-baixo para manter uma fervura suave.\n\nTempo de cozimento: O tempo de cozimento varia dependendo do tipo de feijão e se foi deixado de molho. Geralmente, feijão que não foi deixado de molho leva cerca de 1-2 horas para cozinhar após ferver. Se você deixou o feijão de molho, pode levar cerca de 30 minutos a 1 hora.\n\nAdicione sal (opcional): Cerca de 30 minutos antes do feijão estar pronto, você pode adicionar sal a gosto. Adicionar sal muito cedo pode prolongar o tempo de cozimento do feijão.\n\nVerifique a maciez: Para saber se o feijão está pronto, experimente alguns grãos. Eles devem estar macios, mas ainda inteiros. Se estiverem muito macios, você pode ter cozido demais, mas ainda estarão deliciosos!\n\nEscorra o feijão (opcional): Quando o feijão estiver pronto, você pode escorrer o excesso de água, se preferir, ou deixá-lo com um pouco de caldo.",
-      "nota": 0,
-      "imagem": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fsnack-85b295c1-43e3-4043-9db6-5f421cd691ef-6b7d619b-62c6-4627-af41-4a28eb37efbd/ImagePicker/ce761297-4e26-4fca-b8e0-02c3d413a292.jpeg",
-      "id": 13
     }
   ],
   "comentarios": [
