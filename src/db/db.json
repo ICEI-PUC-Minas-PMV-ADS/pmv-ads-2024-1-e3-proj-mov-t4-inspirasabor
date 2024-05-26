@@ -156,8 +156,8 @@
       "tituloReceita": "Receita de Strogonoff de Carne",
       "ingredientes": "500g de carne em tiras, 1 cebola picada, 200g de champignon fatiado, 1 lata de creme de leite, 2 colheres de sopa de ketchup, 2 colheres de sopa de mostarda, sal, pimenta",
       "modoPreparo": "1. Em uma panela, refogue a cebola até dourar. 2. Adicione a carne e frite até dourar. 3. Acrescente o champignon e refogue por mais alguns minutos. 4. Adicione o ketchup, a mostarda, o sal e a pimenta. 5. Por último, adicione o creme de leite e mexa bem até incorporar. Sirva quente.",
-      "nota": 5,
-      "numeroAvaliacao": 1,
+      "nota": 10,
+      "numeroAvaliacao": 2,
       "media": 5,
       "imagem": "https://img.freepik.com/fotos-gratis/refeicao-gourmet-saudavel-com-caril-de-carne-de-frango-gerada-por-ia_188544-18147.jpg?t=st=1714928315~exp=1714931915~hmac=19c983234689332267b450f2db8b4a8b67bd3ff1326e2ce0f10975df680b2b8f&w=996",
       "categoriaId": 1
@@ -294,6 +294,18 @@
       "receitaId": 5,
       "comentario": "Show!",
       "id": 9
+    },
+    {
+      "userId": 13,
+      "receitaId": 12,
+      "comentario": "Ótimo!!",
+      "id": 10
+    },
+    {
+      "userId": 13,
+      "receitaId": 5,
+      "comentario": "Gostei muito!",
+      "id": 11
     }
   ]
 }

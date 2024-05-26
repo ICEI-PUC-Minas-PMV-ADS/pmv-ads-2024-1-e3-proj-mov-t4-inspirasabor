@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
-import { Searchbar } from 'react-native-paper';
+import { Searchbar, Text } from 'react-native-paper';
 import Container from '../components/Container';
 import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
