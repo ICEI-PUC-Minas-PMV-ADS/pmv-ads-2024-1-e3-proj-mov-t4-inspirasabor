@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { Text } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { findAllReceitas } from '../services/receitas.service';
-import { findAllCategorias } from '../services/categorias.service'; // Importe a função corretamente
-import { useNavigation, useIsFocused} from '@react-navigation/native';
+import { getReceitas } from '../services/receita.service';
+import { getCategorias } from '../services/categoria.service';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const Dashboard = () => {
   const navigation = useNavigation();
@@ -17,12 +17,12 @@ const Dashboard = () => {
   const [melhoresAvaliadas, setMelhoresAvaliadas] = useState([]);
   
   useEffect(() => {
-    findAllCategorias().then((dados) => { 
+    getCategorias().then((dados) => { 
       setCategorias(dados);
     });
-    findAllReceitas().then((dados) => {
-      setReceitasDoDia(dados.filter(r => r.nota === 5));
-      setMelhoresAvaliadas(dados.filter(r => r.nota >= 4));
+    getReceitas().then((dados) => {
+      setReceitasDoDia(dados.filter(r => r.media === 5));
+      setMelhoresAvaliadas(dados.filter(r => r.media >= 4));
     });
   }, [isFocused]);
 
@@ -32,9 +32,13 @@ const Dashboard = () => {
 
   return (
     <Container>
-      <Header 
-        title={'InspiraSabor'} 
-        search={() => navigation.navigate('ListaReceita')} 
+      <Header
+        title={'InspiraSabor'}
+        middleIconA={'plus-box'}
+        middleIconB={'magnify'}
+        rightIcon={'account-circle'}
+        onPressMiddleIconA={() => navigation.navigate('AdicionarReceita')}
+        onPressMiddleIconB={() => navigation.navigate('ListaReceita')}
       />
       <Body>
         <ScrollView>
@@ -44,7 +48,7 @@ const Dashboard = () => {
                   horizontal
                   data={receitasDoDia}
                   renderItem={({ item }) => (
-                    <ItemCard
+                    <ReceitaCard
                       style={styles.cardDay}
                       imagem={item.imagem}
                       onPress={() => navigation.navigate('Receita', { item })}
@@ -61,10 +65,10 @@ const Dashboard = () => {
                   horizontal
                   data={melhoresAvaliadas}
                   renderItem={({ item }) => (
-                    <ItemCard 
+                    <ReceitaCard 
                       style={styles.card}
                       titulo={item.tituloReceita}
-                      nota={item.nota}
+                      nota={item.media}
                       imagem={item.imagem}
                       onPress={() => navigation.navigate('Receita', { item })}
                     />
@@ -81,7 +85,7 @@ const Dashboard = () => {
                   horizontal
                   data={categorias}
                   renderItem={({ item }) => (
-                    <ItemCard 
+                    <ReceitaCard 
                       style={styles.card} 
                       categoria={item.categoria} 
                       imagem={item.imagem} 

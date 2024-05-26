@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { findAllReceitas } from '../services/receitas.service';
+import { getReceitas } from '../services/receita.service';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const ListaReceita = () => {
@@ -15,7 +15,7 @@ const ListaReceita = () => {
     const [receitas, setReceitas] = useState([]);
 
     useEffect(() => {
-        findAllReceitas().then((dados) => {
+        getReceitas().then((dados) => {
             if (busca) {
                 setReceitas(dados.filter(r => r.tituloReceita.toLowerCase().includes(busca.toLowerCase())));
             } else {
@@ -28,8 +28,8 @@ const ListaReceita = () => {
         <Container>
             <Header
                 title={'Receitas'}
-                leftIcon={'home'}
-                onPressLeftIcon={() => navigation.navigate('Dashboard')}
+                leftIcon={'arrow-left'}
+                onPressLeftIcon={() => navigation.goBack()}
             />
             <Body>
                 <Searchbar
@@ -44,10 +44,10 @@ const ListaReceita = () => {
                             style={styles.section}
                             data={receitas}
                             renderItem={({ item }) => (
-                                <ItemCard
+                                <ReceitaCard
                                     style={styles.card}
                                     titulo={item.tituloReceita}
-                                    nota={item.nota}
+                                    nota={item.media}
                                     imagem={item.imagem}
                                     onPress={() => navigation.navigate('Receita', { item })} // Passando o item da receita como parâmetro
                                 />

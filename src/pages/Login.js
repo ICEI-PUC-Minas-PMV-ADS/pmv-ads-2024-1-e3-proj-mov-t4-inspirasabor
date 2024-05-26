@@ -7,11 +7,11 @@ import Body from "../components/Body";
 import Input from "../components/Input";
 import Logo from '../components/Logo';
 import { useUser } from "../contexts/UserContext";
-import { login } from "../services/auth.services";
+import { login } from "../services/auth.service";
 
 const Login = () => {
     const navigation = useNavigation();
-    const { setSigned, setName } = useUser();
+    const { setSigned, setName, setId } = useUser();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
@@ -26,6 +26,7 @@ const Login = () => {
             if (res && res.user) {
                 setSigned(true);
                 setName(res.user.name);
+                setId(res.user.id);
                 navigation.navigate('Dashboard');
             } else {
 
@@ -70,7 +71,7 @@ const Login = () => {
                     mode="outlined"
                     onPress={() => navigation.navigate('Register')}
                 >
-                    CRIE SUA CONTA!
+                    CRIE SUA CONTA
                 </Button>
             </Body>
         </Container>

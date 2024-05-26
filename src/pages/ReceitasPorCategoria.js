@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { Text } from 'react-native-paper';
 import Container from '../components/Container';
-import ItemCard from '../components/ItemCard';
+import ReceitaCard from '../components/ReceitaCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import { useNavigation, useRoute } from '@react-navigation/native'; 
-import jsonData from '../db/db.json'; 
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { getCategorias } from '../services/categoria.service';
 
 const ReceitasPorCategoria = () => {
   const navigation = useNavigation();
@@ -15,14 +15,14 @@ const ReceitasPorCategoria = () => {
   const [receitasPorCategoria, setReceitasPorCategoria] = useState([]);
 
   useEffect(() => {
-    // Encontrar a categoria no JSON
-    const categoriaEncontrada = jsonData.categorias.find((cat) => cat.categoria === categoria);
-    // Se a categoria for encontrada, defina as receitas associadas a ela
-    if (categoriaEncontrada) {
-      setReceitasPorCategoria(categoriaEncontrada.receitas);
-    } else {
-      setReceitasPorCategoria([]);
-    }
+    getCategorias().then((dados) => {
+      const categoriasEncontradas = dados.find(cat => cat.categoria === categoria);
+      if (categoriasEncontradas) {
+        setReceitasPorCategoria(categoriasEncontradas.receitas);
+      } else {
+        setReceitasPorCategoria([]);
+      }
+    });
   }, [categoria]);
 
   return (
@@ -38,10 +38,9 @@ const ReceitasPorCategoria = () => {
           <FlatList
             data={receitasPorCategoria}
             renderItem={({ item }) => (
-              <ItemCard
+              <ReceitaCard
                 style={styles.card}
                 titulo={item.tituloReceita}
-                nota={item.nota}
                 imagem={item.imagem}
                 onPress={() => navigation.navigate('Receita', { item })}
               />

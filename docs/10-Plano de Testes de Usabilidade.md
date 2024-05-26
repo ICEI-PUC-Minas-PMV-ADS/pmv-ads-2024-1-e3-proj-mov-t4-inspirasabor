@@ -28,15 +28,15 @@ Os testes de usabilidade serão conduzidos pelos membros da equipe de planejamen
 2. **Treinamento (10 minutos):** Explicação do funcionamento da aplicação e orientação sobre o uso das ferramentas de videoconferência e compartilhamento de tela.
 3. **Execução das Tarefas Remotas (60 minutos):** Cada participante realizará as tarefas designadas, com o facilitador observando e fazendo anotações. As tarefas serão realizadas na seguinte ordem:
 
-   - ***Tarefa 1:*** Conseguir pesquisar uma receita sem criar usuário.
-   - ***Tarefa 2:*** Conseguir pesquisar uma receita filtrando categoria sem criar usuário.
-   - ***Tarefa 3:*** Criar um usuário.
-   - ***Tarefa 4:*** Fazer login na aplicação.
+   - ***Tarefa 1:*** Criar um novo usuário.
+   - ***Tarefa 2:*** Fazer login na aplicação.
+   - ***Tarefa 3:*** Visualizar receita.
+   - ***Tarefa 4:*** Pesquisar receita.
    - ***Tarefa 5:*** Adicionar uma receita.
    - ***Tarefa 6:*** Avaliar e comentar nas receitas.
    - ***Tarefa 7:*** Adicionar mídias referentes as receitas.
    - ***Tarefa 8:*** Favoritar receitas.
-   - ***Tarefa 9:*** Compartilhar receitas na rede social.
+   - ***Tarefa 9:*** Compartilhar receitas.
 
 4. **Entrevista Pós-Teste (15 minutos):** Após a conclusão das tarefas, os participantes serão entrevistados remotamente para obter feedback adicional sobre sua experiência com a aplicação.
 

@@ -77,235 +77,223 @@
       "password": "$2a$10$FnvxfBgAmsXqJTPHuEjPWOl8E6agKxw3vSjhkeKSxXhHcfDm3Fx1K",
       "name": "Teste 09",
       "id": 13
-    }
-  ],
-  "receitas": [
-    {
-      "id": 1,
-      "tituloReceita": "Receita de carne",
-      "categoria": "Carnes",
-      "ingredientes": "500g de carne, sal, pimenta",
-      "modoPreparo": "1. Tempere a carne com sal e pimenta. 2. Grelhe a carne em fogo médio até dourar.",
-      "nota": 5,
-      "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "id": 2,
-      "tituloReceita": "Receita de massa",
-      "categoria": "Massas",
-      "ingredientes": "500g de massa, molho de tomate, queijo parmesão",
-      "modoPreparo": "1. Cozinhe a massa em água fervente até ficar al dente. 2. Misture o molho de tomate e o queijo parmesão na massa.",
-      "nota": 4,
-      "imagem": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "email": "tiago@gmail.com",
+      "password": "$2a$10$ghnCo51HsYi3o9qyyDyxIe/TdyW49MeKuXWyxRAPhSJcbAe8uB8vW",
+      "name": "Tiago",
+      "id": 14
     },
     {
-      "id": 3,
-      "tituloReceita": "Receita de doce",
-      "categoria": "Doces",
-      "ingredientes": "200g de chocolate, 1 lata de leite condensado",
-      "modoPreparo": "1. Derreta o chocolate em banho-maria. 2. Misture o chocolate derretido com o leite condensado. 3. Leve à geladeira por 2 horas.",
-      "nota": 3,
-      "imagem": "https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": 4,
-      "tituloReceita": "Receita de Frango Assado",
-      "categoria": "Carnes",
-      "ingredientes": "1 frango inteiro, suco de 2 limões, 4 dentes de alho picados, sal, pimenta, alecrim",
-      "modoPreparo": "1. Lave bem o frango e tempere-o com suco de limão, alho picado, sal, pimenta e alecrim. 2. Deixe marinar por pelo menos 1 hora na geladeira. 3. Asse em forno preaquecido a 180°C por cerca de 1 hora ou até dourar.",
-      "nota": 4,
-      "imagem": ""
-    },
-    {
-      "id": 5,
-      "tituloReceita": "Receita de Strogonoff de Carne",
-      "categoria": "Carnes",
-      "ingredientes": "500g de carne em tiras, 1 cebola picada, 200g de champignon fatiado, 1 lata de creme de leite, 2 colheres de sopa de ketchup, 2 colheres de sopa de mostarda, sal, pimenta",
-      "modoPreparo": "1. Em uma panela, refogue a cebola até dourar. 2. Adicione a carne e frite até dourar. 3. Acrescente o champignon e refogue por mais alguns minutos. 4. Adicione o ketchup, a mostarda, o sal e a pimenta. 5. Por último, adicione o creme de leite e mexa bem até incorporar. Sirva quente.",
-      "nota": 5,
-      "imagem": ""
-    },
-    {
-      "id": 6,
-      "tituloReceita": "Receita de Carne de Porco Assada",
-      "categoria": "Carnes",
-      "ingredientes": "1kg de carne de porco, suco de 2 laranjas, 4 dentes de alho picados, 1 cebola picada, sal, pimenta, azeite",
-      "modoPreparo": "1. Tempere a carne de porco com suco de laranja, alho picado, cebola picada, sal e pimenta. 2. Deixe marinar na geladeira por pelo menos 2 horas. 3. Asse em forno preaquecido a 180°C por 1 hora ou até dourar.",
-      "nota": 4,
-      "imagem": ""
-    },
-    {
-      "id": 7,
-      "tituloReceita": "Receita de Espaguete à Carbonara",
-      "categoria": "Massas",
-      "ingredientes": "500g de espaguete, 200g de bacon em cubos, 4 ovos, 1 xícara de queijo parmesão ralado, pimenta-do-reino",
-      "modoPreparo": "1. Cozinhe o espaguete em água fervente até ficar al dente. 2. Em uma frigideira, frite o bacon até ficar crocante. 3. Em uma tigela, bata os ovos com o queijo parmesão e a pimenta-do-reino. 4. Escorra o espaguete e reserve um pouco da água do cozimento. 5. Misture o espaguete ainda quente com o bacon e a mistura de ovos. 6. Adicione um pouco da água do cozimento para deixar o molho cremoso. Sirva imediatamente.",
-      "nota": 5,
-      "imagem": ""
-    },
-    {
-      "id": 8,
-      "tituloReceita": "Receita de Ravioli com Molho de Tomate",
-      "categoria": "Massas",
-      "ingredientes": "500g de massa para ravioli, 500ml de molho de tomate, 200g de queijo mussarela ralado, manjericão fresco",
-      "modoPreparo": "1. Cozinhe o ravioli em água fervente com sal até ficar al dente. 2. Escorra a massa e reserve. 3. Em uma panela, aqueça o molho de tomate. 4. Misture o ravioli cozido com o molho de tomate. 5. Sirva quente, decorado com queijo mussarela ralado e folhas de manjericão fresco.",
-      "nota": 4,
-      "imagem": ""
-    },
-    {
-      "id": 9,
-      "tituloReceita": "Receita de Macarrão com Camarão",
-      "categoria": "Massas",
-      "ingredientes": "500g de macarrão tipo penne, 400g de camarão limpo, 4 dentes de alho picados, 1 cebola picada, 1 lata de tomate pelado, sal, pimenta, azeite, salsinha picada",
-      "modoPreparo": "1. Cozinhe o macarrão em água fervente com sal até ficar al dente. 2. Em uma frigideira, aqueça o azeite e refogue o alho e a cebola até dourar. 3. Adicione os camarões e frite até ficarem rosados. 4. Acrescente o tomate pelado, o sal, a pimenta e cozinhe por alguns minutos. 5. Misture o macarrão cozido com o molho de camarão. 6. Polvilhe salsinha picada por cima e sirva quente.",
-      "nota": 4,
-      "imagem": ""
-    },
-    {
-      "id": 10,
-      "tituloReceita": "Receita de Lasanha de Berinjela",
-      "categoria": "Massas",
-      "ingredientes": "2 berinjelas grandes, 500ml de molho de tomate, 300g de queijo mussarela fatiado, 100g de queijo parmesão ralado, azeite, sal, pimenta, manjericão fresco",
-      "modoPreparo": "1. Corte as berinjelas em fatias finas no sentido do comprimento. 2. Em uma assadeira, regue as fatias de berinjela com azeite, sal e pimenta. 3. Asse no forno preaquecido a 200°C por cerca de 15 minutos. 4. Em um refratário, monte camadas alternadas de berinjela, molho de tomate, queijo mussarela e manjericão. 5. Repita as camadas até acabarem os ingredientes, finalizando com queijo parmesão ralado por cima. 6. Leve ao forno por 30 minutos ou até gratinar. 7. Sirva quente.",
-      "nota": 5,
-      "imagem": ""
-    },
-    {
-      "id": 11,
-      "tituloReceita": "Receita de Mousse de Chocolate",
-      "categoria": "Doces",
-      "ingredientes": "200g de chocolate meio amargo, 1 lata de creme de leite sem soro, 3 claras em neve, 3 colheres de sopa de açúcar",
-      "modoPreparo": "1. Derreta o chocolate em banho-maria e reserve. 2. Bata o creme de leite na batedeira até ficar cremoso. 3. Acrescente o chocolate derretido ao creme de leite e misture bem. 4. Bata as claras em neve, adicionando o açúcar aos poucos. 5. Incorpore as claras ao creme de chocolate delicadamente. 6. Distribua em taças e leve à geladeira por algumas horas antes de servir.",
-      "nota": 4,
-      "imagem": ""
-    },
-    {
-      "id": 12,
-      "tituloReceita": "Receita de Pavê de Morango",
-      "categoria": "Doces",
-      "ingredientes": "1 pacote de biscoito maisena, 500g de morangos picados, 1 lata de leite condensado, 2 latas de creme de leite, 1 xícara de leite, 2 colheres de sopa de amido de milho",
-      "modoPreparo": "1. Em uma panela, misture o leite condensado, o leite e o amido de milho. 2. Leve ao fogo baixo, mexendo sempre, até engrossar. 3. Desligue o fogo e misture uma lata de creme de leite. Reserve. 4. Em um refratário, faça camadas alternadas de biscoito, creme e morangos picados. 5. Repita as camadas até acabarem os ingredientes, finalizando com o creme. 6. Decore com morangos inteiros e leve à geladeira por algumas horas antes de servir.",
-      "nota": 5,
-      "imagem": ""
+      "email": "Gabriel@mail.com",
+      "password": "$2a$10$Z3Rybs.fftLXhxusiEeg2ukjnaim.fx5Prgs/wQwNJWtFWhNL/anK",
+      "name": "Gabriel",
+      "id": 16
     }
   ],
   "categorias": [
     {
       "id": 1,
       "categoria": "Carnes",
-      "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "receitas": [
-        {
-          "id": 1,
-          "tituloReceita": "Receita de carne",
-          "ingredientes": "500g de carne, sal, pimenta",
-          "modoPreparo": "1. Tempere a carne com sal e pimenta. 2. Grelhe a carne em fogo médio até dourar.",
-          "nota": 5,
-          "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-          "id": 4,
-          "tituloReceita": "Receita de Frango Assado",
-          "ingredientes": "1 frango inteiro, suco de 2 limões, 4 dentes de alho picados, sal, pimenta, alecrim",
-          "modoPreparo": "1. Lave bem o frango e tempere-o com suco de limão, alho picado, sal, pimenta e alecrim. 2. Deixe marinar por pelo menos 1 hora na geladeira. 3. Asse em forno preaquecido a 180°C por cerca de 1 hora ou até dourar.",
-          "nota": 4,
-          "imagem": ""
-        },
-        {
-          "id": 5,
-          "tituloReceita": "Receita de Strogonoff de Carne",
-          "ingredientes": "500g de carne em tiras, 1 cebola picada, 200g de champignon fatiado, 1 lata de creme de leite, 2 colheres de sopa de ketchup, 2 colheres de sopa de mostarda, sal, pimenta",
-          "modoPreparo": "1. Em uma panela, refogue a cebola até dourar. 2. Adicione a carne e frite até dourar. 3. Acrescente o champignon e refogue por mais alguns minutos. 4. Adicione o ketchup, a mostarda, o sal e a pimenta. 5. Por último, adicione o creme de leite e mexa bem até incorporar. Sirva quente.",
-          "nota": 5,
-          "imagem": ""
-        },
-        {
-          "id": 6,
-          "tituloReceita": "Receita de Carne de Porco Assada",
-          "ingredientes": "1kg de carne de porco, suco de 2 laranjas, 4 dentes de alho picados, 1 cebola picada, sal, pimenta, azeite",
-          "modoPreparo": "1. Tempere a carne de porco com suco de laranja, alho picado, cebola picada, sal e pimenta. 2. Deixe marinar na geladeira por pelo menos 2 horas. 3. Asse em forno preaquecido a 180°C por 1 hora ou até dourar.",
-          "nota": 4,
-          "imagem": ""
-        }
-      ]
+      "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": 2,
       "categoria": "Massas",
-      "imagem": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "receitas": [
-        {
-          "id": 2,
-          "tituloReceita": "Receita de massa",
-          "ingredientes": "500g de massa, molho de tomate, queijo parmesão",
-          "modoPreparo": "1. Cozinhe a massa em água fervente até ficar al dente. 2. Misture o molho de tomate e o queijo parmesão na massa.",
-          "nota": 4,
-          "imagem": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-          "id": 7,
-          "tituloReceita": "Receita de Espaguete à Carbonara",
-          "ingredientes": "500g de espaguete, 200g de bacon em cubos, 4 ovos, 1 xícara de queijo parmesão ralado, pimenta-do-reino",
-          "modoPreparo": "1. Cozinhe o espaguete em água fervente até ficar al dente. 2. Em uma frigideira, frite o bacon até ficar crocante. 3. Em uma tigela, bata os ovos com o queijo parmesão e a pimenta-do-reino. 4. Escorra o espaguete e reserve um pouco da água do cozimento. 5. Misture o espaguete ainda quente com o bacon e a mistura de ovos. 6. Adicione um pouco da água do cozimento para deixar o molho cremoso. Sirva imediatamente.",
-          "nota": 5,
-          "imagem": ""
-        },
-        {
-          "id": 8,
-          "tituloReceita": "Receita de Ravioli com Molho de Tomate",
-          "ingredientes": "500g de massa para ravioli, 500ml de molho de tomate, 200g de queijo mussarela ralado, manjericão fresco",
-          "modoPreparo": "1. Cozinhe o ravioli em água fervente com sal até ficar al dente. 2. Escorra a massa e reserve. 3. Em uma panela, aqueça o molho de tomate. 4. Misture o ravioli cozido com o molho de tomate. 5. Sirva quente, decorado com queijo mussarela ralado e folhas de manjericão fresco.",
-          "nota": 4,
-          "imagem": ""
-        },
-        {
-          "id": 9,
-          "tituloReceita": "Receita de Macarrão com Camarão",
-          "ingredientes": "500g de macarrão tipo penne, 400g de camarão limpo, 4 dentes de alho picados, 1 cebola picada, 1 lata de tomate pelado, sal, pimenta, azeite, salsinha picada",
-          "modoPreparo": "1. Cozinhe o macarrão em água fervente com sal até ficar al dente. 2. Em uma frigideira, aqueça o azeite e refogue o alho e a cebola até dourar. 3. Adicione os camarões e frite até ficarem rosados. 4. Acrescente o tomate pelado, o sal, a pimenta e cozinhe por alguns minutos. 5. Misture o macarrão cozido com o molho de camarão. 6. Polvilhe salsinha picada por cima e sirva quente.",
-          "nota": 4,
-          "imagem": ""
-        },
-        {
-          "id": 10,
-          "tituloReceita": "Receita de Lasanha de Berinjela",
-          "ingredientes": "2 berinjelas grandes, 500ml de molho de tomate, 300g de queijo mussarela fatiado, 100g de queijo parmesão ralado, azeite, sal, pimenta, manjericão fresco",
-          "modoPreparo": "1. Corte as berinjelas em fatias finas no sentido do comprimento. 2. Em uma assadeira, regue as fatias de berinjela com azeite, sal e pimenta. 3. Asse no forno preaquecido a 200°C por cerca de 15 minutos. 4. Em um refratário, monte camadas alternadas de berinjela, molho de tomate, queijo mussarela e manjericão. 5. Repita as camadas até acabarem os ingredientes, finalizando com queijo parmesão ralado por cima. 6. Leve ao forno por 30 minutos ou até gratinar. 7. Sirva quente.",
-          "nota": 5,
-          "imagem": ""
-        }
-      ]
+      "imagem": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": 3,
       "categoria": "Doces",
+      "imagem": "https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "receitas": [
+    {
+      "categoriaId": 1,
+      "tituloReceita": "Receita de carne",
+      "ingredientes": "500g de carne, sal, pimenta",
+      "modoPreparo": "1. Tempere a carne com sal e pimenta. 2. Grelhe a carne em fogo médio até dourar.",
+      "numeroAvaliacao": 4,
+      "media": 3,
+      "nota": 13,
+      "imagem": "https://images.pexels.com/photos/1683549/pexels-photo-1683549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "tituloReceita": "Receita de massa",
+      "ingredientes": "500g de massa, molho de tomate, queijo parmesão",
+      "modoPreparo": "1. Cozinhe a massa em água fervente até ficar al dente. 2. Misture o molho de tomate e o queijo parmesão na massa.",
+      "nota": 6,
+      "numeroAvaliacao": 2,
+      "media": 3,
+      "imagem": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoriaId": 2
+    },
+    {
+      "categoriaId": 3,
+      "tituloReceita": "Receita de doce",
+      "ingredientes": "200g de chocolate;\n1 lata de leite condensado.",
+      "modoPreparo": "1. Derreta o chocolate em banho-maria.\n2. Misture o chocolate derretido com o leite condensado. \n3. Leve à geladeira por 2 horas.",
+      "nota": 3,
       "imagem": "https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "receitas": [
-        {
-          "id": 3,
-          "tituloReceita": "Receita de doce",
-          "ingredientes": "200g de chocolate, 1 lata de leite condensado",
-          "modoPreparo": "1. Derreta o chocolate em banho-maria. 2. Misture o chocolate derretido com o leite condensado. 3. Leve à geladeira por 2 horas.",
-          "nota": 3,
-          "imagem": "https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-          "id": 11,
-          "tituloReceita": "Receita de Mousse de Chocolate",
-          "ingredientes": "200g de chocolate meio amargo, 1 lata de creme de leite sem soro, 3 claras em neve, 3 colheres de sopa de açúcar",
-          "modoPreparo": "1. Derreta o chocolate em banho-maria e reserve. 2. Bata o creme de leite na batedeira até ficar cremoso. 3. Acrescente o chocolate derretido ao creme de leite e misture bem. 4. Bata as claras em neve, adicionando o açúcar aos poucos. 5. Incorpore as claras ao creme de chocolate delicadamente. 6. Distribua em taças e leve à geladeira por algumas horas antes de servir.",
-          "nota": 4,
-          "imagem": ""
-        },
-        {
-          "id": 12,
-          "tituloReceita": "Receita de Pavê de Morango",
-          "ingredientes": "1 pacote de biscoito maisena, 500g de morangos picados, 1 lata de leite condensado, 2 latas de creme de leite, 1 xícara de leite, 2 colheres de sopa de amido de milho",
-          "modoPreparo": "1. Em uma panela, misture o leite condensado, o leite e o amido de milho. 2. Leve ao fogo baixo, mexendo sempre, até engrossar. 3. Desligue o fogo e misture uma lata de creme de leite. Reserve. 4. Em um refratário, faça camadas alternadas de biscoito, creme e morangos picados. 5. Repita as camadas até acabarem os ingredientes, finalizando com o creme. 6. Decore com morangos inteiros e leve à geladeira por algumas horas antes de servir.",
-          "nota": 5,
-          "imagem": ""
-        }
-      ]
+      "id": 3
+    },
+    {
+      "categoriaId": 1,
+      "tituloReceita": "Receita de Frango Assado",
+      "ingredientes": "1 frango inteiro, suco de 2 limões, 4 dentes de alho picados, sal, pimenta, alecrim",
+      "modoPreparo": "1. Lave bem o frango e tempere-o com suco de limão, alho picado, sal, pimenta e alecrim.\n2. Deixe marinar por pelo menos 1 hora na geladeira. \n3. Asse em forno preaquecido a 180°C por cerca de 1 hora ou até dourar.",
+      "numeroAvaliacao": 0,
+      "media": 0,
+      "nota": 4,
+      "imagem": "https://images.pexels.com/photos/5876544/pexels-photo-5876544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "tituloReceita": "Receita de Strogonoff de Carne",
+      "ingredientes": "500g de carne em tiras, 1 cebola picada, 200g de champignon fatiado, 1 lata de creme de leite, 2 colheres de sopa de ketchup, 2 colheres de sopa de mostarda, sal, pimenta",
+      "modoPreparo": "1. Em uma panela, refogue a cebola até dourar. 2. Adicione a carne e frite até dourar. 3. Acrescente o champignon e refogue por mais alguns minutos. 4. Adicione o ketchup, a mostarda, o sal e a pimenta. 5. Por último, adicione o creme de leite e mexa bem até incorporar. Sirva quente.",
+      "nota": 5,
+      "numeroAvaliacao": 1,
+      "media": 5,
+      "imagem": "https://img.freepik.com/fotos-gratis/refeicao-gourmet-saudavel-com-caril-de-carne-de-frango-gerada-por-ia_188544-18147.jpg?t=st=1714928315~exp=1714931915~hmac=19c983234689332267b450f2db8b4a8b67bd3ff1326e2ce0f10975df680b2b8f&w=996",
+      "categoriaId": 1
+    },
+    {
+      "id": 6,
+      "tituloReceita": "Receita de Carne de Porco Assada",
+      "ingredientes": "1kg de carne de porco, suco de 2 laranjas, 4 dentes de alho picados, 1 cebola picada, sal, pimenta, azeite",
+      "modoPreparo": "1. Tempere a carne de porco com suco de laranja, alho picado, cebola picada, sal e pimenta. 2. Deixe marinar na geladeira por pelo menos 2 horas. 3. Asse em forno preaquecido a 180°C por 1 hora ou até dourar.",
+      "nota": 7,
+      "numeroAvaliacao": 2,
+      "media": 4,
+      "imagem": "https://images.pexels.com/photos/6605642/pexels-photo-6605642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoriaId": 1
+    },
+    {
+      "id": 7,
+      "tituloReceita": "Receita de Espaguete à Carbonara",
+      "ingredientes": "500g de espaguete, 200g de bacon em cubos, 4 ovos, 1 xícara de queijo parmesão ralado, pimenta-do-reino",
+      "modoPreparo": "1. Cozinhe o espaguete em água fervente até ficar al dente. 2. Em uma frigideira, frite o bacon até ficar crocante. 3. Em uma tigela, bata os ovos com o queijo parmesão e a pimenta-do-reino. 4. Escorra o espaguete e reserve um pouco da água do cozimento. 5. Misture o espaguete ainda quente com o bacon e a mistura de ovos. 6. Adicione um pouco da água do cozimento para deixar o molho cremoso. Sirva imediatamente.",
+      "nota": 5,
+      "numeroAvaliacao": 1,
+      "media": 5,
+      "imagem": "https://images.pexels.com/photos/2703468/pexels-photo-2703468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoriaId": 2
+    },
+    {
+      "id": 8,
+      "tituloReceita": "Receita de Ravioli com Molho de Tomate",
+      "ingredientes": "500g de massa para ravioli, 500ml de molho de tomate, 200g de queijo mussarela ralado, manjericão fresco",
+      "modoPreparo": "1. Cozinhe o ravioli em água fervente com sal até ficar al dente. 2. Escorra a massa e reserve. 3. Em uma panela, aqueça o molho de tomate. 4. Misture o ravioli cozido com o molho de tomate. 5. Sirva quente, decorado com queijo mussarela ralado e folhas de manjericão fresco.",
+      "nota": 4,
+      "numeroAvaliacao": 1,
+      "media": 4,
+      "imagem": "https://img.freepik.com/fotos-gratis/closeup-de-saboroso-ravioli-italiano_1220-5142.jpg?t=st=1714928388~exp=1714931988~hmac=1edfb0f6cf54a029da0de341b26f9bffc513d1638ae3048a45d3b979fb2d6d45&w=826",
+      "categoriaId": 2
+    },
+    {
+      "id": 9,
+      "tituloReceita": "Receita de Macarrão com Camarão",
+      "ingredientes": "500g de macarrão tipo penne, 400g de camarão limpo, 4 dentes de alho picados, 1 cebola picada, 1 lata de tomate pelado, sal, pimenta, azeite, salsinha picada",
+      "modoPreparo": "1. Cozinhe o macarrão em água fervente com sal até ficar al dente. 2. Em uma frigideira, aqueça o azeite e refogue o alho e a cebola até dourar. 3. Adicione os camarões e frite até ficarem rosados. 4. Acrescente o tomate pelado, o sal, a pimenta e cozinhe por alguns minutos. 5. Misture o macarrão cozido com o molho de camarão. 6. Polvilhe salsinha picada por cima e sirva quente.",
+      "nota": 4,
+      "numeroAvaliacao": 1,
+      "media": 4,
+      "imagem": "https://images.pexels.com/photos/725997/pexels-photo-725997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoriaId": 2
+    },
+    {
+      "id": 10,
+      "tituloReceita": "Receita de Lasanha de Berinjela",
+      "ingredientes": "2 berinjelas grandes, 500ml de molho de tomate, 300g de queijo mussarela fatiado, 100g de queijo parmesão ralado, azeite, sal, pimenta, manjericão fresco",
+      "modoPreparo": "1. Corte as berinjelas em fatias finas no sentido do comprimento. 2. Em uma assadeira, regue as fatias de berinjela com azeite, sal e pimenta. 3. Asse no forno preaquecido a 200°C por cerca de 15 minutos. 4. Em um refratário, monte camadas alternadas de berinjela, molho de tomate, queijo mussarela e manjericão. 5. Repita as camadas até acabarem os ingredientes, finalizando com queijo parmesão ralado por cima. 6. Leve ao forno por 30 minutos ou até gratinar. 7. Sirva quente.",
+      "nota": 8,
+      "numeroAvaliacao": 2,
+      "media": 4,
+      "imagem": "https://images.stockcake.com/public/6/a/0/6a03cd7f-4f7d-4a51-a184-696dbdbfb98f_large/delicious-vegetarian-lasagna-stockcake.jpg",
+      "categoriaId": 2
+    },
+    {
+      "id": 11,
+      "tituloReceita": "Receita de Mousse de Chocolate",
+      "ingredientes": "200g de chocolate meio amargo, 1 lata de creme de leite sem soro, 3 claras em neve, 3 colheres de sopa de açúcar",
+      "modoPreparo": "1. Derreta o chocolate em banho-maria e reserve. 2. Bata o creme de leite na batedeira até ficar cremoso. 3. Acrescente o chocolate derretido ao creme de leite e misture bem. 4. Bata as claras em neve, adicionando o açúcar aos poucos. 5. Incorpore as claras ao creme de chocolate delicadamente. 6. Distribua em taças e leve à geladeira por algumas horas antes de servir.",
+      "nota": 4,
+      "numeroAvaliacao": 1,
+      "media": 4,
+      "imagem": "https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoriaId": 3
+    },
+    {
+      "id": 12,
+      "tituloReceita": "Receita de Pavê de Morango",
+      "ingredientes": "1 pacote de biscoito maisena, 500g de morangos picados, 1 lata de leite condensado, 2 latas de creme de leite, 1 xícara de leite, 2 colheres de sopa de amido de milho",
+      "modoPreparo": "1. Em uma panela, misture o leite condensado, o leite e o amido de milho. 2. Leve ao fogo baixo, mexendo sempre, até engrossar. 3. Desligue o fogo e misture uma lata de creme de leite. Reserve. 4. Em um refratário, faça camadas alternadas de biscoito, creme e morangos picados. 5. Repita as camadas até acabarem os ingredientes, finalizando com o creme. 6. Decore com morangos inteiros e leve à geladeira por algumas horas antes de servir.",
+      "nota": 5,
+      "numeroAvaliacao": 1,
+      "media": 5,
+      "imagem": "https://images.pexels.com/photos/10311446/pexels-photo-10311446.jpeg",
+      "categoriaId": 3
+    }
+  ],
+  "comentarios": [
+    {
+      "userId": 4,
+      "receitaId": 2,
+      "comentario": "Brabo!!!!",
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "receitaId": 2,
+      "comentario": "Prático",
+      "id": 2
+    },
+    {
+      "userId": 13,
+      "receitaId": 2,
+      "comentario": "Cheiroso",
+      "id": 3
+    },
+    {
+      "userId": 16,
+      "receitaId": 6,
+      "comentario": "Colocar mais sal",
+      "id": 4
+    },
+    {
+      "userId": 13,
+      "receitaId": 9,
+      "comentario": "Fantástico!",
+      "id": 5
+    },
+    {
+      "userId": 13,
+      "receitaId": 6,
+      "comentario": "Show!",
+      "id": 6
+    },
+    {
+      "userId": 13,
+      "receitaId": 5,
+      "comentario": "Delicioso!",
+      "id": 7
+    },
+    {
+      "userId": 13,
+      "receitaId": 5,
+      "comentario": "Muito bom!",
+      "id": 8
+    },
+    {
+      "userId": 13,
+      "receitaId": 5,
+      "comentario": "Show!",
+      "id": 9
     }
   ]
 }
