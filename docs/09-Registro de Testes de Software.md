@@ -94,9 +94,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_009- Permitir que o usuário favorite as receitas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue favoritar receitas. |
 |Resultado esperado | O usuário consegue comentar favoritar receitas de sua preferência. |
-|Resultado obtido | FEATURE NÃO IMPLEMENTADA AINDA. |
-|Avaliação | FEATURE NÃO IMPLEMENTADA AINDA. |
-|Evidência |FEATURE NÃO IMPLEMENTADA AINDA.|
+|Resultado obtido | Feature não implementada ainda. |
+|Avaliação | Feature não implementada ainda. |
+|Evidência |Feature não implementada ainda.|
 
 | **Caso de Teste** | **CT-10- Permitir que o usuário compartilhar as receitas** |
 |---|---|
@@ -121,9 +121,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RNF_002 - Deve ser compatível com os principais sistemas móveis do mercado - IOS e Android e RNF_003: O aplicativo deve ser publicado em ambiente acessível na internet - App Store e Google Play. |
 | Objetivo do Teste 	| Verificar a publicação da aplicação. |
 |Resultado esperado | A aplicação deve ser compatível com os principais sistemas móveis do mercado bem como estar publicada em ambiente acessível. |
-|Resultado obtido | Observa-se que a funcionalidade está implementada. |
-|Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Resultado obtido | Feature não implementada ainda. |
+|Avaliação | Feature não implementada ainda |
+|Evidência |Feature não implementada ainda.|
 
 | **Caso de Teste** | **CT-13- Usabilidade** |
 |---|---|
@@ -132,7 +132,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O usuário deve conseguir usar e navegar pela aplicação sem gargalos. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. |
 |Avaliação | Nível 0 |
-|Evidência |INSERIR|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/24ed9b4c-2054-4962-be0a-8445433be5f2" width="300"/>|
 
 | **Caso de Teste** | **CT-14- Elaboração com React Native** |
 |---|---|
@@ -146,4 +146,4 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 
 ## Avaliação
 
-O trabalho desenvolvido pela equipe seguiu os planejamentos realizados e, em concordância com os requisitos e regras de negócios delimitadas, a equipe logrou exito em entregar as funcionalidades que foram acordadas.
+O trabalho desenvolvido pela equipe seguiu os planejamentos realizados e, em concordância com os requisitos e regras de negócios delimitadas, a equipe logrou exito em entregar as funcionalidades que foram acordadas para o _sprint 4_. No último _sprint,_ a equipe concluirá os trabalhos e registrará os testes informados no CT-09 e CT-12.
