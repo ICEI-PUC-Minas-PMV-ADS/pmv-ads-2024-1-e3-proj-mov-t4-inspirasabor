@@ -112,6 +112,57 @@
 | Idoso | Usuário conseguiu ver uma receita sem erros. | Nenhum.  | 1m | Satisfação parcial. Usuário gostaria de letras maiores. |
 | Adolescente | Usuário conseguiu ver uma receita sem erros.  | Nenhum.  | 18s | Usuário ficou satisfeito.  |
 
+**TESTE 4 - PESQUISAR RECEITA**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Usuário conseguiu realizar pesquisas sem erros. | Nenhum.  | 25s  | Usuário ficou satisfeito.   |
+| Idoso | Usuário conseguiu realizar pesquisas sem erros. | Nenhum.  | 1.40m | Satisfação parcial. Usuário gostaria de letras maiores porém adaptou o tamanho da fonte em seu dispositivo. |
+| Adolescente | Usuário conseguiu ver uma receita sem erros.  | Nenhum.  | 14s | Usuário ficou satisfeito.  |
+
+**TESTE 5 - ADICIONAR RECEITA**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Usuário conseguiu criar uma nova receita porém teve dificuldade em fazer a quebra de linhas dos textos. | Nenhum.  | 45s  | Usuário ficou parcialmente satisfeito.   |
+| Idoso | Usuário conseguiu criar receitas. | Nenhum.  | 2.00m | Satisfação parcial. Usuário ficou satisfeito.  |
+| Adolescente | Usuário conseguiu criar receitas.  | Nenhum.  | 10s | Usuário ficou satisfeito porém sugeriu uma maior gama de categoria de receitas.  |
 
 
-Os testes realizados mostram os avanços atuais do desenvolvimento da aplicação. As telas estão bem configuradas para a navegação do usuário com certa facilidade, porém melhorias ainda podem ser implementadas no sentido de aumentar a satisfação na experiência do usuário, item considerado muito importante pela equipe de desenvolvimento.
+**TESTE 6 - AVALIAR E COMENTAR EM RECEITAS**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Usuário conseguiu realizar as tarefas. | Nenhum.  | 25s  | Usuário ficou satisfeito.   |
+| Idoso | Usuário conseguiu avaliar a receita mas achou o campo de comentários pequeno, sentiu frustração. | Nenhum.  | 2.40m |Usuário parcialmente satisfeito. |
+| Adolescente | Usuário conseguiu realizar as tarefas sem erros.  | Nenhum.  | 19s | Usuário ficou satisfeito.  |
+
+
+**TESTE 7 - ADICIONAR MÍDIAS REFERENTES AS RECEITAS**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Usuário conseguiu realizar a atividade sem erros. | Nenhum.  | 55s  | Usuário ficou satisfeito.   |
+| Idoso | Usuário conseguiu realizar a atividade sem erros. | Nenhum.  | 2.10m | Usuário ficou satisfeito. |
+| Adolescente | Usuário conseguiu realizar a atividade sem erros.  | Nenhum.  | 38s | Usuário ficou satisfeito.  |
+
+
+**TESTE 8 - FAVORITAR RECEITAS**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Feature não implementada. | //.  | //.   | //.    |
+| Idoso | Feature não implementada.. | //.  | //.  | //.  |
+| Adolescente | Feature não implementada..  | //.   | //.  | //.   |
+
+
+**TESTE 9 - COMPARTILHAR RECEITAS**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
+|---|---|---|---|---|
+| Adulto  | Usuário conseguiu realizar a atividade sem erros. | Nenhum.  | 35s  | Usuário ficou satisfeito.   |
+| Idoso | Usuário conseguiu realizar a atividade sem erros. | Nenhum.  | 4m | Usuário ficou satisfeito. |
+| Adolescente | Usuário conseguiu realizar a atividade sem erros.  | Nenhum.  | 10s | Usuário ficou satisfeito.  |
+
+Os testes realizados mostram os avanços atuais do desenvolvimento da aplicação. A equipe de desenvolvimento vem conseguindo lograr exito no objeto do projeto.
+
