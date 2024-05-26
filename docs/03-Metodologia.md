@@ -76,6 +76,15 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/6b54e5ca-444c-4ca9-96d3-94ceb2643af9)
 
+#### Sprint 4
+- Planejamento: Entregue a documentação do terceiro _sprint_, o grupo buscou a definição das principais funcionalidades que deveriam ser entregues no _sprint_ atual. Dessa forma, buscou-se o desenvolvimento das funcionalidades com requisitos funcionais de alta prioridade.
+
+- Execução: Utilizando a ferramenta de projetos do Github, o grupo realizou a seguinte divisão de tarefas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/889a07fb-a614-4e01-ba83-b6945b4ef6ee)
+
+
+
  
 ### Ferramentas
 
