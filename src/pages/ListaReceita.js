@@ -39,22 +39,19 @@ const ListaReceita = () => {
                     value={busca}
                 />
                 <View style={styles.section}>
-                    <View>
-                        <FlatList
-                            style={styles.section}
-                            data={receitas}
-                            renderItem={({ item }) => (
-                                <ReceitaCard
-                                    style={styles.card}
-                                    titulo={item.tituloReceita}
-                                    nota={item.media}
-                                    imagem={item.imagem}
-                                    onPress={() => navigation.navigate('Receita', { item })} // Passando o item da receita como parâmetro
-                                />
-                            )}
-                            keyExtractor={(item) => item.id.toString()} // Convertendo para string, pois o id é um número
-                        />
-                    </View>
+                    <FlatList
+                        data={receitas}
+                        renderItem={({ item }) => (
+                            <ReceitaCard 
+                                style={styles.card}
+                                titulo={item.tituloReceita}
+                                nota={item.media}
+                                imagem={item.imagem}
+                                onPress={() => navigation.navigate('Receita', { item })}
+                            />
+                        )}
+                        keyExtractor={(item) => item.id.toString()} // Corrija a chave do FlatList
+                    />
                 </View>
             </Body>
         </Container>
