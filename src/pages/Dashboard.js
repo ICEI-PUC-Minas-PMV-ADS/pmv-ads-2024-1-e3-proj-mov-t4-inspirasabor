@@ -36,9 +36,10 @@ const Dashboard = () => {
         title={'InspiraSabor'}
         middleIconA={'plus-box'}
         middleIconB={'magnify'}
-        rightIcon={'account-circle'}
+        rightIcon={'account-star'}
         onPressMiddleIconA={() => navigation.navigate('AdicionarReceita')}
         onPressMiddleIconB={() => navigation.navigate('ListaReceita')}
+        onPressRightIcon={() => navigation.navigate('Favoritas')}
       />
       <Body>
         <ScrollView>

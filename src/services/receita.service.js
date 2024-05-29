@@ -68,3 +68,20 @@ export const deleteReceita = async (id) => {
     return null;
   }
 }
+
+export const findAllFavoritas = async () => {
+  try {
+    return await API.get(`${BASE_URL}/favoritas?_embed=receitas`).then(
+      (response) => {
+        return response.data;
+      },
+      (error) => {
+        console.log(error);
+        return null;
+      }
+    );
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};

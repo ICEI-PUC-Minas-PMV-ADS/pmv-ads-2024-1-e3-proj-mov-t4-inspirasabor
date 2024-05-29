@@ -14,11 +14,12 @@ import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
 import { getCategoriaById } from '../services/categoria.service';
 import ComentatioCard from '../components/ComentarioCard';
+import { createFavorita } from '../services/favoritas.service';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
   const isFocused = useIsFocused();
-  const { id } = useUser();
+  const { id:userId } = useUser();
   const [rating, setRating] = useState(0);
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
@@ -83,6 +84,19 @@ const Receita = ({ route }) => {
     }
   };
 
+  const favoritarReceita = () => {
+
+    createFavorita({
+      userId: userId,
+      receitaId: item.id
+    }).then(res => {
+      Alert.alert('Receita salva na lista de Favoritas!');
+    }).catch(error => {
+      console.error('Erro ao favoritar a receita:', error);
+      Alert.alert('Ocorreu um erro ao favoritar a receita. Tente novamente mais tarde.');
+    });
+  };
+
   useEffect(() => {
     getCategoriaById(item.categoriaId).then((cat) => {
       setCategoria(cat.categoria);
@@ -108,6 +122,7 @@ const Receita = ({ route }) => {
         onPressLeftIcon={() => navigation.goBack()}
         onPressMiddleIconA={() => navigation.navigate('AdicionarReceita', { receita: item })}
         onPressMiddleIconB={handleShare}
+        onPressRightIcon={favoritarReceita}
       /> 
     
       <Body>
