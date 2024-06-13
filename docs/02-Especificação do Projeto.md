@@ -115,7 +115,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Deve oferecer sistema de credenciais do usuário com login e senha | ALTA |
 |RF-002| Permitir que o usuário pesquise pelo nome específico da receita. | ALTA | 
 |RF-003| Permitir que o usuário visualize a receita. | ALTA |
-|RF-004| Permitir que o usuário adicione uma nova receita. | MÉDIA |
+|RF-004| Permitir que o usuário adicione e exclua uma nova receita. | MÉDIA |
 |RF-005| Permitir que o usuário filtre as receitas por categoria (Massas, Doces e Sobremesas, Carnes) | MÉDIA |
 |RF-006| Permitir que o usuário avalie as receitas | MÉDIA |
 |RF-007| Permitir que o usuário adicione mídias referentes a receita (Foto e vídeos) | MÉDIA |
