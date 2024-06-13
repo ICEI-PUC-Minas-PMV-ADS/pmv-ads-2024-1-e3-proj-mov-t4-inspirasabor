@@ -14,15 +14,16 @@ import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
 import { getCategoriaById } from '../services/categoria.service';
 import ComentatioCard from '../components/ComentarioCard';
-import { createFavorita } from '../services/favoritas.service';
+import { createFavorita, getFavoritas } from '../services/favoritas.service';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
   const isFocused = useIsFocused();
-  const { id:userId } = useUser();
+  const { userId } = useUser();
   const [rating, setRating] = useState(0);
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
+  const [favorita, setFavorita] = useState([]);
   const [categoria, setCategoria] = useState('');
   const { item } = route.params;
 
@@ -55,7 +56,7 @@ const Receita = ({ route }) => {
     };
 
     createComentario({
-      userId: id,
+      userId: userId,
       receitaId: item.id,
       comentario: comentario
     }).then(res => {
@@ -104,7 +105,12 @@ const Receita = ({ route }) => {
     getComentarios().then((listaDeComentarios) => {
       setComentarios(listaDeComentarios.filter(c => c.receitaId === item.id));
     });
-  }, [isFocused]);
+    getFavoritas().then((listaDeFavoritas) => {
+      const favoritosFiltrados = listaDeFavoritas.filter(f => f.userId === userId);
+      setFavorita(favoritosFiltrados.filter(f => f.receitaId === item.id));
+    });
+
+  }, [isFocused, favorita]);
 
   useLayoutEffect(() => {
     handleShare();
@@ -112,18 +118,18 @@ const Receita = ({ route }) => {
 
   return (
     <Container>
-     
+
       <Header
         title={'Detalhes da receita'}
         leftIcon={'arrow-left'}
-        middleIconA={'lead-pencil'}
+        middleIconA={userId === item.userId ? 'lead-pencil' : null}
         middleIconB={'share'}
-        rightIcon={'star-plus-outline'}
+        rightIcon={favorita.length === 0 ? 'star-plus-outline' : 'star-plus'}
         onPressLeftIcon={() => navigation.goBack()}
         onPressMiddleIconA={() => navigation.navigate('AdicionarReceita', { receita: item })}
         onPressMiddleIconB={handleShare}
-        onPressRightIcon={favoritarReceita}
-      /> 
+        onPressRightIcon={favorita.length === 0 ? favoritarReceita : () => {}}
+      />   
     
       <Body>
         <ScrollView>

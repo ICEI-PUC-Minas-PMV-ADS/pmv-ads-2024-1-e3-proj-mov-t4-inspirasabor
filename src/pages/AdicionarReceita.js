@@ -13,7 +13,7 @@ const AdicionarReceita = () => {
   const route = useRoute();
   const receita = route.params?.receita || {}; 
 
-  const [categoriaId, setCategoriaId] = useState(receita.categoriaId || '');
+  const [categoriaId, setCategoriaId] = useState(receita.categoriaId || 0);
   const [tituloReceita, setTituloReceita] = useState(receita.tituloReceita || '');
   const [ingredientes, setIngredientes] = useState(receita.ingredientes || '');
   const [modoPreparo, setModoPreparo] = useState(receita.modoPreparo || '');
@@ -27,7 +27,8 @@ const AdicionarReceita = () => {
       }
 
       const receitaAntiga = {
-        categoriaId: categoriaId === 'Carnes' ? 1 : categoriaId === 'Massas' ? 2 : 3,
+        categoriaId: categoriaId,
+        userId: receita.userId,
         tituloReceita,
         ingredientes,
         modoPreparo,
@@ -101,22 +102,22 @@ const AdicionarReceita = () => {
           <View style={styles.ContainerRadio}>
             <RadioButton
               value="Carnes"
-              status={categoriaId === 'Carnes' ? 'checked' : 'unchecked'}
-              onPress={() => setCategoriaId('Carnes')}
+              status={categoriaId === 1 ? 'checked' : 'unchecked'}
+              onPress={() => setCategoriaId(1)}
             />
             <Text style={styles.NomeCategoria}>Carnes</Text>
 
             <RadioButton
               value="Massas"
-              status={categoriaId === 'Massas' ? 'checked' : 'unchecked'}
-              onPress={() => setCategoriaId('Massas')}
+              status={categoriaId === 2 ? 'checked' : 'unchecked'}
+              onPress={() => setCategoriaId(2)}
             />
             <Text style={styles.NomeCategoria}>Massas</Text>
 
             <RadioButton
               value="Doces"
-              status={categoriaId === 'Doces' ? 'checked' : 'unchecked'}
-              onPress={() => setCategoriaId('Doces')}
+              status={categoriaId === 3 ? 'checked' : 'unchecked'}
+              onPress={() => setCategoriaId(3)}
             />
             <Text style={styles.NomeCategoria}>Doces</Text>
           </View>

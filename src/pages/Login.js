@@ -11,7 +11,7 @@ import { login } from "../services/auth.service";
 
 const Login = () => {
     const navigation = useNavigation();
-    const { setSigned, setName, setId } = useUser();
+    const { setSigned, setName, setUserId } = useUser();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
@@ -26,7 +26,7 @@ const Login = () => {
             if (res && res.user) {
                 setSigned(true);
                 setName(res.user.name);
-                setId(res.user.id);
+                setUserId(res.user.id);
                 navigation.navigate('Dashboard');
             } else {
 
