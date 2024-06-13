@@ -120,13 +120,13 @@
 | Idoso | Usuário conseguiu realizar pesquisas sem erros. | Nenhum.  | 1.40m | Satisfação parcial. Usuário gostaria de letras maiores porém adaptou o tamanho da fonte em seu dispositivo. |
 | Adolescente | Usuário conseguiu ver uma receita sem erros.  | Nenhum.  | 14s | Usuário ficou satisfeito.  |
 
-**TESTE 5 - ADICIONAR RECEITA**
+**TESTE 5 - ADICIONAR OU EXCLUIR RECEITA**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  | Usuário conseguiu criar uma nova receita porém teve dificuldade em fazer a quebra de linhas dos textos. | Nenhum.  | 45s  | Usuário ficou parcialmente satisfeito.   |
-| Idoso | Usuário conseguiu criar receitas. | Nenhum.  | 2.00m | Satisfação parcial. Usuário ficou satisfeito.  |
-| Adolescente | Usuário conseguiu criar receitas.  | Nenhum.  | 10s | Usuário ficou satisfeito porém sugeriu uma maior gama de categoria de receitas.  |
+| Adulto  | Usuário conseguiu criar uma nova receita porém teve dificuldade em fazer a quebra de linhas dos textos. Não teve problemas com a exclusão. | Nenhum.  | 45s  | Usuário ficou parcialmente satisfeito.   |
+| Idoso | Usuário conseguiu criar, e, posteriormente, excluir eceitas. | Nenhum.  | 2.00m | Satisfação parcial. Usuário ficou satisfeito.  |
+| Adolescente | Usuário conseguiu criar e excluir receitas.  | Nenhum.  | 10s | Usuário ficou satisfeito porém sugeriu uma maior gama de categoria de receitas.  |
 
 
 **TESTE 6 - AVALIAR E COMENTAR EM RECEITAS**

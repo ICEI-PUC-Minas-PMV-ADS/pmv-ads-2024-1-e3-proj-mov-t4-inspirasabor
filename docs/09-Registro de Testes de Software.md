@@ -44,14 +44,14 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Avaliação | Nível 1 |
 |Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dea21507-c891-47f1-a3a3-1147c11fe627" width="300"/>|
 
-| **Caso de Teste** | **CT-04 - Cadastrar Receitas** |
+| **Caso de Teste** | **CT-04 - Cadastrar e excluir Receitas** |
 |---|---|
-|	Requisito Associado 	| RF_004- Permitir que o usuário adicione uma nova receita. |
-| Objetivo do Teste 	| Verificar se o usuário consegue adicionar uma nova receita. |
-|Resultado esperado | O usuário consegue inserir receitas. |
-|Resultado obtido | Observa-se que a funcionalidade está implementada. Porém, a imagem fica salva apenas no dispositivo local em decorrência da API _fake_. |
+|	Requisito Associado 	| RF_004- Permitir que o usuário adicione e exclua uma nova receita. |
+| Objetivo do Teste 	| Verificar se o usuário consegue adicionar ou excluir uma nova receita. |
+|Resultado esperado | O usuário consegue inserir receitas novas ou excluir receitas. |
+|Resultado obtido | Observa-se que a funcionalidade está implementada. |
 |Avaliação | Nível 0 |
-|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/d51626f6-c768-4521-bc5e-930c6dbadec9" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dc210e29-3151-448f-a3fa-41b5c41f4b6c" width="300"/> 
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/d51626f6-c768-4521-bc5e-930c6dbadec9" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dc210e29-3151-448f-a3fa-41b5c41f4b6c" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/623009e8-4113-48f0-a744-a366932b05ac" width="300"/> 
 
 | **Caso de Teste** | **CT-05 - Sistema de Filtro de Categoria** |
 |---|---|
