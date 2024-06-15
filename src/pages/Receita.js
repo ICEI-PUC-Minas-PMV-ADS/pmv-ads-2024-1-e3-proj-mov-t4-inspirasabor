@@ -15,6 +15,7 @@ import { createComentario, getComentarios } from '../services/comentario.service
 import { getCategoriaById } from '../services/categoria.service';
 import ComentatioCard from '../components/ComentarioCard';
 import { createFavorita, getFavoritas } from '../services/favoritas.service';
+import { removeFavorita } from '../services/favoritas.service';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
@@ -86,7 +87,6 @@ const Receita = ({ route }) => {
   };
 
   const favoritarReceita = () => {
-
     createFavorita({
       userId: userId,
       receitaId: item.id
@@ -96,6 +96,19 @@ const Receita = ({ route }) => {
       console.error('Erro ao favoritar a receita:', error);
       Alert.alert('Ocorreu um erro ao favoritar a receita. Tente novamente mais tarde.');
     });
+  };
+
+  const desfavoritarReceita = () => {
+    const favoritaId = favorita[0]?.id;
+    if (favoritaId) {
+      removeFavorita(favoritaId).then(res => {
+        Alert.alert('Receita removida da lista de Favoritas!');
+        setFavorita([]);
+      }).catch(error => {
+        console.error('Erro ao remover a receita dos favoritos:', error);
+        Alert.alert('Ocorreu um erro ao remover a receita dos favoritos. Tente novamente mais tarde.');
+      });
+    }
   };
 
   useEffect(() => {
@@ -124,11 +137,11 @@ const Receita = ({ route }) => {
         leftIcon={'arrow-left'}
         middleIconA={userId === item.userId ? 'lead-pencil' : null}
         middleIconB={'share'}
-        rightIcon={favorita.length === 0 ? 'star-plus-outline' : 'star-plus'}
+        rightIcon={favorita.length === 0 ? 'star-plus-outline' : 'star-minus'}
         onPressLeftIcon={() => navigation.goBack()}
         onPressMiddleIconA={() => navigation.navigate('AdicionarReceita', { receita: item })}
         onPressMiddleIconB={handleShare}
-        onPressRightIcon={favorita.length === 0 ? favoritarReceita : () => {}}
+        onPressRightIcon={favorita.length === 0 ? favoritarReceita : desfavoritarReceita}
       />   
     
       <Body>

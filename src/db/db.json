@@ -165,8 +165,8 @@
       "tituloReceita": "Receita de Carne de Porco Assada",
       "ingredientes": "1kg de carne de porco, suco de 2 laranjas, 4 dentes de alho picados, 1 cebola picada, sal, pimenta, azeite",
       "modoPreparo": "1. Tempere a carne de porco com suco de laranja, alho picado, cebola picada, sal e pimenta. 2. Deixe marinar na geladeira por pelo menos 2 horas. 3. Asse em forno preaquecido a 180°C por 1 hora ou até dourar.",
-      "nota": 7,
-      "numeroAvaliacao": 2,
+      "nota": 11,
+      "numeroAvaliacao": 3,
       "media": 4,
       "imagem": "https://images.pexels.com/photos/6605642/pexels-photo-6605642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoriaId": 1
@@ -301,6 +301,12 @@
       "receitaId": 5,
       "comentario": "Show!",
       "id": 9
+    },
+    {
+      "userId": 3,
+      "receitaId": 6,
+      "comentario": "Bom",
+      "id": 10
     }
   ],
   "favoritas": [
@@ -318,6 +324,11 @@
       "userId": 2,
       "receitaId": 6,
       "id": 3
+    },
+    {
+      "userId": 3,
+      "receitaId": 5,
+      "id": 10
     }
   ]
 }

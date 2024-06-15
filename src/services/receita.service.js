@@ -52,7 +52,7 @@ export const updateReceita = async (param) => {
   }
 }
 
-export const deleteReceita = async (id) => {
+export const removeFavorita = async (id) => {
   try{
     return await API.delete(`${BASE_URL}/receitas/${id}`).then( 
       response => {
