@@ -187,8 +187,8 @@
       "tituloReceita": "Receita de Ravioli com Molho de Tomate",
       "ingredientes": "500g de massa para ravioli, 500ml de molho de tomate, 200g de queijo mussarela ralado, manjericão fresco",
       "modoPreparo": "1. Cozinhe o ravioli em água fervente com sal até ficar al dente. 2. Escorra a massa e reserve. 3. Em uma panela, aqueça o molho de tomate. 4. Misture o ravioli cozido com o molho de tomate. 5. Sirva quente, decorado com queijo mussarela ralado e folhas de manjericão fresco.",
-      "nota": 4,
-      "numeroAvaliacao": 1,
+      "nota": 8,
+      "numeroAvaliacao": 2,
       "media": 4,
       "imagem": "https://img.freepik.com/fotos-gratis/closeup-de-saboroso-ravioli-italiano_1220-5142.jpg?t=st=1714928388~exp=1714931988~hmac=1edfb0f6cf54a029da0de341b26f9bffc513d1638ae3048a45d3b979fb2d6d45&w=826",
       "categoriaId": 2
@@ -307,6 +307,18 @@
       "receitaId": 6,
       "comentario": "Bom",
       "id": 10
+    },
+    {
+      "userId": 3,
+      "receitaId": 6,
+      "comentario": "Excelnte",
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "receitaId": 7,
+      "comentario": "Excelente",
+      "id": 12
     }
   ],
   "favoritas": [
