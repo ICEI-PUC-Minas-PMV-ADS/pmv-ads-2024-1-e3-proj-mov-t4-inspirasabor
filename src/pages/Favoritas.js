@@ -5,37 +5,23 @@ import Container from '../components/Container';
 import FavoritasCard from '../components/FavoritasCard';
 import Body from '../components/Body';
 import Header from '../components/Header';
-import getFavoritas from '../services/favoritas.service';
+import { getFavoritas } from '../services/favoritas.service';
 import { useNavigation, useIsFocused } from '@react-navigation/native';
+import { useUser } from '../contexts/UserContext';
 
 
 const Favoritas = () => {
   const [favoritas, setFavoritas] = useState([]);
+  const { userId } = useUser();
   const navigation = useNavigation();
   const isFocused = useIsFocused();
 
   useEffect(() => {
-    const fetchFavoritas = async () => {
-      const dados = await getFavoritas();
-      if (dados) {
-        setFavoritas(dados);
-      } else {
-        console.error("Erro ao buscar favoritas");
-      }
-    };
-
-    fetchFavoritas();
+    getFavoritas().then((listaDeFavoritas) => {
+      const favoritosFiltrados = listaDeFavoritas.filter(f => f.userId === userId);
+      setFavoritas(favoritosFiltrados);
+    });
   }, [isFocused]);
-
-  const renderItem = ({ item }) => (
-    <FavoritasCard
-      style={styles.card}
-      titulo={item.tituloReceita}
-      imagem={item.imagem}
-      onPress={() => navigation.navigate('Receita', { item })}
-    />
-  );
-
 
   return (
     <Container>
@@ -47,19 +33,27 @@ const Favoritas = () => {
       <Body>
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Lista de Receitas Favoritas</Text>
-          <FlatList
+          {
+            favoritas.length != 0 ?
+            <FlatList
              style={styles.section}
              data={favoritas}
              renderItem={({ item }) => (
                  <FavoritasCard
                      style={styles.card}
-                     titulo={item.tituloReceita}
-                     imagem={item.imagem}
-                     onPress={() => navigation.navigate('Receita', { item })} 
+                     titulo={item.receita.tituloReceita}
+                     imagem={item.receita.imagem}
+                     onPress={() => navigation.navigate('Receita', { item: item.receita })} 
                  />
              )}
              keyExtractor={(item) => item.id.toString()} 
-          />
+          /> : 
+            <FavoritasCard
+              style={styles.cardSemReceita}
+              titulo={"Não existem receitas para exibir..."}
+              onPress={() => {}} 
+            />
+          } 
         </View>
       </Body>
     </Container>
@@ -78,6 +72,9 @@ const styles = StyleSheet.create({
   card: {
     marginBottom: 10,
   },
+  cardSemReceita: {
+    alignItems: 'center'
+  }
 });
 
 export default Favoritas;

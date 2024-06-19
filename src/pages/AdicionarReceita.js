@@ -7,12 +7,13 @@ import Container from '../components/Container';
 import Body from '../components/Body';
 import Header from '../components/Header';
 import { insertReceita, updateReceita, deleteReceita } from '../services/receita.service';
+import { useUser } from '../contexts/UserContext';
 
 const AdicionarReceita = () => {
   const navigation = useNavigation();
   const route = useRoute();
   const receita = route.params?.receita || {}; 
-
+  const { userId } = useUser();
   const [categoriaId, setCategoriaId] = useState(receita.categoriaId || 0);
   const [tituloReceita, setTituloReceita] = useState(receita.tituloReceita || '');
   const [ingredientes, setIngredientes] = useState(receita.ingredientes || '');
@@ -28,7 +29,7 @@ const AdicionarReceita = () => {
 
       const receitaAntiga = {
         categoriaId: categoriaId,
-        userId: receita.userId,
+        userId: userId,
         tituloReceita,
         ingredientes,
         modoPreparo,
