@@ -26,14 +26,25 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/70013a8a-a209-4bfd-ba44-3d963a2aa110" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/bb1d4033-b262-4372-935e-00aaee107f74" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/46ca4cf0-b1c5-4cbf-889d-9e58dc3d9b0b" width="300"/> |
 
 
-| **Caso de Teste** | **CT-02 - Sistema de Pesquisa** |
+| **Caso de Teste** | **CT-02 - Sistema de Pesquisa** | 
 |---|---|
 |	Requisito Associado 	| RF_002- Permitir que o usuário pesquise pelo nome específico da receita. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar buscas dentro da aplicação. |
 |Resultado esperado | O usuário consegue buscar as receitas disponíveis. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada porém não há imagens em todas as receitas. Logo, isso deve ser concluído antes da apresentação final da aplicação. |
 |Avaliação | 4|
-|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/41eeddd5-52a0-47db-8bc3-c43b29e4e715" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/973cb060-072d-4c9e-9721-6f638697491e" width="300"/> 
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/41eeddd5-52a0-47db-8bc3-c43b29e4e715" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/973cb060-072d-4c9e-9721-6f638697491e" width="300"/>
+
+| **Caso de Teste** | **CT-02 - Sistema de Pesquisa - v2** | 
+|---|---|
+|	Requisito Associado 	| RF_002- Permitir que o usuário pesquise pelo nome específico da receita. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar buscas dentro da aplicação. |
+|Resultado esperado | O usuário consegue buscar as receitas disponíveis. |
+|Resultado obtido | Durante o desenvolvimento do _sprint 4_ a equipe encontrou um _bug,_ na funcionalidade em questão. Será resolvida antes da apresentação final. |
+|Avaliação | 4|
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/24ab9149-9747-4ef6-af4e-b0a34dcb6483" width="300"/> 
+
+
 
 | **Caso de Teste** | **CT-03 - Visualizar receitas** |
 |---|---|
