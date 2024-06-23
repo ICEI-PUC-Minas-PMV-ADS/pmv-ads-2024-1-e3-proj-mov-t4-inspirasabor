@@ -16,7 +16,7 @@ A codificação do projeto pode ser encontrada abaixo:
 |RF_006| Permitir que o usuário avalie as receitas | Receita.js |
 |RF_007| Permitir que o usuário adicione mídias referentes a receita (Foto e vídeos) | Receita.js |
 |RF_008| Permitir que o usuário adicione comentários nas receitas| Receita.js / comentario.service.js |
-|RF_009| Permitir que o usuário favorite as receitas | / Inserir / |
+|RF_009| Permitir que o usuário favorite as receitas | Receitas.js/ Favoritas.js / FavoritasCard.js/ FavoritasReceita.js/Favoritas.service.js |
 |RF_010| Permitir que o usuário compatilhe as receitas nas redes sociais | Receita.js |
 
 E também no link: 
