@@ -50,5 +50,10 @@ A tela em questão foi feita de forma a informar, da melhor maneira ao usuário,
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/56ec9481-0440-4e1a-986a-e1c04a42d545)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/e41943e0-68f3-43c9-aa73-7d972a1b155f)
 
+# Tela de Receitas favoritas
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/02d975b5-e7f1-4229-a5ab-7297a8d3eb50)
+
+
 
 As telas seguem o parametro da aplicação.
