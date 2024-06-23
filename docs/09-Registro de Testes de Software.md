@@ -94,9 +94,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_009- Permitir que o usuário favorite as receitas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue favoritar receitas. |
 |Resultado esperado | O usuário consegue comentar favoritar receitas de sua preferência. |
-|Resultado obtido | Feature não implementada ainda. |
-|Avaliação | Feature não implementada ainda. |
-|Evidência |Feature não implementada ainda.|
+|Resultado obtido | Observa-se que a funcionalidade está implementada.  |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/390d4247-d2ca-4f06-8feb-7cc2474b18f8" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/7d9dc0bf-c4b8-4198-89f4-deb5e2fdceb3" width="300"/>)|
 
 | **Caso de Teste** | **CT-10- Permitir que o usuário compartilhar as receitas** |
 |---|---|
@@ -116,27 +116,19 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Avaliação | Nível 0 |
 |Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/24ed9b4c-2054-4962-be0a-8445433be5f2" width="300"/>|
 
-| **Caso de Teste** | **CT-12- Publicação** |
-|---|---|
-|	Requisito Associado 	| RNF_002 - Deve ser compatível com os principais sistemas móveis do mercado - IOS e Android e RNF_003: O aplicativo deve ser publicado em ambiente acessível na internet - App Store e Google Play. |
-| Objetivo do Teste 	| Verificar a publicação da aplicação. |
-|Resultado esperado | A aplicação deve ser compatível com os principais sistemas móveis do mercado bem como estar publicada em ambiente acessível. |
-|Resultado obtido | Feature não implementada ainda. |
-|Avaliação | Feature não implementada ainda |
-|Evidência |Feature não implementada ainda.|
 
-| **Caso de Teste** | **CT-13- Usabilidade** |
+| **Caso de Teste** | **CT-12- Usabilidade** |
 |---|---|
-|	Requisito Associado 	| RNF_004 - A aplicação deve ser fácil de usar e navegar, com interfaces claras e intuitivas. |
+|	Requisito Associado 	| RNF_002 - A aplicação deve ser fácil de usar e navegar, com interfaces claras e intuitivas. |
 | Objetivo do Teste 	| Verificar se a UX e UI da aplicação estão satisfatórias. |
 |Resultado esperado | O usuário deve conseguir usar e navegar pela aplicação sem gargalos. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. |
 |Avaliação | Nível 0 |
 |Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/24ed9b4c-2054-4962-be0a-8445433be5f2" width="300"/>|
 
-| **Caso de Teste** | **CT-14- Elaboração com React Native** |
+| **Caso de Teste** | **CT-13- Elaboração com React Native** |
 |---|---|
-|	Requisito Associado 	| RNF_005- O aplicativo deve ser elaborado com React Native. |
+|	Requisito Associado 	| RNF_003- O aplicativo deve ser elaborado com React Native. |
 | Objetivo do Teste 	| Verificar se a aplicação foi implementada com a ferramenta desejada. |
 |Resultado esperado | Aplicação desenvolvida com React Native. |
 |Resultado obtido | Observa-se que a funcionalidade está implementada. |
