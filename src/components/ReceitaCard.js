@@ -10,9 +10,14 @@ const ReceitaCard = ({ titulo, nota, imagem, categoria, style , onPress }) => {
         {
           imagem && <Card.Cover style={styles.cardImage} source={{ uri: imagem }}/>
         }
-        <Text variant="titleLarge">{titulo || categoria}</Text>
         {
-          nota && <StarRatingDisplay rating={nota} starSize={20}/>
+          titulo && <Text style={styles.cardText} variant="titleLarge">{titulo}</Text>
+        }
+        {
+          categoria && <Text style={styles.cardText} variant="titleLarge">{categoria}</Text>
+        }
+        {
+          nota >= 0 && <StarRatingDisplay rating={nota} starSize={20}/>
         }
       </Card.Content>
     </Card>
@@ -22,7 +27,11 @@ const ReceitaCard = ({ titulo, nota, imagem, categoria, style , onPress }) => {
 const styles = StyleSheet.create({
   cardImage: {
     borderRadius: 5,
+    marginBottom: 5
   },
+  cardText: {
+    marginBottom: 5
+  }
 });
 
 export default ReceitaCard;

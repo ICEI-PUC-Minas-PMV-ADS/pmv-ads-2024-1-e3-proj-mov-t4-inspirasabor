@@ -29,6 +29,11 @@ A tela em questão foi feita de forma a informar, da melhor maneira ao usuário,
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/d51626f6-c768-4521-bc5e-930c6dbadec9)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dc210e29-3151-448f-a3fa-41b5c41f4b6c)
 
+# Tela de Edição e Exclusão de Receitas
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/dc46384f-14cb-48bf-8964-9c263aa76acd)
+
+
 # Tela de Avaliação
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/b94ce192-7a87-4730-bc00-6671ce5132f2)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/4114a433-b4eb-425e-a814-524b944af949)
@@ -44,6 +49,11 @@ A tela em questão foi feita de forma a informar, da melhor maneira ao usuário,
 # Tela de Adicionar mídia
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/56ec9481-0440-4e1a-986a-e1c04a42d545)![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/e41943e0-68f3-43c9-aa73-7d972a1b155f)
+
+# Tela de Receitas favoritas
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e3-proj-mov-t4-inspirasabor/assets/100796561/02d975b5-e7f1-4229-a5ab-7297a8d3eb50)
+
 
 
 As telas seguem o parametro da aplicação.

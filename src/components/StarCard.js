@@ -13,9 +13,12 @@ const StarCard = ({ title, buttonPlaceHolder, rating, onChange, onPress }) => {
            onChange={onChange}
            starSize={40}
         />
-        <Button style={styles.button} mode="outlined" onPress={onPress}>
+        {
+          buttonPlaceHolder &&
+          <Button style={styles.button} mode="outlined" onPress={onPress}>
             {buttonPlaceHolder}
-        </Button>
+          </Button>
+        }
       </Card.Content>
     </Card>
   );

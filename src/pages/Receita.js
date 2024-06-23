@@ -14,19 +14,39 @@ import { useUser } from '../contexts/UserContext';
 import { createComentario, getComentarios } from '../services/comentario.service';
 import { getCategoriaById } from '../services/categoria.service';
 import ComentatioCard from '../components/ComentarioCard';
+import { createFavorita, getFavoritas, removeFavorita } from '../services/favoritas.service';
+import { createAvaliacao, getAvaliacoes } from '../services/avaliacao.service';
 
 const Receita = ({ route }) => {
   const navigation = useNavigation();
   const isFocused = useIsFocused();
-  const { id } = useUser();
+  const { userId } = useUser();
   const [rating, setRating] = useState(0);
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
+  const [favorita, setFavorita] = useState(null);
   const [categoria, setCategoria] = useState('');
+  const [avaliacao, setAvaliacao] = useState(null)
   const { item } = route.params;
 
   const handleAvaliacao = () => {
     if (rating > 0) {
+
+      createAvaliacao({
+        userId: userId,
+        receitaId: item.id,
+        avaliacao: rating
+      }).then(res => {
+        Alert.alert('Obrigado pela avaliação!');
+        getAvaliacoes().then((listaDeAvaliacoes) => {
+          const avaliacaoFiltrada = listaDeAvaliacoes.filter(a => a.userId === userId && a.receitaId === item.id);
+          setAvaliacao(avaliacaoFiltrada[0]);
+        });
+      }).catch(error => {
+        console.error('Erro ao criar a avaliação:', error);
+        Alert.alert('Ocorreu um erro ao criar a avaliação. Tente novamente mais tarde.');
+      });
+
       const notaFinal = Math.round(item.nota + rating);
       const numeroAvaliacao = item.numeroAvaliacao + 1;
       const media = Math.round(notaFinal/numeroAvaliacao);
@@ -41,7 +61,6 @@ const Receita = ({ route }) => {
         imagem: item.imagem,
         categoriaId: item.categoriaId
       }).then();
-      Alert.alert('Muito obrigado pela avaliação');
     } else {
       Alert.alert('Atenção!','Valor invalido!');
     }
@@ -54,11 +73,11 @@ const Receita = ({ route }) => {
     };
 
     createComentario({
-      userId: id,
+      userId: userId,
       receitaId: item.id,
       comentario: comentario
     }).then(res => {
-      Alert.alert('Muito obrigado pelo comentario');
+      Alert.alert('Obrigado pelo comentario!');
       setComentario('');
       getComentarios().then((listaDeComentarios) => {
         setComentarios(listaDeComentarios.filter(c => c.receitaId === item.id));
@@ -83,12 +102,49 @@ const Receita = ({ route }) => {
     }
   };
 
+  const favoritarReceita = () => {
+    createFavorita({
+      userId: userId,
+      receitaId: item.id
+    }).then(res => {
+      Alert.alert('Receita salva na lista de Favoritas!');
+      getFavoritas().then((listaDeFavoritas) => {
+        const favoritosFiltrados = listaDeFavoritas.filter(f => f.userId === userId && f.receitaId === item.id);
+        setFavorita(favoritosFiltrados[0]);
+      });
+    }).catch(error => {
+      console.error('Erro ao favoritar a receita:', error);
+      Alert.alert('Ocorreu um erro ao favoritar a receita. Tente novamente mais tarde.');
+    });
+  };
+
+  const desfavoritarReceita = () => {
+    const favoritaId = favorita.id;
+    if (favoritaId) {
+      removeFavorita(favoritaId).then(res => {
+        Alert.alert('Receita removida da lista de Favoritas!');
+        setFavorita(null);
+      }).catch(error => {
+        console.error('Erro ao remover a receita dos favoritos:', error);
+        Alert.alert('Ocorreu um erro ao remover a receita dos favoritos. Tente novamente mais tarde.');
+      });
+    }
+  };
+
   useEffect(() => {
     getCategoriaById(item.categoriaId).then((cat) => {
       setCategoria(cat.categoria);
     });
     getComentarios().then((listaDeComentarios) => {
       setComentarios(listaDeComentarios.filter(c => c.receitaId === item.id));
+    });
+    getFavoritas().then((listaDeFavoritas) => {
+      const favoritosFiltrados = listaDeFavoritas.filter(f => f.userId === userId && f.receitaId === item.id);
+      setFavorita(favoritosFiltrados[0]);
+    });
+    getAvaliacoes().then((listaDeAvaliacoes) => {
+      const avaliacaoFiltrada = listaDeAvaliacoes.filter(a => a.userId === userId && a.receitaId === item.id);
+      setAvaliacao(avaliacaoFiltrada[0]);
     });
   }, [isFocused]);
 
@@ -98,17 +154,18 @@ const Receita = ({ route }) => {
 
   return (
     <Container>
-     
+
       <Header
         title={'Detalhes da receita'}
         leftIcon={'arrow-left'}
-        middleIconA={'lead-pencil'}
+        middleIconA={userId === item.userId ? 'lead-pencil' : null}
         middleIconB={'share'}
-        rightIcon={'star-plus-outline'}
+        rightIcon={!favorita ? 'star-plus-outline' : 'star-minus'}
         onPressLeftIcon={() => navigation.goBack()}
         onPressMiddleIconA={() => navigation.navigate('AdicionarReceita', { receita: item })}
         onPressMiddleIconB={handleShare}
-      /> 
+        onPressRightIcon={!favorita ? favoritarReceita : desfavoritarReceita}
+      />   
     
       <Body>
         <ScrollView>
@@ -129,10 +186,10 @@ const Receita = ({ route }) => {
           </View>
           <View>
             <StarCard
-              title={"Avaliação"}
-              buttonPlaceHolder={"Enviar avaliação"}
-              rating={rating}
-              onChange={setRating}
+              title={!avaliacao ? "Avaliação" : "Obrigado pela sua avaliação!"}
+              buttonPlaceHolder={!avaliacao ? "Enviar avaliação" : null}
+              rating={!avaliacao ? rating : avaliacao.avaliacao}
+              onChange={!avaliacao ? setRating : () => {}}
               onPress={handleAvaliacao}
             />
           </View>
