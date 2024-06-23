@@ -151,9 +151,9 @@
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  | Feature não implementada. | //.  | //.   | //.    |
-| Idoso | Feature não implementada.. | //.  | //.  | //.  |
-| Adolescente | Feature não implementada..  | //.   | //.  | //.   |
+| Adulto  | Usuário conseguiu realizar a atividade sem erros. | Nenhum.  | 18s.   | Satisfeito.    |
+| Idoso | Usuário conseguiu realizar a atividade sem erros.| Nenhum.  | 24s.  | Satisfeito.  |
+| Adolescente | Usuário conseguiu realizar a atividade sem erros.  | Nenhum.   | 11s.  | Satisfeito.   |
 
 
 **TESTE 9 - COMPARTILHAR RECEITAS**
